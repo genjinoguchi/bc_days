@@ -1,8 +1,8 @@
-
+//main js script
 
 //Constants
-var document-width = $(document).width();
-var document-height= $(document).height();
+var documentWidth = $(document).width();
+var documentHeight= $(document).height();
 
 //A dictionary of projects
 var projects = {}
