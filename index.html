@@ -7,9 +7,10 @@
 		<!--Links-->
 
 		<link rel="shortcut icon" href="./res/icon.png">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT Sans + PT Serif">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
 
 		<!---->
 
@@ -24,109 +25,137 @@
 		<!--Styling-->
 
 		<style>
-		
+
+		/*tags*/
 		body
 		{
 			margin: 0px;
 		}
+		a
+		{
+			text-decoration: none;
+			color: #003399;
+		}
+		a:hover
+		{
+			color: #335CAD;
+		}
+		h1,h2,h3,h4,h5,h6
+		{
+			color: #00FFFF;
+		}
+		h1 a,h2 a,h3 a,h4 a,h5 a
+		{
+			color: #00FFFF;
+		}
+		h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover
+		{
+			color: #00E6E6;
+		}
+		p
+		{
+			font-family: "Open Sans";
+		}
 
+		/*menu bar*/
 		.top-menu-bar
 		{
 			position: fixed;
-			height: 50px;
-			width: 100%;
+			width: 400px;
+			height: 100%;
 			padding-top: 0px;
-			background-color: #00FFFF;
-			display:block;
+			background-color: #3399FF;
+			display: block;
+			opacity: 0.8;
+			z-index: 10;
 		}
-		.menu-heading
+		.option-button
 		{
-			font-family: "Josefin Slab";
+			right: -30px;
+			top: 18px;
+			z-index: 12;
+			position: absolute;
+		}
+		.small-label
+		{
+			position: relative;
+			text-align: center;
+			background-color: #3059D6;
+			font-family: "Lato";
 		}
 		.menu-links
 		{
 			float: right;
+			font-family: "Ubuntu";
+			padding: 25px;
 		}
-		.intro
+		.short-bio
 		{
 
+		}
+		.self
+		{
+			position: absolute;
+			top: 60px;
+		}
+		.bio-description
+		{
+			position: relative;
+			left: 140px;
+			color: #0033CC;
+		}
+
+		/*intro block*/
+		.intro
+		{
+			background-color: #666666;
+			display: inline-block;
+			float: right;
+			top: 70px;
+			height: 600px;
+			width: 100%;
+			position: relative;
+			white-space: nowrap;
+		}
+		.main-heading
+		{
+			font-size: 300%;
+			font-family: Vollkorn;
+			text-align: center;
 		}
 
 		</style>
 
-		<!---->
-
 	</head>
 
 	<body>
-		<!--Top menu bar-->
+		<!--Side Menu Bar-->
 		<div class="top-menu-bar">
-			<h1 class="menu-heading">
-				The Website of Genji Noguchi
-			</h1>
-			<div class="menu-links">
-				
+			<img class="option-button" src="./res/img/grey-circle.png" height="25" width="25">
+			<div class="small-label">
+				<h3>I N F O</h3>
 			</div>
-
+			<br>
+			<br>
+			<br>
+			<div class="short-bio">
+				<img class="self" src="./res/img/self.jpg" width="114" height="226">
+				<p class="bio-description">GENJI NOGUCHI</p>
+				<p class="bio-description">SENIOR</p>
+				<p class="bio-description">STUYVESANT HIGH SCHOOL</p>
+				<p class="bio-description">FRONT/BACK END</p>
+			</div>
 		</div>
 
 		<!--Intro page-->
-		<div class="intro" >
-
+		<!--
+		<div class="intro">
+			<img id="self" src="./res/img/self.jpg">
+			<h1 class="main-heading"><a>
+				Hey, it's Genji.
+			</a></h1>
 		</div>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
-		<br><p>hello</p>
+	-->
 
 	</body>
 
