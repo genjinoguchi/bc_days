@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<!--Remember to change the icon-->
+
+
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Genji Noguchi</title>
@@ -30,6 +33,7 @@
 		body
 		{
 			margin: 0px;
+
 		}
 		a
 		{
@@ -56,25 +60,25 @@
 		{
 			font-family: "Open Sans";
 		}
-
+		/*option button*/
+		#option-button
+		{
+			top: 3%;
+			left: 2%;
+			z-index: 15;
+			position: fixed;
+		}
 		/*menu bar*/
-		.side-menu-bar
+		#side-menu-bar
 		{
 			position: fixed;
-			width: 375px;
+			width: 400px;
 			height: 100%;
 			padding-top: 0px;
 			background-color: #3399FF;
 			display: block;
-			opacity: 0.8;
-			z-index: 10;
-		}
-		.option-button
-		{
-			right: -30px;
-			top: 18px;
-			z-index: 12;
-			position: absolute;
+			z-index: 5;
+			left: -400px;
 		}
 		.small-label
 		{
@@ -85,44 +89,69 @@
 		}
 		.menu-links
 		{
+			font-family: "Ubuntu";
+			padding: 10px;
 			text-align: center;
-			padding: 25px;
-			color: #FFFFFF;
-			bottom: 200px;
+			position:absolute;
+			bottom: 10px;
+			left: 70px;
 		}
 		.short-bio
 		{
 
 		}
-		.self
+		#self
 		{
 			position: absolute;
-			top: 60px;
+			top: 50px;
 		}
 		.bio-description
 		{
 			position: relative;
-			left: 140px;
+			left: 120px;
 			color: #0033CC;
 		}
 
 		/*intro block*/
-		.intro
+		#intro-page
+		{
+			position:relative;
+		}
+		#intro
 		{
 			background-color: #666666;
 			display: inline-block;
 			float: right;
-			top: 70px;
-			height: 600px;
-			width: 100%;
-			position: relative;
-			white-space: nowrap;
-		}
-		.main-heading
-		{
-			font-size: 300%;
-			font-family: Vollkorn;
 			text-align: center;
+			height: 700px;
+			width: 100%;
+			z-index: 10;
+		}
+		#pointer
+		{
+			text-align: left;
+			color: #66FF66;
+			position: fixed;
+			display:none;
+			top: 3px;
+			left: 4%;
+		}
+		#heading-main
+		{
+			font-size: 500%;
+			font-family: Vollkorn;
+			position: absolute;
+			left: 450px;
+			top: 200px;
+			opacity: 0;
+		}
+		#subheading-main
+		{
+			color: #FFFFFF;
+			font-size: 200%;
+			position: absolute;
+			left: 45%;
+			top: 360px;
 		}
 
 		</style>
@@ -130,26 +159,28 @@
 	</head>
 
 	<body>
+		<!--Option button-->
+		<img id="option-button" src="./res/img/green-circle.png" height="25" width="25">
+		<!---->
+
 		<!--Side Menu Bar-->
-		<div class="side-menu-bar">
-			<img class="option-button" src="./res/img/grey-circle.png" height="25" width="25">
+		<div id="side-menu-bar">
 			<div class="small-label">
-				<h3>I N F O</h3>
+				<h3>I N F O a n d T A B S</h3>
 			</div>
-			<br>
-			<br>
-			<br>
 			<div class="short-bio">
-				<img class="self" src="./res/img/self.jpg" width="114" height="226">
-				<p class="bio-description">GENJI NOGUCHI</p>
-				<p class="bio-description">SENIOR</p>
-				<p class="bio-description">STUYVESANT HIGH SCHOOL</p>
-				<p class="bio-description">FRONT/BACK END</p>
+				<img id="self" src="./res/img/self.jpg" height="113">
+				<p class="bio-description">
+					GENJI NOGUCHI <br>
+					SENIOR <br> 
+					STUYVESANT HIGH SCHOOL <br>
+					FRONT END/BACK END <br>
+				</p>
 			</div>
-			<br><br><br><br>
+			<!--Put in links here.-->
+			<br><br><br><br><br><br>
 			<div class="menu-links">
 					<p>Quick Contact Methods:</p>
-					<br>
 					<i>
 					<a class="facebook-link" href="https://facebook.com/genji.noguchi" target="_blank">
 						facebook
@@ -162,17 +193,25 @@
 					<a>genji.noguchi@gmail.com</a>
 					</i>
 			</div>
+
 		</div>
 
 		<!--Intro page-->
-		
-		<div class="intro">
-			<!--<img id="self" src="./res/img/self.jpg">-->
-			<h1 class="main-heading"><a>
-				Hey, it's Genji.
-			</a></h1>
-			<p style="text-align: center"><i>Website coming soon!</i></p>
-		</div
+		<div id="intro-page">
+			<div id="intro">
+				<h1 id="heading-main"><a>
+					Hey, it's Genji.
+				</a></h1>
+				<p id="subheading-main">
+					Welcome to my website!
+				</p>
+				<p id="pointer">
+					<--------Click here to access other tabs.
+				</p>
+
+			</div>
+
+		</div>
 
 	</body>
 
