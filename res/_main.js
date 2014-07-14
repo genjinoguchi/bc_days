@@ -1,4 +1,4 @@
-//main js script
+﻿//main js script
 
 //Constants
 var menuToggled = false;
