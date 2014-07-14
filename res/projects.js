@@ -8,4 +8,3 @@ var projects = {}
 //Init the projects.
 
 
-
