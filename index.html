@@ -1,5 +1,13 @@
 ﻿<!--Remember to change the icon-->
-
+<!--
+	Make an interactive movement thing so that parts of the page respond to cursor movements.
+	Possible color themes: 
+		Grey-green
+		Grey-cyan
+		Red, dull yellow, royal blue
+		White, orange, possibly black
+		Silver white
+-->
 
 <!DOCTYPE html>
 <html>
@@ -19,9 +27,10 @@
 
 		<!--Resources-->
 		
-		<script src="genjinoguchi.github.io/res/_main.js"></script>
+		<script src="./res/jquery.min.js"></script>
 		<script src="./res/jquery.velocity.min.js"></script>
 		<script src="./res/_main.js"></script>
+		<script src="./res/_projects.js"></script>
 
 		<!---->
 
@@ -30,10 +39,14 @@
 		<style>
 
 		/*tags*/
+		html
+		{
+			height: 100%;
+		}
 		body
 		{
 			margin: 0px;
-
+			height: 100%;
 		}
 		a
 		{
@@ -61,31 +74,70 @@
 			font-family: "Open Sans";
 		}
 		/*option button*/
-		#option-button
+		#option-buttons
 		{
-			top: 30px;
-			left: 30px;
 			z-index: 15;
 			position: fixed;
 		}
-		/*menu bar*/
-		#side-menu-bar
+		#tab-option-button
+		{
+			top: 25px;
+			left: 30px;
+			position: fixed;
+		}
+		#about-option-button
+		{
+			bottom: 25px;
+			right: 30px;
+			position: fixed;
+		}
+		#tab-pointer
+		{
+			color: #66FF66;
+			display: none;
+			top: 15px;
+			left: 60px;
+			position: fixed;
+		}
+		#about-pointer
+		{
+			color: #00FFFF;
+			display: none;
+			bottom: 10px;
+			right: 60px;
+			position: fixed;
+		}
+
+		/*tab pane*/
+		.pane
 		{
 			position: fixed;
 			width: 400px;
 			height: 100%;
 			padding-top: 0px;
-			background-color: #3399FF;
-			display: block;
+		}
+
+		/*tab panes*/
+		#tab-pane
+		{
+			background-color: #66FF66;
 			z-index: 5;
-			left: -400px;
+			left: 0px;
+		}
+
+		/*about tab*/
+		#about-tab
+		{
+			background-color: #3399FF;
+			z-index: 5;
+			right: 0px;
 		}
 		.small-label
 		{
 			position: relative;
 			text-align: center;
 			background-color: #3059D6;
-			font-family: "Lato";
+			font-family: "Open Sans";
 		}
 		.menu-links
 		{
@@ -116,32 +168,23 @@
 		#intro-page
 		{
 			position:relative;
+			z-index: 10;
+			height: 100%;
 		}
 		#intro
 		{
-			background-color: #666666;
-			display: inline-block;
+			/*background-color: #666666;*/
+			background-image: url(./res/img/ubuntu-colored.jpg);
 			float: right;
-			text-align: center;
-			height: 700px;
+			height: 100%;
 			width: 100%;
-			z-index: 10;
-		}
-		#pointer
-		{
-			text-align: left;
-			color: #66FF66;
-			position: fixed;
-			display:none;
-			top: 15px;
-			left: 60px;
 		}
 		#heading-main
 		{
 			font-size: 500%;
 			font-family: Vollkorn;
 			position: absolute;
-			left: 450px;
+			left: 30%;
 			top: 200px;
 			opacity: 0;
 		}
@@ -160,16 +203,29 @@
 
 	<body>
 		<!--Option button-->
-		<img id="option-button" src="./res/img/green-circle.png" height="25" width="25">
+		<div id="option-buttons">
+			<img id="tab-option-button" src="./res/img/green-circle.png" height="25" width="25">
+			<p id="tab-pointer"> View tabs.</p>
+			<img id="about-option-button" src="./res/img/cyan-circle.png" height="25" width="25">
+			<p id="about-pointer"> About Me.</p>
+		</div>
 		<!---->
-
-		<!--Side Menu Bar-->
-		<div id="side-menu-bar">
+		<!--Tab Pane-->
+		<div class="pane" id="tab-pane">
 			<div class="small-label">
-				<h3>I N F O & T A B S</h3>
+				<h3>T A B S</h3>
+			</div>
+
+
+		</div>
+
+		<!--About Tab-->
+		<div class="pane" id="about-tab">
+			<div class="small-label">
+				<h3>G E N J I N O G U C H I</h3>
 			</div>
 			<div class="short-bio">
-				<img id="self" src="./res/img/self.jpg" height="113">
+				<img id="self" src="./res/img/self.jpg" height="226">
 				<p class="bio-description">
 					GENJI NOGUCHI <br>
 					SENIOR <br> 
@@ -199,14 +255,11 @@
 		<!--Intro page-->
 		<div id="intro-page">
 			<div id="intro">
-				<h1 id="heading-main"><a>
+				<h1 id="heading-main"><a href="">
 					Hey, it's Genji.
 				</a></h1>
 				<p id="subheading-main">
 					Welcome to my website!
-				</p>
-				<p id="pointer">
-					<--------Click here to access other tabs.
 				</p>
 
 			</div>

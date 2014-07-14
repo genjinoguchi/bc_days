@@ -1,16 +1,12 @@
-﻿//main js script
+//main js script
 
 //Constants
-var menuToggled = false;
-
-//A dictionary of projects
-var projects = {}
 
 
-//Init the projects.
-
-
-
+//Variables
+var aboutPaneToggled = false;
+var tabPaneToggled = false;
+var inFocus;
 
 
 //jQuery Actions
@@ -18,8 +14,13 @@ var projects = {}
 $(document).ready(function(){
 	intro();
 
-	$("#option-button").click(function(){
-		toggleMenu();
+	inFocus = $("#intro-page");
+
+	$("#about-option-button").click(function(){
+		toggleAboutPane();
+	});
+	$("#tab-option-button").click(function(){
+		toggleTabPane();
 	});
 })
 
@@ -31,20 +32,107 @@ function intro(){
 		top: '250px'
 	}, "slow");
 	
-	$("#pointer").delay(1000).show("slow");
+	$("#tab-pointer").delay(1000).show("slow");
+	$("#about-pointer").delay(1000).show("slow");
 }
 
-function toggleMenu(){
-	if(!menuToggled){
+function toggleAboutPane(){
+	if(!aboutPaneToggled){
 		//Change this to javascript animations later on.
-		document.getElementById("side-menu-bar").style.left = "0px";
-		document.getElementById("intro-page").style.right = "-400px";
-		document.getElementById("option-button").style.left = "30%";
-		$("#pointer").delay(1000).hide("slow");
+
+		//Move the buttons and pointers.
+		$("#about-option-button").velocity({
+			right: '420px'
+		});
+		$("#about-pointer").velocity({
+			right: '450px'
+		});
+		$("#tab-option-button").velocity({
+			left: '-420px'
+		})
+		$("#tab-pointer").velocity({
+			left: '-450px'
+		})
+		
+		//Move the tab(s)
+		//document.getElementById("about-tab").style.right = "0px";
+
+		inFocus.velocity({ left: "-400px"}, "slow");
+
+
 	}else{
-		document.getElementById("side-menu-bar").style.left = "-400px";
-		document.getElementById("intro-page").style.right = "0px";
-		document.getElementById("option-button").style.left = "2%";
+		//Move the main page.
+
+		inFocus.velocity({ left: "0px"}, "slow");
+		
+		//Move the buttons and pointers.
+		$("#about-option-button").velocity({
+			right: '30px'
+		});
+		$("#about-pointer").velocity({
+			right: '60px'
+		})
+		$("#tab-option-button").velocity({
+			left: '30px'
+		})
+		$("#tab-pointer").velocity({
+			left: '60px'
+		})
+
+
+		//document.getElementById("about-tab").style.right = "-400px";
+		
 	}
-	menuToggled = !menuToggled;
+	aboutPaneToggled = !aboutPaneToggled;
+}
+
+function toggleTabPane(){
+	if(!tabPaneToggled){
+		//Change this to javascript animations later on.
+
+		//Main page
+		inFocus.velocity({ right: "-400px"}, "slow");
+
+		//Move the buttons and pointers.
+		$("#about-option-button").velocity({
+			right: '-420px'
+		});
+		$("#about-pointer").velocity({
+			right: '-450px'
+		});
+		$("#tab-option-button").velocity({
+			left: '420px'
+		})
+		$("#tab-pointer").velocity({
+			left: '450px'
+		})
+		
+		//Move the tab(s)
+		//document.getElementById("about-tab").style.right = "0px";
+
+	}else{
+		//Move the main page.
+		inFocus.velocity({ right: "0px"}, "slow");
+		
+		//Move the buttons and pointers.
+		$("#about-option-button").velocity({
+			right: '30px'
+		});
+		$("#about-pointer").velocity({
+			right: '60px'
+		})
+		$("#tab-option-button").velocity({
+			left: '30px'
+		})
+		$("#tab-pointer").velocity({
+			left: '60px'
+		})
+
+
+		//document.getElementById("about-tab").style.right = "-400px";
+
+
+		
+	}
+	tabPaneToggled = !tabPaneToggled;
 }
