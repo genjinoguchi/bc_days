@@ -57,13 +57,13 @@ function toggleAboutPane(){
 		//Move the tab(s)
 		//document.getElementById("about-tab").style.right = "0px";
 
-		inFocus.velocity({ right: "400px"}, "slow");
+		inFocus.velocity({ left: "-400px", right: "400px"}, "slow");
 
 
 	}else{
 		//Move the main page.
 
-		inFocus.velocity({ right: "0px"}, "slow");
+		inFocus.velocity({ left: "0px", right: "0px"}, "slow");
 		
 		//Move the buttons and pointers.
 		$("#about-option-button").velocity({
@@ -91,7 +91,7 @@ function toggleTabPane(){
 		//Change this to javascript animations later on.
 
 		//Main page
-		inFocus.velocity({ right: "-400px"}, "slow");
+		inFocus.velocity({ left: "400px", right: "-400px"}, "slow");
 
 		//Move the buttons and pointers.
 		$("#about-option-button").velocity({
@@ -112,7 +112,7 @@ function toggleTabPane(){
 
 	}else{
 		//Move the main page.
-		inFocus.velocity({ right: "0px"}, "slow");
+		inFocus.velocity({ left: "0px", right: "0px"}, "slow");
 		
 		//Move the buttons and pointers.
 		$("#about-option-button").velocity({
