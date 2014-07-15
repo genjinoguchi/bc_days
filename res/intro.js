@@ -4,8 +4,7 @@
 
 
 //Variables
-var aboutPaneToggled = false;
-var tabPaneToggled = false;
+var position = 0;
 var inFocus;
 
 
@@ -17,11 +16,14 @@ $(document).ready(function(){
 	inFocus = $("#intro-page");
 
 	$("#about-option-button").click(function(){
-		toggleAboutPane();
+		shiftRight(-400);
 	});
 	$("#tab-option-button").click(function(){
-		toggleTabPane();
+		shiftRight(400);
 	});
+	$(inFocus).click(function(){
+		shiftRight(0);
+	})
 })
 
 //Functions
@@ -36,103 +38,53 @@ function intro(){
 	$("#about-pointer").delay(1000).show("slow");
 }
 
-function toggleAboutPane(){
-	if(!aboutPaneToggled){
-		//Change this to javascript animations later on.
+function shiftRight(dist){
+	//Change this to javascript animations later on.
 
-		//Move the buttons and pointers.
-		$("#about-option-button").velocity({
-			right: '420px'
-		});
-		$("#about-pointer").velocity({
-			right: '450px'
-		});
-		$("#tab-option-button").velocity({
-			left: '-420px'
-		})
-		$("#tab-pointer").velocity({
-			left: '-450px'
-		})
-		
-		//Move the tab(s)
-		//document.getElementById("about-tab").style.right = "0px";
+	//Main page
+	inFocus.velocity({ left: dist+"px", right: dist+"px"}, "slow");
 
-		inFocus.velocity({ left: "-400px", right: "400px"}, "slow");
-
-
-	}else{
-		//Move the main page.
-
-		inFocus.velocity({ left: "0px", right: "0px"}, "slow");
-		
-		//Move the buttons and pointers.
-		$("#about-option-button").velocity({
-			right: '30px'
-		});
-		$("#about-pointer").velocity({
-			right: '60px'
-		})
-		$("#tab-option-button").velocity({
-			left: '30px'
-		})
-		$("#tab-pointer").velocity({
-			left: '60px'
-		})
-
-
-		//document.getElementById("about-tab").style.right = "-400px";
-		
-	}
-	aboutPaneToggled = !aboutPaneToggled;
+	//Move the buttons and pointers.
+	$("#about-option-button").velocity({
+		right: '-420px'
+	});
+	$("#about-pointer").velocity({
+		right: '-450px'
+	});
+	$("#tab-option-button").velocity({
+		left: '420px'
+	})
+	$("#tab-pointer").velocity({
+		left: '450px'
+	})
+	
+	//Move the tab(s)
+	//document.getElementById("about-tab").style.right = "0px";
+	position = dist;
 }
 
-function toggleTabPane(){
-	if(!tabPaneToggled){
-		//Change this to javascript animations later on.
+function shiftRight(dist){
+	//Change this to javascript animations later on.
 
-		//Main page
-		inFocus.velocity({ left: "400px", right: "-400px"}, "slow");
+	//Move the main page.
+	inFocus.velocity({ left: dist+"px", right: dist+"px"}, "slow");
+	
+	//Move the buttons and pointers.
+	$("#about-option-button").velocity({
+		right: 30-dist+"px"
+	});
+	$("#about-pointer").velocity({
+		right: 60-dist+"px"
+	});
+	$("#tab-option-button").velocity({
+		left: 30+dist+"px"
+	});
+	$("#tab-pointer").velocity({
+		left: 60+dist+"px"
+	});
 
-		//Move the buttons and pointers.
-		$("#about-option-button").velocity({
-			right: '-420px'
-		});
-		$("#about-pointer").velocity({
-			right: '-450px'
-		});
-		$("#tab-option-button").velocity({
-			left: '420px'
-		})
-		$("#tab-pointer").velocity({
-			left: '450px'
-		})
-		
-		//Move the tab(s)
-		//document.getElementById("about-tab").style.right = "0px";
+	//document.getElementById("about-tab").style.right = "-400px";
 
-	}else{
-		//Move the main page.
-		inFocus.velocity({ left: "0px", right: "0px"}, "slow");
-		
-		//Move the buttons and pointers.
-		$("#about-option-button").velocity({
-			right: '30px'
-		});
-		$("#about-pointer").velocity({
-			right: '60px'
-		})
-		$("#tab-option-button").velocity({
-			left: '30px'
-		})
-		$("#tab-pointer").velocity({
-			left: '60px'
-		})
+	position = dist;
 
-
-		//document.getElementById("about-tab").style.right = "-400px";
-
-
-		
-	}
-	tabPaneToggled = !tabPaneToggled;
 }
