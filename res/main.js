@@ -57,13 +57,13 @@ function toggleAboutPane(){
 		//Move the tab(s)
 		//document.getElementById("about-tab").style.right = "0px";
 
-		inFocus.velocity({ left: "-400px"}, "slow");
+		inFocus.velocity({ right: "400px"}, "slow");
 
 
 	}else{
 		//Move the main page.
 
-		inFocus.velocity({ left: "0px"}, "slow");
+		inFocus.velocity({ right: "0px"}, "slow");
 		
 		//Move the buttons and pointers.
 		$("#about-option-button").velocity({
