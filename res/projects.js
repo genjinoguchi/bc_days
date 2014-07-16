@@ -18,8 +18,10 @@ function projectPageActions(){
 function hideProjectPage(){
 	//Subject to change
 	document.getElementById("projects-page").style.display = "none";
+
 }
 function showProjectPage(){
 	//Subject to change
 	document.getElementById("projects-page").style.display = "block";
+
 }
