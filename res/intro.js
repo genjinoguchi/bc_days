@@ -17,12 +17,15 @@ $(document).ready(function(){
 
 	$("#about-option-button").click(function(){
 		shiftRight(-400);
+		$("body").css("overflow", "hidden");
 	});
 	$("#tab-option-button").click(function(){
 		shiftRight(400);
+		$("body").css("overflow", "hidden");
 	});
 	$(inFocus).click(function(){
 		shiftRight(0);
+		$("body").css("overflow", "auto");
 	})
 })
 
@@ -36,31 +39,6 @@ function intro(){
 	
 	$("#tab-pointer").delay(1000).show("slow");
 	$("#about-pointer").delay(1000).show("slow");
-}
-
-function shiftRight(dist){
-	//Change this to javascript animations later on.
-
-	//Main page
-	inFocus.velocity({ left: dist+"px", right: dist+"px"}, "slow");
-
-	//Move the buttons and pointers.
-	$("#about-option-button").velocity({
-		right: '-420px'
-	});
-	$("#about-pointer").velocity({
-		right: '-450px'
-	});
-	$("#tab-option-button").velocity({
-		left: '420px'
-	})
-	$("#tab-pointer").velocity({
-		left: '450px'
-	})
-	
-	//Move the tab(s)
-	//document.getElementById("about-tab").style.right = "0px";
-	position = dist;
 }
 
 function shiftRight(dist){
@@ -82,8 +60,6 @@ function shiftRight(dist){
 	$("#tab-pointer").velocity({
 		left: 60+dist+"px"
 	});
-
-	//document.getElementById("about-tab").style.right = "-400px";
 
 	position = dist;
 
