@@ -93,7 +93,7 @@
 		}
 		#tab-pointer
 		{
-			color: #66FF66;
+			color: #FF7519;
 			display: none;
 			top: 15px;
 			left: 60px;
@@ -108,7 +108,7 @@
 			position: fixed;
 		}
 
-		/*tab pane*/
+		/*pane*/
 		.pane
 		{
 			position: fixed;
@@ -120,10 +120,34 @@
 		/*tab panes*/
 		#tab-pane
 		{
-			background-color: #66FF66;
+			background-color: #FFFFFF;
 			z-index: 5;
 			left: 0px;
+			padding: 5px;
 		}
+		#tab-label
+		{
+			color: #FF7519;
+			padding: 5px;
+		}
+		.tab-section
+		{
+			width: 100%;
+			color: #000000;
+		}
+		.tab
+		{
+			left: 50px;
+			position: relative;
+			padding: 15px;
+			font-size: 125%;
+		}
+		
+		.tab:hover
+		{
+			background-color: #E6E6E6;
+		}
+		
 
 		/*about tab*/
 		#about-tab
@@ -136,8 +160,11 @@
 		{
 			position: relative;
 			text-align: center;
-			background-color: #3059D6;
 			font-family: "Open Sans";
+		}
+		#about-label
+		{
+			background-color: #3059D6;
 		}
 		.menu-links
 		{
@@ -164,12 +191,20 @@
 			color: #0033CC;
 		}
 
-		/*intro block*/
-		#intro-page
+
+		/*MAIN SECTION*/
+		#main-section
 		{
 			position:relative;
 			z-index: 10;
 			height: 100%;
+		}
+
+		/*intro block*/
+		#intro-page
+		{
+			height: 100%;
+			position: relative;
 		}
 		#intro
 		{
@@ -197,6 +232,18 @@
 			top: 360px;
 		}
 
+		/*projects page*/
+		#projects-page
+		{
+			height: 100%;
+			display: none;
+		}
+		#projects-intro
+		{
+			height: 100%;
+			width: 100%;
+		}
+
 		</style>
 
 	</head>
@@ -205,7 +252,7 @@
 
 		<!--Option button-->
 		<div id="option-buttons">
-			<img id="tab-option-button" src="./res/img/green-circle.png" height="25" width="25">
+			<img id="tab-option-button" src="./res/img/orange-circle.png" height="25" width="25">
 			<p id="tab-pointer"> View tabs.</p>
 			<img id="about-option-button" src="./res/img/cyan-circle.png" height="25" width="25">
 			<p id="about-pointer"> About Me.</p>
@@ -214,16 +261,26 @@
 		<!--Tab Pane-->
 		<div class="pane" id="tab-pane">
 			<div class="small-label">
-				<h3>T A B S</h3>
+				<h3 id="tab-label">T A B S</h3>
 			</div>
-
+			<div class="tab-section">
+				<p id="home-tab" class="tab">
+					Home
+				</p>
+				<p id="projects-tab" class="tab">
+					Projects
+				</p>
+				<p id="blog-tab" class="tab">
+					Blog
+				</p>
+			</div>
 
 		</div>
 
 		<!--About Tab-->
 		<div class="pane" id="about-tab">
 			<div class="small-label">
-				<h3>G E N J I N O G U C H I</h3>
+				<h3 id="about-label">G E N J I N O G U C H I</h3>
 			</div>
 			<div class="short-bio">
 				<img id="self" src="./res/img/self.jpg" height="226">
@@ -255,21 +312,33 @@
 
 		</div>
 
-		<!--Intro page-->
-		<div id="intro-page">
-			<div id="intro">
-				<h1 id="heading-main"><a href="">
-					Hey, it's Genji.
-				</a></h1>
-				<p id="subheading-main">
-					Site still under construction. Check back soon!
-				</p>
+		<div id = "main-section">
+
+			<!--Intro page-->
+			<div id="intro-page">
+				<div id="intro">
+					<h1 id="heading-main"><a href="">
+						Hey, it's Genji.
+					</a></h1>
+					<p id="subheading-main">
+						Site still under construction. Check back soon!
+					</p>
+
+				</div>
+
+			</div>
+
+			<!--Projects Page-->
+			<div id="projects-page">
+				<div id="projects-intro">
+					<p style="font-size: 300%"> HURRR</p>
+
+
+				</div>
 
 			</div>
 
 		</div>
-
-		<!--Projects Page-->
 
 	</body>
 
