@@ -18,7 +18,10 @@ function projectPageActions(){
 function hideProjectPage(){
 	//Subject to change
 	document.getElementById("projects-page").style.display = "none";
-
+	$("#heading-projects").velocity({
+		opacity: '0',
+		top: '200px'
+	}, "slow");
 }
 function showProjectPage(){
 	//Subject to change
