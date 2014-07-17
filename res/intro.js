@@ -10,20 +10,26 @@ var position = 0;
 
 $(document).ready(function(){
 	intro();
+	hideProjectPage();
+	hideHomePage();
+
+	showProjectPage();
 
 	detectTabClicks();
 
+	tabActions();
+
+
+	/*
 	$("#home-tab").click(function(){
-		showHomePage();
 		hideProjectPage();
+		showHomePage();
 	});
-	$("#projects-page").click(function(){
+	$("#projects-tab").click(function(){
 		hideHomePage();
 		showProjectPage();
-	});
-
-	homePageActions();
-	projectPageActions();
+	})
+*/
 
 	
 })
@@ -31,7 +37,6 @@ $(document).ready(function(){
 //Functions
 
 function intro(){
-	showHomePage();
 	$("#tab-pointer").delay(1000).show("slow");
 	$("#about-pointer").delay(1000).show("slow");
 }
@@ -44,17 +49,30 @@ function hideHomePage(){
 
 function showHomePage(){
 	document.getElementById("intro-page").style.display = "block";
+	
 	$("#heading-main").velocity({
 		opacity: '1',
 		top: '250px'
 	}, "slow");
+
 }
 
 function detectTabClicks(){
-	
+	$("#home-tab").click(function(){
+		showHomePage();
+		hideProjectPage();
+		shiftRight(0);
+		$("body").css("overflow", "auto");
+	});
+	$("#projects-tab").click(function(){
+		hideHomePage();
+		showProjectPage();
+		shiftRight(0);
+		$("body").css("overflow", "auto");
+	});
 }
 
-function homePageActions(){
+function tabActions(){
 	$("#about-option-button").click(function(){
 		shiftRight(-400);
 		$("body").css("overflow", "hidden");
