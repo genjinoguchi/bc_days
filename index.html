@@ -223,7 +223,7 @@
 			top: 200px;
 			opacity: 0;
 		}
-		#subheading-main
+		.subheading-main
 		{
 			color: #FFFFFF;
 			font-size: 200%;
@@ -236,13 +236,23 @@
 		#projects-page
 		{
 			height: 100%;
-			display: none;
+			position: relative;
 		}
 		#projects-intro
 		{
+			background-image: url(./res/img/nexus-gray.png);
+			float: right;
 			height: 100%;
 			width: 100%;
-			background-image: url(./res/img/nicebackground.jpg);
+		}
+		#heading-projects
+		{
+			font-size: 500%;
+			font-family: Vollkorn;
+			position: absolute;
+			left: 40%;
+			top: 200px;
+			opacity: 0;
 		}
 
 		</style>
@@ -329,7 +339,7 @@
 					<h1 id="heading-main"><a href="">
 						Hey, it's Genji.
 					</a></h1>
-					<p id="subheading-main">
+					<p class="subheading-main">
 						Site still under construction. Check back soon!
 					</p>
 
@@ -340,7 +350,7 @@
 			<!--Projects Page-->
 			<div id="projects-page">
 				<div id="projects-intro">
-					<h1 style="text-align: center">Test Heading</h1>
+					<h1 id="heading-projects">Projects</h1>
 
 
 				</div>
