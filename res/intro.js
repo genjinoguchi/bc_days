@@ -13,7 +13,7 @@ $(document).ready(function(){
 	hideProjectPage();
 	hideHomePage();
 
-	showProjectPage();
+	showHomePage();
 
 	detectTabClicks();
 
