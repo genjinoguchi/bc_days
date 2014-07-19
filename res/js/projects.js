@@ -14,11 +14,11 @@ function Project(name, year, month, path, fileType){
 	this.path = path;
 	this.fileType = fileType;
 
-	function getName(){ return name;}
-	function getYear(){ return year;}
-	function getMonth(){ return month;}
-	function getPath(){ return path;}
-	function getFileType(){ return fileType;}
+	this.getName = function(){ return name;}
+	this.getYear = function(){ return year;}
+	this.getMonth = function(){ return month;}
+	this.getPath = function(){ return path;}
+	this.getFileType = function(){ return fileType;}
 }
 
 codeDayJan = new Project("CodeDay NY", 2014, 1, "../projects/codeDayJan", ".png");
@@ -35,18 +35,18 @@ function projectPageActions(){
 	
 }
 function initProjects(){
-	var total;
-	console.log("hurr");
+	var total = "";
 
 	for(var i=0;i<projects.length;i++){
 		total += addProject(projects[i]);
 	}
+	console.log(total);
 	document.getElementById("projects-display").inner = total;
 }
 function addProject(project){
 	var total = "";
-	total += "<img class=\"project-icon\" src=\"";
-	total += project.getPath() + "thumbnail" + project.getFileType() + "\"";
+	total = "<img class=\"project-icon\" src=\"";
+	total += project.getPath() + "thumbnail" + project.getFileType() + "\" width=\"200\" heigth=\"200\"";
 	total += ">\n";
 	return total;
 }

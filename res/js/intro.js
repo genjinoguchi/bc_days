@@ -16,7 +16,6 @@ $(document).ready(function(){
 	showProjectPage();
 
 	initProjects();
-	console.log("derpderp");
 	homePageActions();
 	projectPageActions();
 
