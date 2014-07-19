@@ -21,12 +21,12 @@ function Project(name, year, month, path, fileType){
 	this.getFileType = function(){ return fileType;}
 }
 
-codeDayJan = new Project("CodeDay NY", 2014, 1, "../projects/codeDayJan", ".png");
-//hackNYU = new Project("Hack NYU", 2014, 5, "../projects.hackNYU", ".png");
-Pool3D = new Project("3D Pool", 2014, 6, "../projects/Pool3D", ".png");
+//codeDayJan = new Project("CodeDay NY", 2014, 1, "./res/projects/codeDayJan/", ".png");
+hackNYU = new Project("Hack NYU", 2014, 5, "./res/projects/hackNYU/", ".png");
+Pool3D = new Project("3D Pool", 2014, 6, "./res/projects/Pool3D/", ".png");
 
-projects.push(codeDayJan);
-//projects.push(hackNYU);
+//projects.push(codeDayJan);
+projects.push(hackNYU);
 projects.push(Pool3D);
 
 //Functions
@@ -41,7 +41,7 @@ function initProjects(){
 		total += addProject(projects[i]);
 	}
 	console.log(total);
-	document.getElementById("projects-display").inner = total;
+	document.getElementById("projects-display").innerHTML = total;
 }
 function addProject(project){
 	var total = "";
