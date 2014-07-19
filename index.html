@@ -1,0 +1,145 @@
+﻿<!--Remember to change the icon-->
+<!--
+	Make an interactive movement thing so that parts of the page respond to cursor movements.
+	Possible color themes: 
+		Grey-green
+		Grey-cyan
+		Red, dull yellow, royal blue
+		White, orange, possibly black
+		Silver white
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Genji Noguchi</title>
+
+
+		<!--Links-->
+
+		<link rel="shortcut icon" href="./res/icon.png">
+		<link rel="stylesheet" type="text/css" href="./res/main.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+		<!---->
+
+		<!--Resources-->
+		
+		<script src="./res/js/jquery.min.js"></script>
+		<script src="./res/js/jquery.velocity.min.js"></script>
+		<script src="./res/js/intro.js"></script>
+		<script src="./res/js/projects.js"></script>
+
+		<!---->
+
+	</head>
+
+	<body>
+
+		<!--Option button-->
+		
+		<div id="option-buttons">
+			<img id="tab-option-button" src="res/img/orange-circle.png" height="25" width="25">
+			<p id="tab-pointer"> View tabs.</p>
+			<img id="about-option-button" src="res/img/cyan-circle.png" height="25" width="25">
+			<p id="about-pointer"> About Me.</p>
+		</div>
+	
+		<!---->
+		<!--Tab Pane-->
+		
+		<div class="pane" id="tab-pane">
+			<div class="small-label">
+				<h3 id="tab-label">T A B S</h3>
+			</div>
+			<div class="tab-section">
+				<p id="home-tab" class="tab">
+					Home
+				</p>
+				<p id="projects-tab" class="tab">
+					Projects
+				</p>
+				<p id="blog-tab" class="tab">
+					Blog
+				</p>
+			</div>
+
+		</div>
+	
+
+		<!--About Tab-->
+		
+		<div class="pane" id="about-tab">
+			<div class="small-label">
+				<h3 id="about-label">G E N J I N O G U C H I</h3>
+			</div>
+			<div class="short-bio">
+				<img id="self" src="./res/img/self.jpg" height="226">
+				<p class="bio-description">
+					GENJI NOGUCHI <br>
+					SENIOR <br> 
+					STUYVESANT HIGH SCHOOL <br>
+					FULL STACK <br>
+				</p>
+			</div>
+		
+			<!--Put in links here.-->
+			
+			<br><br><br><br><br><br>
+			<div class="menu-links">
+					<p>Quick Contact Methods:</p>
+					<i>
+					<a class="facebook-link" href="https://facebook.com/genji.noguchi" target="_blank">
+						facebook
+					</a>
+					<br>
+					<a class="linkedin-link" href="https://linkedin.com/in/genjinoguchi" target="_blank">
+						linkedin
+					</a>
+					<br>
+					<a>genji.noguchi@gmail.com</a>
+					<br>
+					&copyGenji Noguchi 2014
+					</i>
+			</div>
+
+		</div>
+
+		<div id = "main-section">
+			
+			<!--Intro page-->
+			
+			<div id="intro-page" class="full-page">
+				<div id="intro">
+					<h1 id="heading-main"><a href="">
+						Hey, it's Genji.
+					</a></h1>
+					<p id="subheading-main" class="subheading">
+						Site still under construction. Check back soon!
+					</p>
+
+				</div>
+
+			</div>
+		
+			<!--Projects Page-->
+			<div id="projects-page" class="full-page">
+				<div id="projects-intro">
+					<h1 id="heading-projects">Projects</h1>
+					
+				</div>
+				<div id="projects-display">
+					
+				</div>
+
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
