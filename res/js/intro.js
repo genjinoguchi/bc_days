@@ -5,7 +5,6 @@
 //Variables
 var position = 0;
 
-
 //jQuery Actions
 
 $(document).ready(function(){
@@ -22,10 +21,6 @@ $(document).ready(function(){
 
 	detectTabClicks();
 	tabActions();
-
-	$(".circle").hover(function(){
-		$(".circle").css("opacity","0.5");
-	});
 })
 
 //Functions
@@ -36,7 +31,7 @@ function intro(){
 }
 
 function homePageActions(){
-
+	
 }
 
 function hideHomePage(){
@@ -54,7 +49,6 @@ function showHomePage(){
 		opacity: '1',
 		top: '250px'
 	}, "slow");
-
 }
 
 function detectTabClicks(){

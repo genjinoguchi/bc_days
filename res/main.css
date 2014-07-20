@@ -41,6 +41,7 @@ p
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border-radius: 100px;
+	position: absolute;
 }
 /*option button*/
 #option-buttons
@@ -188,7 +189,11 @@ p
 #intro
 {
 	/*background-color: #666666;*/
-	background-image: url(./img/ubuntu-colored.jpg);
+	background: url(./img/nexus-gray.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	float: right;
 	height: 100%;
 	width: 100%;
@@ -206,7 +211,6 @@ p
 {
 	color: #FFFFFF;
 	font-size: 200%;
-	position: absolute;
 	left: 45%;
 	top: 360px;
 }
@@ -214,13 +218,16 @@ p
 /*projects page*/
 #projects-page
 {
-
+	background: url(./img/ubuntu.jpg) no-repeat center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 250%;
 }
 #projects-intro, #projects-display
 {
-	background-image: url(./img/nexus-gray.png);
 	float: right;
-	height: 100%;
 	width: 100%;
 }
 #heading-projects
@@ -234,10 +241,10 @@ p
 }
 #projects-display
 {
-	left: 50%;
-	top: 10%;
+	top: 100%;
 }
 .project-icon
 {
-	padding: 30px;
+	padding: 0px;
+	position: absolute;
 }
