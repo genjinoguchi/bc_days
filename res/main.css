@@ -220,12 +220,15 @@ p
 	font-family: Vollkorn;
 	position: absolute;
 	left: 30%;
-	top: 200px;
+	top: 45%;
 	opacity: 0;
 }
-
-
-#project-icon
+#projects-display
 {
-
+	left: 50%;
+	top: 10%;
+}
+.project-icon
+{
+	padding: 30px;
 }
