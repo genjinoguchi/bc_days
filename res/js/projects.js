@@ -18,6 +18,7 @@ function Project(name, id, year, month, path, fileType, topDistance, leftDistanc
 	this.fileType = fileType;
 	this.topDistance = topDistance;
 	this.leftDistance = leftDistance;
+	this.speed = Math.random();
 
 	this.getName = function(){ return name;}
 	this.getID = function(){ return id;}
