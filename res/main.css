@@ -33,6 +33,15 @@ p
 {
 	font-family: "Open Sans";
 }
+.circle
+{
+	width: 200px;
+	height: 200px;
+	background: black;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+}
 /*option button*/
 #option-buttons
 {

@@ -22,6 +22,10 @@ $(document).ready(function(){
 
 	detectTabClicks();
 	tabActions();
+
+	$(".circle").hover(function(){
+		$(".circle").css("opacity","0.5");
+	});
 })
 
 //Functions

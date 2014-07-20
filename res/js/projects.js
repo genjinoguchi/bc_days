@@ -40,14 +40,14 @@ function initProjects(){
 	for(var i=0;i<projects.length;i++){
 		total += addProject(projects[i]);
 	}
-	console.log(total);
 	document.getElementById("projects-display").innerHTML = total;
 }
 function addProject(project){
 	var total = "";
-	total = "<img class=\"project-icon\" src=\"";
-	total += project.getPath() + "thumbnail" + project.getFileType() + "\" width=\"200\" heigth=\"200\"";
-	total += ">\n";
+	total += "<div class=\"project-icon\"> ";
+	total += "<img class=\"circle\" src=\"";
+	total += project.getPath() + "thumbnail" + project.getFileType() + "\"";
+	total += ">\n</div>\n";
 	return total;
 }
 
