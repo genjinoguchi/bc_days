@@ -1,0 +1,273 @@
+﻿<!--Remember to change the icon-->
+<!--
+	Make an interactive movement thing so that parts of the page respond to cursor movements.
+	Possible color themes: 
+		Grey-green
+		Grey-cyan
+		Red, dull yellow, royal blue
+		White, orange, possibly black
+		Silver white
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Genji Noguchi</title>
+
+
+		<!--Links-->
+
+		<link rel="shortcut icon" href="./res/icon.png">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+		<!---->
+
+		<!--Resources-->
+		
+		<script src="./res/jquery.min.js"></script>
+		<script src="./res/jquery.velocity.min.js"></script>
+		<script src="./res/main.js"></script>
+		<script src="./res/projects.js"></script>
+
+		<!---->
+
+		<!--Styling-->
+
+		<style>
+
+		/*tags*/
+		html
+		{
+			height: 100%;
+		}
+		body
+		{
+			margin: 0px;
+			height: 100%;
+		}
+		a
+		{
+			text-decoration: none;
+			color: #003399;
+		}
+		a:hover
+		{
+			color: #335CAD;
+		}
+		h1,h2,h3,h4,h5,h6
+		{
+			color: #00FFFF;
+		}
+		h1 a,h2 a,h3 a,h4 a,h5 a
+		{
+			color: #00FFFF;
+		}
+		h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover
+		{
+			color: #00E6E6;
+		}
+		p
+		{
+			font-family: "Open Sans";
+		}
+		/*option button*/
+		#option-buttons
+		{
+			z-index: 15;
+			position: fixed;
+		}
+		#tab-option-button
+		{
+			top: 25px;
+			left: 30px;
+			position: fixed;
+		}
+		#about-option-button
+		{
+			bottom: 25px;
+			right: 30px;
+			position: fixed;
+		}
+		#tab-pointer
+		{
+			color: #66FF66;
+			display: none;
+			top: 15px;
+			left: 60px;
+			position: fixed;
+		}
+		#about-pointer
+		{
+			color: #00FFFF;
+			display: none;
+			bottom: 10px;
+			right: 60px;
+			position: fixed;
+		}
+
+		/*tab pane*/
+		.pane
+		{
+			position: fixed;
+			width: 400px;
+			height: 100%;
+			padding-top: 0px;
+		}
+
+		/*tab panes*/
+		#tab-pane
+		{
+			background-color: #66FF66;
+			z-index: 5;
+			left: 0px;
+		}
+
+		/*about tab*/
+		#about-tab
+		{
+			background-color: #3399FF;
+			z-index: 5;
+			right: 0px;
+		}
+		.small-label
+		{
+			position: relative;
+			text-align: center;
+			background-color: #3059D6;
+			font-family: "Open Sans";
+		}
+		.menu-links
+		{
+			font-family: "Ubuntu";
+			padding: 10px;
+			text-align: center;
+			position:absolute;
+			bottom: 10px;
+			left: 70px;
+		}
+		.short-bio
+		{
+
+		}
+		#self
+		{
+			position: absolute;
+			top: 50px;
+		}
+		.bio-description
+		{
+			position: relative;
+			left: 120px;
+			color: #0033CC;
+		}
+
+		/*intro block*/
+		#intro-page
+		{
+			position:relative;
+			z-index: 10;
+			height: 100%;
+		}
+		#intro
+		{
+			/*background-color: #666666;*/
+			background-image: url(./res/img/ubuntu-colored.jpg);
+			float: right;
+			height: 100%;
+			width: 100%;
+		}
+		#heading-main
+		{
+			font-size: 500%;
+			font-family: Vollkorn;
+			position: absolute;
+			left: 30%;
+			top: 200px;
+			opacity: 0;
+		}
+		#subheading-main
+		{
+			color: #FFFFFF;
+			font-size: 200%;
+			position: absolute;
+			left: 45%;
+			top: 360px;
+		}
+
+		</style>
+
+	</head>
+
+	<body>
+		
+		<!--Option button-->
+		<div id="option-buttons">
+			<img id="tab-option-button" src="./res/img/green-circle.png" height="25" width="25">
+			<p id="tab-pointer"> View tabs.</p>
+			<img id="about-option-button" src="./res/img/cyan-circle.png" height="25" width="25">
+			<p id="about-pointer"> About Me.</p>
+		</div>
+		<!---->
+		<!--Tab Pane-->
+		<div class="pane" id="tab-pane">
+			<div class="small-label">
+				<h3>T A B S</h3>
+			</div>
+
+
+		</div>
+
+		<!--About Tab-->
+		<div class="pane" id="about-tab">
+			<div class="small-label">
+				<h3>G E N J I N O G U C H I</h3>
+			</div>
+			<div class="short-bio">
+				<img id="self" src="./res/img/self.jpg" height="226">
+				<p class="bio-description">
+					GENJI NOGUCHI <br>
+					SENIOR <br> 
+					STUYVESANT HIGH SCHOOL <br>
+					FRONT END/BACK END <br>
+				</p>
+			</div>
+			<!--Put in links here.-->
+			<br><br><br><br><br><br>
+			<div class="menu-links">
+					<p>Quick Contact Methods:</p>
+					<i>
+					<a class="facebook-link" href="https://facebook.com/genji.noguchi" target="_blank">
+						facebook
+					</a>
+					<br>
+					<a class="linkedin-link" href="https://linkedin.com/in/genjinoguchi" target="_blank">
+						linkedin
+					</a>
+					<br>
+					<a>genji.noguchi@gmail.com</a>
+					</i>
+			</div>
+
+		</div>
+
+		<!--Intro page-->
+		<div id="intro-page">
+			<div id="intro">
+				<h1 id="heading-main"><a href="">
+					Hey, it's Genji.
+				</a></h1>
+				<p id="subheading-main">
+					Welcome to my website!
+				</p>
+
+			</div>
+
+		</div>
+
+
+	</body>
+
+</html>
