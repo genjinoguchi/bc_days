@@ -4,10 +4,15 @@
 
 //Variables
 var position = 0;
+var docHeight;
+var docWidth;
 
 //jQuery Actions
 
 $(document).ready(function(){
+	docHeight = $(window).height();
+	docWidth = $(window).width();
+
 	intro();
 	hideProjectPage();
 	hideHomePage();

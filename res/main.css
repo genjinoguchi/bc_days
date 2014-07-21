@@ -223,7 +223,7 @@ p
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 250%;
+	height: 100%;
 }
 #projects-intro, #projects-display
 {

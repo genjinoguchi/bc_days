@@ -1,48 +1,63 @@
+
 <html>
+<head>
+<title>Javascript animation: Demo 1</title>
+<style type="text/css">
 
-	<head>
-		<style>
-		#circle
-		{
-			width: 200px;
-			height: 200px;
-			background-color: red;
-			-moz-border-radius: 100px;
-			-webkit-border-radius: 100px;
-			border-radius: 100px;
-			text-align: center;
-			position: relative;
-			top: 100px;
-		}
-		#supercircle
-		{
-			shape-inside: circle();
-		}
+body {
+ font:76% normal verdana,arial,tahoma;
+}
 
-		</style>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-		<script>
+h1, h2 {
+ font-size:1em;
+}
 
-			$(document).ready(function(){
-				
-			});
+#fooObject {
+ /* simple box */
+ position:absolute;
+ left:0px;
+ top:8em;
+ width:5em;
+ line-height:3em;
+ background:#99ccff;
+ border:1px solid #003366;
+ white-space:nowrap;
+ padding:0.5em;
+}
 
+</style>
+<script type="text/javascript">
 
-		</script>
+var foo = null; // object
+var timer;
 
-	</head>
+function doMove() {
+  foo.style.left = parseInt(foo.style.left)+1+'px';
+}
 
-	<body>
+function init() {
+  foo = document.getElementById('fooObject'); // get the "foo" object
+  foo.style.left = '0px'; // set its initial position to 0px
+  startAnimation(); // start animating
+}
 
-		<div>
-			<p id="hurr">Hurrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</p>
-		</div>
-		
-		<div>
-			<img id="circle" src="./hurr.jpeg">
-		</div>
+function startAnimation(){
+  timer = setInterval(doMove,20);
+}
 
+window.onload = init;
 
-	</body>
+</script>
+</head>
 
+<body>
+
+<h1>Javascript animation: Demo 1</h1>
+<h2>Recursive setTimeout-based animation</h2>
+
+<div id="fooObject">
+ I am foo.
+</div>
+
+</body>
 </html>
