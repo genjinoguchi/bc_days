@@ -14,3 +14,4 @@ Swag to include
 * Parallax scrolling
 * Flat, minimal design.
 * Google keep-style post it notes. These should not be staticly made.
+* Use a really special about page. Maybe a play (use jackcheng.com/about for inspiration)
