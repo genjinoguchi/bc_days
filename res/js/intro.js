@@ -66,38 +66,23 @@ function detectTabClicks(){
 		showHomePage();
 		hideProjectPage();
 		shiftRight(0);
-		$("body").css("overflow", "auto");
 	});
 	$("#projects-tab").click(function(){
 		hideHomePage();
 		showProjectPage();
 		shiftRight(0);
-		$("body").css("overflow", "auto");
 	});
 }
 
 function tabActions(){
 	$("#about-option-button").click(function(){
-		if($("body").css("overflow")==="hidden"){
-			shiftRight(0);
-			$("body").css("overflow","auto");
-		}else{
-			shiftRight(-400);
-			$("body").css("overflow", "hidden");
-		}
+		shiftRight(-400);
 	});
 	$("#tab-option-button").click(function(){
-		if($("body").css("overflow")==="hidden"){
-			shiftRight(0);
-			$("body").css("overflow", "auto");
-		}else{
-			shiftRight(400);
-			$("body").css("overflow", "hidden");
-		}
+		shiftRight(400);
 	});
 	$("#main-section").click(function(){
 		shiftRight(0);
-		$("body").css("overflow", "auto");
 
 		//$("#main-section").css("z-index", "10");
 	});
