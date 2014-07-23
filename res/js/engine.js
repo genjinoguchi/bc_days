@@ -1,5 +1,5 @@
 
-var FRICTION = 0.04;
+var FRICTION = -0.01;
 
 function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy){
 	var name, year, month, path, fileType;
@@ -144,13 +144,14 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		this.insertLowPass();
 		this.setX(this.getX() + this.getXVel());
 		this.setY(this.getY() + this.getYVel());
+		this.insertFriction();
+		this.insertWallCollisions();
+		this.insertBallCollisions();
+
 
 		var element = document.getElementById(id);
 		element.style.top = (this.getY()-100).toString()+"px";
 		element.style.left = (this.getX()-100).toString()+"px";
-
-		this.insertWallCollisions();
-		this.insertBallCollisions();
 
 		//this.insertHoverActions();
 	}
