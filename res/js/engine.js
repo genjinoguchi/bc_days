@@ -28,7 +28,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this.getYVel = function(){ return this._vy;}
 	this.setXVel = function(dvx){ this._vx+=dvx;}
 	this.setYVel = function(dvy){ this._vy+=dvy;}
-	this.speed = function(){return Math.sqrt(_vx*_vx + _vy*_vy);}
+	this.speed = function(){return Math.sqrt(this._vx*this._vx + this._vy*this._vy);}
 
 	this.insertLowPass = function(){ //Simple low pass filter for any float calculation errors.
 	    if(Math.abs(this._vx)<0.1){
@@ -70,15 +70,15 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this.insertBallCollisions = function(){
 	    for(var i=0;i<projects.length;i++){
 		    if(this.name !== projects[i].getName()){
-
 		        if(this.distance(projects[i])<0){
-					var translatedAngle = this.convert2PI(this.absoluteAngle(b) - this.direction());
+		    		console.log("hurr");
+					var translatedAngle = this.convert2PI(this.absoluteAngle(projects[i]) - this.direction());
 					//Rotate such that this ball's direction is 0.
 					if(Math.cos(translatedAngle)>0){
 						this._x += this.distance(projects[i])*Math.cos(this.absoluteAngle(projects[i])); //distance is less than 0.
-						this._y += distance(b)*sin(Math.absoluteAngle(b));
-						project.insertForce(this.speed()*Math.cos(translatedAngle),absoluteAngle(projects[i]));
-						this.insertForce(this.speed()*Math.cos(translatedAngle+Math.PI),absoluteAngle(projects[i]));
+						this._y += this.distance(projects[i])*Math.sin(this.absoluteAngle(projects[i]));
+						projects[i].insertForce(this.speed()*Math.cos(translatedAngle),this.absoluteAngle(projects[i]));
+						this.insertForce(this.speed()*Math.cos(translatedAngle+Math.PI),this.absoluteAngle(projects[i]));
 
 					}
 		        }
@@ -90,9 +90,9 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this.angle = function(x, y){ //Helper function
     	if(x===0){
 			if(y>0){
-				return PI/2;
+				return Math.PI/2;
 			}else{
-				return 3*PI/2;
+				return 3*Math.PI/2;
 			}
     	}
 	    var temp = 0;
@@ -122,7 +122,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
   	}
 
   	this.distance = function(project){
-    	return Math.sqrt(Math.pow(this._x-project.getX(),2) + Math.pow(this._y-project.getY(),2));
+    	return Math.sqrt(Math.pow(this._x-project.getX(),2) + Math.pow(this._y-project.getY(),2)) - 200;
   	}
 
   	this.convert2PI = function(f){ //Convert angles to between 0 and 2PI
