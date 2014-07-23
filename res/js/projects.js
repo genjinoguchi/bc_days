@@ -9,19 +9,22 @@ var projects = [];
 
 
 //codeDayJan = new Project("CodeDay NY", 2014, 1, "./res/projects/codeDayJan/", ".png");
-hackNYU = new Project("Hack NYU", "hackNYU", 2014, 5, "./res/projects/hackNYU/", ".png", 200, 200,5,1);
-Pool3D = new Project("3D Pool", "Pool3D", 2014, 6, "./res/projects/Pool3D/", ".png", 400,400,-3,4);
-StuySciOlyHome = new Project("Stuyvesant Science Olympiad's New Homepage", "StuySciOlyHome", 2014, 7, "./res/projects/StuySciOlyHome/", ".JPG", 600,300,0,7);
+hackNYU = new Project("Hack NYU", "hackNYU", 2014, 5, "./res/projects/hackNYU/", ".png", 200, 300,0,0);
+Pool3D = new Project("3D Pool", "Pool3D", 2014, 6, "./res/projects/Pool3D/", ".png", 350, 400,0,0);
+StuySciOlyHome = new Project("Stuyvesant Science Olympiad's New Homepage", "StuySciOlyHome", 2014, 7, "./res/projects/StuySciOlyHome/", ".JPG", 200, 500,0,0);
+ZeroPool = new Project("A new take on 3D Pool", "ZeroPool", 2014, 8, "./res/projects/ZeroPool/",".JPG",700,200,-10,5);
 
 //projects.push(codeDayJan);
 projects.push(hackNYU);
 projects.push(Pool3D);
-projects.push(StuySciOlyHome)
+projects.push(StuySciOlyHome);
+projects.push(ZeroPool);
+
 //Functions
 
 function projectPageActions(){
 	positionProjects();
-	setTimeout(projectPageActions,20);
+	setTimeout(projectPageActions,1000/FPS);
 }
 function initProjects(){
 	var total = "";
@@ -44,6 +47,7 @@ function positionProjects(){
 	for(var x=0;x<projects.length;x++){
 		projects[x].update();
 	}
+	//console.log("hurrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
 }
 
 function hideProjectPage(){

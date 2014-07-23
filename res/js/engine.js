@@ -13,13 +13,15 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this._y = centery;
 	this._vx = vx;
 	this._vy = vy;
+	this.stopped = false;
 
-	this.getName = function(){ return name;}
-	this.getID = function(){ return id;}
-	this.getYear = function(){ return year;}
-	this.getMonth = function(){ return month;}
-	this.getPath = function(){ return path;}
-	this.getFileType = function(){ return fileType;}
+	this.getName = function(){ return this.name;}
+	this.getID = function(){ return this.id;}
+	this.getYear = function(){ return this.year;}
+	this.getMonth = function(){ return this.month;}
+	this.getPath = function(){ return this.path;}
+	this.getFileType = function(){ return this.fileType;}
+	this.isStopped = function(){ return this.stopped;}
 	this.getX = function(){ return this._x;}
 	this.getY = function(){ return this._y;}
 	this.setX = function(nx){ this._x = nx;}
@@ -39,21 +41,40 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	    }
   	}
 
+  	this.zeroVelocity = function(){
+    	this._vx = 0;
+    	this._vy = 0;
+  	}
+
 	this.insertWallCollisions = function(){
 		if(this._x>=$(window).width()-100 || this._x<=110){
-		this._vx *= -1;
+			this._vx *= -1;
 		}
 		if(this._y>=$(window).height()-100 || this._y<=110){
 			this._vy *= -1;
 		}
 	}
 	this.insertHoverActions = function(){
-		var distSq = ( Math.pow((mouseX-this.getX()),2) + Math.pow((mouseY-this.getY()),2) );
-		if( distSq < 10000){
-			$("#"+getID+"-thumbnail").velocity({opacity: "0.5"});
+		var element = $("#"+this.getID()+"-thumbnail");
+		element.hover(function(){
+			element.css("opacity","1");
+			this.stopped = true;
+			this.zeroVelocity();
+		}, function(){
+			element.css("opacity","0.5");
+			this.stopped = false;
+			console.log(this.getID());
+		});
+		/*
+		if( Math.pow(mouseX-this.getX(),2)+Math.pow(mouseY-this.getY(),2) > 10000){
+			$("#"+this.getID()+"-thumbnail").velocity({opacity: "0.7"});
+			this.stopped = false;
 		}else{
-			//$("#"+getID+"-thumbnail").velocity({opacity; "1"})
+			$("#"+this.getID()+"-thumbnail").velocity({opacity: "1"});
+			this.stopped = true;
+			this.stop();
 		}
+		*/
 	}
 	this.insertFriction = function(){
 	    this._vx += Math.cos(this.direction())*FRICTION;
@@ -71,13 +92,14 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	    for(var i=0;i<projects.length;i++){
 		    if(this.name !== projects[i].getName()){
 		        if(this.distance(projects[i])<0){
-		    		console.log("hurr");
 					var translatedAngle = this.convert2PI(this.absoluteAngle(projects[i]) - this.direction());
 					//Rotate such that this ball's direction is 0.
 					if(Math.cos(translatedAngle)>0){
 						this._x += this.distance(projects[i])*Math.cos(this.absoluteAngle(projects[i])); //distance is less than 0.
 						this._y += this.distance(projects[i])*Math.sin(this.absoluteAngle(projects[i]));
-						projects[i].insertForce(this.speed()*Math.cos(translatedAngle),this.absoluteAngle(projects[i]));
+						if(!projects[i].isStopped()){
+							projects[i].insertForce(this.speed()*Math.cos(translatedAngle),this.absoluteAngle(projects[i]));
+						}
 						this.insertForce(this.speed()*Math.cos(translatedAngle+Math.PI),this.absoluteAngle(projects[i]));
 
 					}
@@ -135,11 +157,6 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	    return f;
   	}
 
-  	this.stop = function(){
-    	this._vx = 0;
-    	this._vy = 0;
-  	}
-
 	this.update = function(){
 		this.insertLowPass();
 		this.setX(this.getX() + this.getXVel());
@@ -153,7 +170,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		element.style.top = (this.getY()-100).toString()+"px";
 		element.style.left = (this.getX()-100).toString()+"px";
 
-		//this.insertHoverActions();
+		this.insertHoverActions();
 	}
 	
 }
