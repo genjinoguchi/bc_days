@@ -37,11 +37,24 @@ function initProjects(){
 function addProject(project){
 	var total = "";
 	total += "<div id=\"" + project.getID() + "\" class=\"project-icon\">";
+
+	//Thumbnail
 	total += "<img id=\"" + project.getID()+"-thumbnail" + "\" class=\"circle\" src=\"";
 	total += project.getPath() + "thumbnail" + project.getFileType() + "\"";
 	total += "onmouseover=\""+project.getID()+".displayHoverInfo()\"";
 	total += "onmouseout=\""+project.getID()+".hideHoverInfo()\"";
-	total += ">\n</div>\n";
+	total += ">\n";
+/*
+	//Thumbnail Descriptions
+	total += "<div";
+	total += "id=\""+project.getID()+"-thumbnail-description-left\"";
+	total += "class=\"thumbnail-description-left\"";
+*/
+
+	//Onclick Descriptions
+
+
+	total += "</div>\n";
 	return total;
 }
 
