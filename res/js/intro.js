@@ -31,10 +31,6 @@ $(document).ready(function(){
 })
 
 //Functions
-function logMouseLocation(event){
-	mouseX = event.clientX;
-	mouseY = event.clientY;
-}
 
 function intro(){
 	$("#tab-pointer").delay(1000).show("slow");

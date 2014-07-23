@@ -57,24 +57,49 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		}
 	}
 
-	this.toggleHoverInfo = function(){
-		var bool = this.insertHoverActions();
-		if(bool){
-			this.displayHoverInfo();
-		}else{
-			this.hideHoverInfo();
-		}
-		console.log(bool);
-	}
-
 	this.displayHoverInfo = function(){
 		$("#"+this.getID()+"-thumbnail").velocity({opacity: "1"});
 		this.stopped = true;
 		this.zeroVelocity();
+		this.displayInfoTags(this.getX(),this.getY());
 	}
 	this.hideHoverInfo = function(){
 		$("#"+this.getID()+"-thumbnail").velocity({opacity: "0.5"});
 		this.stopped = false;
+		this.restoreInfoTags();
+	}
+	this.displayInfoTags = function(x,y){
+		$("#tab-pointer").slideUp("slow");
+		$("#about-pointer").slideUp("slow");
+		$("#tab-option-button").velocity({
+			left: x-110+"px",
+			top: y+"px"
+		})
+		$("#about-option-button").velocity({
+			right: $(window).width()-x-110 + "px",
+			bottom: $(window).height()-y + "px"
+		})
+	}
+	this.restoreInfoTags = function(){
+		$("#tab-pointer").slideDown("slow");
+		$("#about-pointer").slideDown("slow");
+		$("#tab-option-button").velocity({
+			top: "25px",
+			left: "30px"
+		})
+		$("#about-option-button").velocity({
+			bottom: "25px",
+			right: "30px"
+		})
+	}
+	this.dragMouse = function(){
+		window.onmousemove = handleMouseMove;
+    	function handleMouseMove(event) {
+    		this._vx = event.clientX;
+    		this._vy = event.clientY;
+    		console.log(this._vx);
+    		console.log(this._vy);
+    	}
 	}
 
 	this.insertFriction = function(){

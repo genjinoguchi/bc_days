@@ -34,6 +34,11 @@ p
 {
 	font-family: "Open Sans";
 }
+.circle .small-circle
+{
+	position: absolute;
+	opacity: 0.7;
+}
 .circle
 {
 	width: 200px;
@@ -42,8 +47,15 @@ p
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border-radius: 100px;
-	position: absolute;
 	opacity: 0.7;
+}
+.small-circle
+{
+	width: 26px;
+	height: 26px;
+	-moz-border-radius: 13px;
+	-webkid-border-radius: 13px;
+	border-radius: 13px;
 }
 /*option button*/
 #option-buttons
@@ -56,12 +68,14 @@ p
 	top: 25px;
 	left: 30px;
 	position: fixed;
+	background: orange;
 }
 #about-option-button
 {
 	bottom: 25px;
 	right: 30px;
 	position: fixed;
+	background: cyan;
 }
 #tab-pointer
 {
