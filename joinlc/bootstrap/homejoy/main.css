@@ -15,3 +15,30 @@
   padding-top: 40px;
   font-size: 35px;
 }
+.jumbotron
+{
+	height: 550px;
+	background-image: url('img/bg-top.jpg');
+	background-size: cover;
+	color: white !important;
+}
+.jumbotron .container
+{
+	color: #FFF;
+}
+.how-it-works
+{
+	background-color: #68A22E;
+	color: white;
+	margin:0;
+	padding: 120px 0;
+}
+.how-it-works .section-header h2{
+	color: #B4EE7A;
+	padding: 0 0 35px 0;
+	font-weight: 700;
+}
+.img-responsive
+{
+	display: block;
+}
