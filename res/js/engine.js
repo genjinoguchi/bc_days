@@ -68,12 +68,12 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	}
 
 	this.displayHoverInfo = function(){
-		$("#"+this.getID()+"-thumbnail").css("opacity","1");
+		$("#"+this.getID()+"-thumbnail").velocity({opacity: "1"});
 		this.stopped = true;
 		this.zeroVelocity();
 	}
 	this.hideHoverInfo = function(){
-		$("#"+this.getID()+"-thumbnail").css("opacity","0.5");
+		$("#"+this.getID()+"-thumbnail").velocity({opacity: "0.5"});
 		this.stopped = false;
 	}
 
