@@ -39,6 +39,8 @@ function addProject(project){
 	total += "<div id=\"" + project.getID() + "\" class=\"project-icon\">";
 	total += "<img id=\"" + project.getID()+"-thumbnail" + "\" class=\"circle\" src=\"";
 	total += project.getPath() + "thumbnail" + project.getFileType() + "\"";
+	total += "onmouseover=\""+project.getID()+".displayHoverInfo()\"";
+	total += "onmouseout=\""+project.getID()+".hideHoverInfo()\"";
 	total += ">\n</div>\n";
 	return total;
 }

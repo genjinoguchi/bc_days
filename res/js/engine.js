@@ -14,6 +14,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this._vx = vx;
 	this._vy = vy;
 	this.stopped = false;
+	this.hover = false;
 
 	this.getName = function(){ return this.name;}
 	this.getID = function(){ return this.id;}
@@ -30,6 +31,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this.getYVel = function(){ return this._vy;}
 	this.setXVel = function(dvx){ this._vx+=dvx;}
 	this.setYVel = function(dvy){ this._vy+=dvy;}
+	this.setHover = function(hover){ this.hover = hover;}
 	this.speed = function(){return Math.sqrt(this._vx*this._vx + this._vy*this._vy);}
 
 	this.insertLowPass = function(){ //Simple low pass filter for any float calculation errors.
@@ -54,28 +56,27 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 			this._vy *= -1;
 		}
 	}
-	this.insertHoverActions = function(){
-		var element = $("#"+this.getID()+"-thumbnail");
-		element.hover(function(){
-			element.css("opacity","1");
-			this.stopped = true;
-			this.zeroVelocity();
-		}, function(){
-			element.css("opacity","0.5");
-			this.stopped = false;
-			console.log(this.getID());
-		});
-		/*
-		if( Math.pow(mouseX-this.getX(),2)+Math.pow(mouseY-this.getY(),2) > 10000){
-			$("#"+this.getID()+"-thumbnail").velocity({opacity: "0.7"});
-			this.stopped = false;
+
+	this.toggleHoverInfo = function(){
+		var bool = this.insertHoverActions();
+		if(bool){
+			this.displayHoverInfo();
 		}else{
-			$("#"+this.getID()+"-thumbnail").velocity({opacity: "1"});
-			this.stopped = true;
-			this.stop();
+			this.hideHoverInfo();
 		}
-		*/
+		console.log(bool);
 	}
+
+	this.displayHoverInfo = function(){
+		$("#"+this.getID()+"-thumbnail").css("opacity","1");
+		this.stopped = true;
+		this.zeroVelocity();
+	}
+	this.hideHoverInfo = function(){
+		$("#"+this.getID()+"-thumbnail").css("opacity","0.5");
+		this.stopped = false;
+	}
+
 	this.insertFriction = function(){
 	    this._vx += Math.cos(this.direction())*FRICTION;
 	    this._vy += Math.sin(this.direction())*FRICTION;
@@ -170,7 +171,6 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		element.style.top = (this.getY()-100).toString()+"px";
 		element.style.left = (this.getX()-100).toString()+"px";
 
-		this.insertHoverActions();
 	}
 	
 }
