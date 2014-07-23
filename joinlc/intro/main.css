@@ -16,11 +16,11 @@ h2
 table
 {
 	border: 1px solid;
-	border-collapse:collapse;
-	border:1px solid #FF0000;
+	border-collapse: collapse;
+	border: 1px solid #FF0000;
 }
 table td{
-	border:1px solid #FF0000;
+	border: 1px solid #FF0000;
 }
 tr
 {

@@ -1,6 +1,7 @@
 //main js script
 
 //Constants
+var FPS = 60;
 
 //Variables
 var position = 0;

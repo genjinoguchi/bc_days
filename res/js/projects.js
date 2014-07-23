@@ -7,59 +7,11 @@ var timer;
 //A dictionary of projects
 var projects = [];
 
-//Init the projects.
-
-function Project(name, id, year, month, path, fileType, centerx, centery, speedx, speedy){
-	var name, year, month, path, fileType;
-	this.name = name;
-	this.id = id;
-	this.year = year;
-	this.month = month;
-	this.path = path;
-	this.fileType = fileType;
-	this.centerx = centerx;
-	this.centery = centery;
-	//this.speed = Math.random();
-	this.speedx = speedx;
-	this.speedy = speedy;
-
-	this.getName = function(){ return name;}
-	this.getID = function(){ return id;}
-	this.getYear = function(){ return year;}
-	this.getMonth = function(){ return month;}
-	this.getPath = function(){ return path;}
-	this.getFileType = function(){ return fileType;}
-	this.update = function(){
-		this.centerx += this.speedx;
-		this.centery += this.speedy;
-		var element = document.getElementById(id);
-		element.style.top = (this.centery-105).toString()+"px";
-		element.style.left = (this.centerx-105).toString()+"px";
-
-		//Wall Collisions-- For some reason it's not working with helper functions.
-		if(this.centerx>=$(window).width()-100 || this.centerx<=100){
-		this.speedx *= -1;
-		}
-		if(this.centery>=$(window).height()-100 || this.centery<=100){
-			this.speedy *= -1;
-		}
-
-		//Hover Actions
-		var distSq = ( Math.pow((mouseX-this.centerX),2) + Math.pow((mouseY-this.centerY),2) );
-		if( distSq < 10000){
-			$("#"+getID+"-thumbnail").velocity({opacity: "0.5"});
-		}else{
-			//$("#"+getID+"-thumbnail").velocity({opacity; "1"})
-		}
-
-	}
-	
-}
 
 //codeDayJan = new Project("CodeDay NY", 2014, 1, "./res/projects/codeDayJan/", ".png");
-hackNYU = new Project("Hack NYU", "hackNYU", 2014, 5, "./res/projects/hackNYU/", ".png", 100, 200,1,1);
-Pool3D = new Project("3D Pool", "Pool3D", 2014, 6, "./res/projects/Pool3D/", ".png", 200,400,-1,2);
-StuySciOlyHome = new Project("Stuyvesant Science Olympiad's New Homepage", "StuySciOlyHome", 2014, 7, "./res/projects/StuySciOlyHome/", ".JPG", 100,300,0,1);
+hackNYU = new Project("Hack NYU", "hackNYU", 2014, 5, "./res/projects/hackNYU/", ".png", 200, 200,1,1);
+Pool3D = new Project("3D Pool", "Pool3D", 2014, 6, "./res/projects/Pool3D/", ".png", 400,400,-1,2);
+StuySciOlyHome = new Project("Stuyvesant Science Olympiad's New Homepage", "StuySciOlyHome", 2014, 7, "./res/projects/StuySciOlyHome/", ".JPG", 600,300,0,1);
 
 //projects.push(codeDayJan);
 projects.push(hackNYU);
