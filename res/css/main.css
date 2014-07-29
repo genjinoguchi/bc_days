@@ -20,7 +20,7 @@ a:hover
 }
 h1,h2,h3,h4,h5,h6
 {
-	color: #00FFFF;
+	color: #0033CC;
 }
 h1 a,h2 a,h3 a,h4 a,h5 a
 {
@@ -68,7 +68,7 @@ p
 	top: 25px;
 	left: 30px;
 	position: fixed;
-	background: orange;
+	background: #FF6600;
 }
 #about-option-button
 {
@@ -204,7 +204,7 @@ p
 }
 #intro
 {
-	background-color: #666666;
+	background-color: #E6E6E6;
 	/*background: url(./img/bridge.jpg) no-repeat center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -222,13 +222,14 @@ p
 	left: 30%;
 	top: 200px;
 	opacity: 0;
+	color: #0033CC;
 }
 #subheading-main
 {
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 200%;
 	left: 45%;
-	top: 360px;
+	bottom: 5%;
 }
 
 /*projects page*/
@@ -255,7 +256,7 @@ p
 	font-family: Vollkorn;
 	position: absolute;
 	left: 40%;
-	top: 45%;
+	top: 50%;
 	opacity: 0;
 	color: #FFFFFF;
 }

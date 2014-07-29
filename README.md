@@ -10,6 +10,7 @@ It's going to have a couple of features:
 *  A randomly-generated animation done through js-- check!
   
 Swag to include
+* Home page with a photo gallery maybe?
 * Some js animations
 * Parallax scrolling
 * Flat, minimal design.
