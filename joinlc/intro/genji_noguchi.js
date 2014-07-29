@@ -20,9 +20,11 @@ people.push(karishma);
 
 function doStuff(){
     for(var i=0;i<people.length;i++){
-	console.log("First Name: " + people[i].getFirst);
-	console.log("Last Name: " + people[i].getLast);
-	console.log("Age: " + people[i].getAge);
-	console.log("Gender: " + people[i].getGender);
+        if(typeof people[i] === "object"){
+        	console.log("First Name: " + people[i].getFirst);
+        	console.log("Last Name: " + people[i].getLast);
+        	console.log("Age: " + people[i].getAge);
+        	console.log("Gender: " + people[i].getGender);
+        }
     }
 }

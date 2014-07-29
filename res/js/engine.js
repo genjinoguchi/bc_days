@@ -69,28 +69,28 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		this.restoreInfoTags();
 	}
 	this.displayInfoTags = function(x,y){
-		$("#tab-pointer").slideUp("slow");
-		$("#about-pointer").slideUp("slow");
+		$("#tab-pointer").slideUp("fast");
+		$("#about-pointer").slideUp("fast");
 		$("#tab-option-button").velocity({
 			left: x-110+"px",
 			top: y+"px"
-		})
+		},"fast")
 		$("#about-option-button").velocity({
 			right: $(window).width()-x-110 + "px",
 			bottom: $(window).height()-y + "px"
 		})
 	}
 	this.restoreInfoTags = function(){
-		$("#tab-pointer").slideDown("slow");
-		$("#about-pointer").slideDown("slow");
+		$("#tab-pointer").delay(500).slideDown("fast");
+		$("#about-pointer").delay(500).slideDown("fast");
 		$("#tab-option-button").velocity({
 			top: "25px",
 			left: "30px"
-		})
+		}, "fast")
 		$("#about-option-button").velocity({
 			bottom: "25px",
 			right: "30px"
-		})
+		}, "fast")
 	}
 	this.dragMouse = function(){
 		window.onmousemove = handleMouseMove;

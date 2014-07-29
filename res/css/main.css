@@ -235,13 +235,13 @@ p
 #projects-page
 {
 	/*
-	background: url(.../ubuntu.jpg) no-repeat center; 
+	background: url(./img/ubuntu.jpg) no-repeat center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	*/
-	background-color: #4775FF;
+	background-color:#0033CC;
 	height: 100%;
 }
 #projects-intro, #projects-display
@@ -251,13 +251,13 @@ p
 }
 #heading-projects
 {
-	font-size: 500%;
+	font-size: 800%;
 	font-family: Vollkorn;
 	position: absolute;
 	left: 40%;
 	top: 45%;
 	opacity: 0;
-	color: #000000;
+	color: #FFFFFF;
 }
 #projects-display
 {

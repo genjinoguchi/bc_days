@@ -43,13 +43,20 @@ function addProject(project){
 	total += project.getPath() + "thumbnail" + project.getFileType() + "\"";
 	total += "onmouseover=\""+project.getID()+".displayHoverInfo()\"";
 	total += "onmouseout=\""+project.getID()+".hideHoverInfo()\"";
+
 	total += ">\n";
-/*
+
 	//Thumbnail Descriptions
+	//left
 	total += "<div";
 	total += "id=\""+project.getID()+"-thumbnail-description-left\"";
-	total += "class=\"thumbnail-description-left\"";
-*/
+	total += "class=\"thumbnail-description\"";
+	total += "</div>\n";
+	//right
+	total += "<div";
+	total += "id=\""+project.getID()+"-thumbnail-description-right\"";
+	total += "class=\"thumbnail-description\"";
+	total += "</div>\n";
 
 	//Onclick Descriptions
 

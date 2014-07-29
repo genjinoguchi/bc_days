@@ -21,6 +21,7 @@
 	background-image: url('img/bg-top.jpg');
 	background-size: cover;
 	color: white !important;
+	margin-bottom: 0px !important;
 }
 .jumbotron .container
 {
@@ -62,4 +63,10 @@ strong
 	display: block;
 	height: auto;
 	max-width: 100%;
+}
+
+footer
+{
+	background-color: #333333;
+	padding: 15px 0;
 }
