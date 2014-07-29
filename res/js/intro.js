@@ -19,9 +19,7 @@ $(document).ready(function(){
 	hideProjectPage();
 	hideHomePage();
 
-	showProjectPage();
-
-	initProjects();
+	showHomePage();
 
 	homePageActions();
 	projectPageActions();
@@ -68,6 +66,7 @@ function detectTabClicks(){
 		hideHomePage();
 		showProjectPage();
 		shiftRight(0);
+		initProjects();
 	});
 }
 

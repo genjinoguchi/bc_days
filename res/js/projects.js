@@ -6,19 +6,7 @@ var timer;
 
 //A dictionary of projects
 var projects = [];
-
-
-//codeDayJan = new Project("CodeDay NY", 2014, 1, "./res/projects/codeDayJan/", ".png");
-hackNYU = new Project("Hack NYU", "hackNYU", 2014, 5, "./res/projects/hackNYU/", ".png", 200, 300,0,0);
-Pool3D = new Project("3D Pool", "Pool3D", 2014, 6, "./res/projects/Pool3D/", ".png", 350, 400,0,0);
-StuySciOlyHome = new Project("Stuyvesant Science Olympiad's New Homepage", "StuySciOlyHome", 2014, 7, "./res/projects/StuySciOlyHome/", ".JPG", 200, 500,0,0);
-ZeroPool = new Project("A new take on 3D Pool", "ZeroPool", 2014, 8, "./res/projects/ZeroPool/",".JPG",700,200,-Math.random()*20,5);
-
-//projects.push(codeDayJan);
-projects.push(hackNYU);
-projects.push(Pool3D);
-projects.push(StuySciOlyHome);
-projects.push(ZeroPool);
+var hackNYU, Pool3D, StuySciOlyHome, ZeroPool;
 
 //Functions
 
@@ -27,6 +15,19 @@ function projectPageActions(){
 	setTimeout(projectPageActions,1000/FPS);
 }
 function initProjects(){
+	projects = [];
+	//codeDayJan = new Project("CodeDay NY", 2014, 1, "./res/projects/codeDayJan/", ".png");
+	hackNYU = new Project("Hack NYU", "hackNYU", 2014, 5, "./res/projects/hackNYU/", ".png", 260, 260,0,0);
+	Pool3D = new Project("3D Pool", "Pool3D", 2014, 6, "./res/projects/Pool3D/", ".png", 260, 460,0,0);
+	StuySciOlyHome = new Project("Stuyvesant Science Olympiad's New Homepage", "StuySciOlyHome", 2014, 7, "./res/projects/StuySciOlyHome/", ".JPG", 340, 360,0,0);
+	ZeroPool = new Project("A new take on 3D Pool", "ZeroPool", 2014, 8, "./res/projects/ZeroPool/",".JPG",700,200,-Math.random()*20,5);
+
+	//projects.push(codeDayJan);
+	projects.push(hackNYU);
+	projects.push(Pool3D);
+	projects.push(StuySciOlyHome);
+	projects.push(ZeroPool);
+
 	var total = "";
 
 	for(var i=0;i<projects.length;i++){

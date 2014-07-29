@@ -49,10 +49,10 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
   	}
 
 	this.insertWallCollisions = function(){
-		if(this._x>=$(window).width()-100 || this._x<=110){
+		if(this._x>=$(window).width()-150 || this._x<=150){
 			this._vx *= -1;
 		}
-		if(this._y>=$(window).height()-100 || this._y<=110){
+		if(this._y>=$(window).height()-150 || this._y<=150){
 			this._vy *= -1;
 		}
 	}
