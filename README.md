@@ -16,3 +16,7 @@ Swag to include
 * Flat, minimal design.
 * Google keep-style post it notes. These should not be staticly made. -- Idea changed
 * Use a really special about page. Maybe a play (use jackcheng.com/about for inspiration)
+
+Things to fix
+* That super ugly about panel.
+* I'd like the tabs to slide in as cards (google :D)

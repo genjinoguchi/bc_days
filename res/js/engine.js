@@ -58,13 +58,13 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	}
 
 	this.displayHoverInfo = function(){
-		$("#"+this.getID()+"-thumbnail").velocity({opacity: "1"});
+		$("#"+this.getID()+"-thumbnail").velocity({opacity: "1"}, 300);
 		this.stopped = true;
 		this.zeroVelocity();
 		this.displayInfoTags(this.getX(),this.getY());
 	}
 	this.hideHoverInfo = function(){
-		$("#"+this.getID()+"-thumbnail").velocity({opacity: "0.5"});
+		$("#"+this.getID()+"-thumbnail").velocity({opacity: "0.5"}, 300);
 		this.stopped = false;
 		this.restoreInfoTags();
 	}
@@ -74,11 +74,11 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		$("#tab-option-button").velocity({
 			left: x-110+"px",
 			top: y+"px"
-		},"fast")
+		},300)
 		$("#about-option-button").velocity({
 			right: $(window).width()-x-110 + "px",
 			bottom: $(window).height()-y + "px"
-		})
+		}, 300)
 	}
 	this.restoreInfoTags = function(){
 		$("#tab-pointer").delay(500).slideDown("fast");
@@ -86,11 +86,11 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		$("#tab-option-button").velocity({
 			top: "25px",
 			left: "30px"
-		}, "fast")
+		}, 300)
 		$("#about-option-button").velocity({
 			bottom: "25px",
 			right: "30px"
-		}, "fast")
+		}, 300)
 	}
 	this.dragMouse = function(){
 		window.onmousemove = handleMouseMove;

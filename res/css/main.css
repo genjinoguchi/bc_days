@@ -16,11 +16,11 @@ a
 }
 a:hover
 {
-	color: #335CAD;
+	color: #3333FF;
 }
 h1,h2,h3,h4,h5,h6
 {
-	color: #0033CC;
+	color: #3333FF;
 }
 h1 a,h2 a,h3 a,h4 a,h5 a
 {
@@ -75,7 +75,7 @@ p
 	bottom: 25px;
 	right: 30px;
 	position: fixed;
-	background: cyan;
+	background: #3333FF;
 }
 #tab-pointer
 {
@@ -87,7 +87,6 @@ p
 }
 #about-pointer
 {
-	color: #00FFFF;
 	display: none;
 	bottom: 10px;
 	right: 60px;
@@ -220,9 +219,9 @@ p
 	font-family: Vollkorn;
 	position: absolute;
 	left: 30%;
-	top: 45%;
 	opacity: 0;
 	color: #0033CC;
+	padding: 0px;
 }
 #subheading-main
 {
