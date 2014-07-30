@@ -60,32 +60,31 @@ function addProject(project){
 	total += "<div id=\"" + project.getID() + "\">";
 	
 		//Thumbnail
-		total += "<div class=\"project-icon\">";
+		total += "<div id=\""+project.getID()+"-project-icon\" class=\"project-icon\">";
 			total += "<img id=\"" + project.getID()+"-thumbnail" + "\" class=\"circle\" src=\"";
 			total += project.getPath() + "thumbnail" + project.getFileType() + "\"";
 			total += "onmouseover=\""+project.getID()+".displayHoverInfo()\"";
 			total += "onmouseout=\""+project.getID()+".hideHoverInfo()\"";
-			total += "onclick=\""+project.getID()+".showProjectPage";
-
+			total += "onclick=\""+project.getID()+".toggleProjectPage()\"";
 			total += ">\n";
 
 			//Thumbnail Descriptions
 			//left
-			total += "<div";
+			total += "<div ";
 				total += "id=\""+project.getID()+"-thumbnail-description-left\"";
-				total += "class=\"thumbnail-description\"";
+				total += "class=\"thumbnail-description\">";
 			total += "</div>\n";
 			//right
-			total += "<div";
+			total += "<div ";
 				total += "id=\""+project.getID()+"-thumbnail-description-right\"";
-				total += "class=\"thumbnail-description\"";
+				total += "class=\"thumbnail-description\">";
 			total += "</div>\n";
 
 		total += "</div>\n";
 
 		//Project Page
 		total += "<div id=\"" + project.getID() + "-description\" class=\"project-description\">";
-			total += project.get
+			total += project.getMain();
 
 		total += "</div>\n";
 

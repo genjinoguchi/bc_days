@@ -1,8 +1,7 @@
 
 var FRICTION = -0.01;
 
-function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy){
-	var name, year, month, path, fileType;
+function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy, mainDescription){
 	this.name = name;
 	this.id = id;
 	this.year = year;
@@ -15,6 +14,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this._vy = vy;
 	this.stopped = false;
 	this.hover = false;
+	this.mainDescription = "hurr"+this.id+" description";
 
 	this.getName = function(){ return this.name;}
 	this.getID = function(){ return this.id;}
@@ -22,6 +22,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 	this.getMonth = function(){ return this.month;}
 	this.getPath = function(){ return this.path;}
 	this.getFileType = function(){ return this.fileType;}
+	this.getMain = function(){ return this.mainDescription;}
 	this.isStopped = function(){ return this.stopped;}
 	this.getX = function(){ return this._x;}
 	this.getY = function(){ return this._y;}
@@ -92,9 +93,15 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 			right: "30px"
 		}, 300)
 	}
+	this.toggleProjectPage = function(){
+		$("#"+id+"-description").css("display") === "none" ? this.showProjectPage() : this.hideProjectPage();
+
+	}
 	this.showProjectPage = function(){
-		//Page slideup.
-		
+		$("#"+id+"-description").css("display","block")
+	}
+	this.hideProjectPage = function(){
+		$("#"+id+"-description").css("display","none")
 	}
 	this.dragMouse = function(){
 		window.onmousemove = handleMouseMove;
@@ -196,7 +203,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 		this.insertBallCollisions();
 
 
-		var element = document.getElementById(id);
+		var element = document.getElementById(id+"-project-icon");
 		element.style.top = (this.getY()-100).toString()+"px";
 		element.style.left = (this.getX()-100).toString()+"px";
 
