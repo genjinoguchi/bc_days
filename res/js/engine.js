@@ -92,6 +92,10 @@ function Project(name, id, year, month, path, fileType, centerx, centery, vx, vy
 			right: "30px"
 		}, 300)
 	}
+	this.showProjectPage = function(){
+		//Page slideup.
+		
+	}
 	this.dragMouse = function(){
 		window.onmousemove = handleMouseMove;
     	function handleMouseMove(event) {

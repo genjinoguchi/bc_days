@@ -20,3 +20,4 @@ Swag to include
 Things to fix
 * That super ugly about panel.
 * I'd like the tabs to slide in as cards (google :D)
+* Finish the project pages (possibly use bootstrap to speed things up?)
