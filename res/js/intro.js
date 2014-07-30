@@ -52,7 +52,7 @@ function showHomePage(){
 	document.getElementById("intro-page").style.display = "block";
 	$("#heading-main").velocity({
 		opacity: '1',
-		top: '250px'
+		top: '20%'
 	}, "slow");
 }
 

@@ -101,12 +101,34 @@ p
 	height: 100%;
 	padding-top: 0px;
 }
+.shadow-right
+{
+	filter: drop-shadow(3px 3px 20px black);
+	-webkit-filter: drop-shadow(3px 3px 20px black);
+	-moz-filter: drop-shadow(3px 3px 20px black);
+	-o-filter: drop-shadow(3px 3px 20px black);
+}
+.shadow-left
+{
+	filter: drop-shadow(-3px 3px 20px black);
+	-webkit-filter: drop-shadow(-3px 3px 20px black);
+	-moz-filter: drop-shadow(-3px 3px 20px black);
+	-o-filter: drop-shadow(-3px 3px 20px black);
+}
+.info-card
+{
+	width: 400px;
+	height: 50px;
+	z-index: 25;
+	background-color: white;
+	opacity: 1;
+	position: relative;
+}
 
 /*tab panes*/
 #tab-pane
 {
 	background-color: #FFFFFF;
-	z-index: 5;
 	left: 0px;
 	padding: 5px;
 }
@@ -137,8 +159,7 @@ p
 /*about tab*/
 #about-tab
 {
-	background-color: #3399FF;
-	z-index: 5;
+	background-color: #CCCCCC;
 	right: 0px;
 }
 .small-label
@@ -151,29 +172,21 @@ p
 {
 	background-color: #3059D6;
 }
-.menu-links
+#name-card
 {
-	font-family: "Ubuntu";
-	padding: 10px;
-	text-align: center;
-	position:absolute;
-	bottom: 10px;
-	left: 70px;
+	top: 100px;
 }
-.short-bio
+#school-card
 {
-
+	top: 200px;
 }
-#self
+#tagline-card
 {
-	position: absolute;
-	top: 50px;
+	top: 300px;
 }
-.bio-description
+#job-card
 {
-	position: relative;
-	left: 120px;
-	color: #0033CC;
+	top: 400px;
 }
 
 
