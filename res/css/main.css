@@ -119,6 +119,7 @@ p
 }
 .info-card
 {
+	right: 10px;
 	width: 500px;
 	float: right;
 	z-index: 25;
@@ -132,15 +133,21 @@ p
 .card-heading
 {
 	font-size: 200%;
-	padding-right: 150px;
+	padding-right: 200px;
 	padding-bottom: 15px;
 
 }
 .card-description
 {
 	font-size: 150%;
-	padding-right: 150px;
+	padding-right: 200px;
 	padding-bottom: 15px;
+}
+.card-icon
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
 }
 
 /*tab panes*/
