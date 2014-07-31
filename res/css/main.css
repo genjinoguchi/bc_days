@@ -33,6 +33,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover
 p
 {
 	font-family: "Open Sans";
+	padding: 0px;
 }
 .circle .small-circle
 {
@@ -100,29 +101,46 @@ p
 	width: 400px;
 	height: 100%;
 	padding-top: 0px;
+	z-index: 20;
 }
 .shadow-right
 {
-	filter: drop-shadow(3px 3px 20px black);
-	-webkit-filter: drop-shadow(3px 3px 20px black);
-	-moz-filter: drop-shadow(3px 3px 20px black);
-	-o-filter: drop-shadow(3px 3px 20px black);
+	filter: drop-shadow(0.5px 0.5px 20px gray);
+	-webkit-filter: drop-shadow(0.5px 0.5px 20px gray);
+	-moz-filter: drop-shadow(0.5px 0.5px 20px gray);
+	-o-filter: drop-shadow(0.5px 0.5px 20px gray);
 }
 .shadow-left
 {
-	filter: drop-shadow(-3px 3px 20px black);
-	-webkit-filter: drop-shadow(-3px 3px 20px black);
-	-moz-filter: drop-shadow(-3px 3px 20px black);
-	-o-filter: drop-shadow(-3px 3px 20px black);
+	filter: drop-shadow(-1px 1px 20px gray);
+	-webkit-filter: drop-shadow(-1px 1px 20px gray);
+	-moz-filter: drop-shadow(-1px 1px 20px gray);
+	-o-filter: drop-shadow(-1px 1px 20px gray);
 }
 .info-card
 {
-	width: 400px;
-	height: 50px;
+	width: 500px;
+	float: right;
 	z-index: 25;
 	background-color: white;
 	opacity: 1;
 	position: relative;
+	font-family: "Open Sans";
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.card-heading
+{
+	font-size: 200%;
+	padding-right: 150px;
+	padding-bottom: 15px;
+
+}
+.card-description
+{
+	font-size: 150%;
+	padding-right: 150px;
+	padding-bottom: 15px;
 }
 
 /*tab panes*/
@@ -159,7 +177,7 @@ p
 /*about tab*/
 #about-tab
 {
-	background-color: #CCCCCC;
+	background: white;
 	right: 0px;
 }
 .small-label
@@ -172,21 +190,21 @@ p
 {
 	background-color: #3059D6;
 }
-#name-card
+#card-1
 {
-	top: 100px;
+	top: 10%;
 }
-#school-card
+#card-2
 {
-	top: 200px;
+	top: 11%;
 }
-#tagline-card
+#card-3
 {
-	top: 300px;
+	top: 12%;
 }
-#job-card
+#card-4
 {
-	top: 400px;
+	top: 13%;
 }
 
 
