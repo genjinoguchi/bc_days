@@ -191,7 +191,7 @@ p
 	left: 0px;
 	padding: 5px;
 	width: 400px;
-	left: -500px;
+	left: -600px;
 }
 #tab-label
 {
@@ -220,8 +220,13 @@ p
 /*about tab*/
 #about-tab
 {
-	background: white;
-	right: -600px;
+	right: 0px;
+	bottom: -100%;
+	width: 500px;
+}
+.about-tab-card
+{
+	
 }
 .small-label
 {
