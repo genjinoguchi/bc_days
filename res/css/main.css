@@ -35,6 +35,14 @@ p
 	font-family: "Open Sans";
 	padding: 0px;
 }
+.push-right
+{
+	float: right;
+}
+.push-left
+{
+	float: left;
+}
 .circle .small-circle
 {
 	position: absolute;
@@ -98,10 +106,9 @@ p
 .pane
 {
 	position: fixed;
-	width: 400px;
 	height: 100%;
 	padding-top: 0px;
-	z-index: 20;
+	z-index: 25;
 }
 .shadow-right
 {
@@ -121,7 +128,6 @@ p
 {
 	right: 10px;
 	width: 500px;
-	float: right;
 	z-index: 25;
 	background-color: white;
 	opacity: 1;
@@ -141,13 +147,41 @@ p
 {
 	font-size: 150%;
 	padding-right: 200px;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 }
 .card-icon
 {
 	position: absolute;
 	right: 0px;
 	top: 0px;
+}
+.card-1
+{
+	top: 10%;
+}
+.card-2
+{
+	top: 11%;
+}
+.card-3
+{
+	top: 12%;
+}
+.card-4
+{
+	top: 13%;
+}
+.card-5
+{
+	top: 14%;
+}
+.card-6
+{
+	top: 15%;
+}
+.card-7
+{
+	top: 16%;
 }
 
 /*tab panes*/
@@ -156,6 +190,8 @@ p
 	background-color: #FFFFFF;
 	left: 0px;
 	padding: 5px;
+	width: 400px;
+	left: -500px;
 }
 #tab-label
 {
@@ -185,7 +221,7 @@ p
 #about-tab
 {
 	background: white;
-	right: 0px;
+	right: -600px;
 }
 .small-label
 {
@@ -196,22 +232,6 @@ p
 #about-label
 {
 	background-color: #3059D6;
-}
-#card-1
-{
-	top: 10%;
-}
-#card-2
-{
-	top: 11%;
-}
-#card-3
-{
-	top: 12%;
-}
-#card-4
-{
-	top: 13%;
 }
 
 

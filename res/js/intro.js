@@ -72,16 +72,26 @@ function detectTabClicks(){
 
 function tabActions(){
 	$("#about-option-button").click(function(){
-		shiftRight(-400);
+		slideAboutTab(0);
 	});
 	$("#tab-option-button").click(function(){
-		shiftRight(400);
+		slideTabPane(0);
 	});
 	$("#main-section").click(function(){
-		shiftRight(0);
-
-		//$("#main-section").css("z-index", "10");
+		slideTabPane(-400);
+		slideAboutTab(-600);
 	});
+}
+
+function slideTabPane(dist){
+	$("#tab-pane").velocity({
+		left: dist+"px"
+	})
+}
+function slideAboutTab(dist){
+	$("#about-tab").velocity({
+		right: dist + "px"
+	})
 }
 
 function shiftRight(dist){
