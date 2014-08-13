@@ -135,6 +135,7 @@ p
 	font-family: "Open Sans";
 	padding-left: 20px;
 	padding-top: 20px;
+	float: right;
 }
 .card-heading
 {
@@ -222,7 +223,8 @@ p
 {
 	right: 0px;
 	bottom: -100%;
-	width: 500px;
+	width: 550px;
+	background: #E6E6E6;
 }
 .about-tab-card
 {
