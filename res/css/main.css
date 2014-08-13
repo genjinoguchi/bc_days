@@ -66,16 +66,6 @@ p
 	-webkid-border-radius: 13px;
 	border-radius: 13px;
 }
-.icon-lg
-{
-	width: 200px;
-	height: 200px;
-	background: black;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	opacity: 0.7;
-}
 /*option button*/
 #option-buttons
 {
@@ -325,7 +315,7 @@ p
 	-o-background-size: cover;
 	background-size: cover;
 	*/
-	/*background-color:#0033CC;*/
+	background-color:#0033CC;
 	height: 100%;
 }
 #projects-intro, #projects-display
@@ -350,10 +340,10 @@ p
 .project-icon
 {
 	padding: 0px;
-	position: relative;
-	margin-left: 10%;
+	position: absolute;
 }
 .project-description
 {
 	position: absolute;
+	display: none;
 }
