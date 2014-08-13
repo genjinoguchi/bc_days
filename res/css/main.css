@@ -220,13 +220,13 @@ p
 /*about tab*/
 #about-tab
 {
-	right: 0px;
-	bottom: -100%;
+	right: -500px;
 	width: 500px;
+	background-color: grey;
 }
 .about-tab-card
 {
-	
+	margin-left: 10px;
 }
 .small-label
 {

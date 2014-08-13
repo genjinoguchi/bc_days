@@ -81,7 +81,7 @@ function tabActions(){
 	});
 	$("#main-section").click(function(){
 		slideTabPane(-600);
-		slideAboutTab("-100%");
+		slideAboutTab(-600);
 		$("#main-section").css("-webkit-filter", "brightness(1)");
 
 	});
@@ -94,7 +94,7 @@ function slideTabPane(dist){
 }
 function slideAboutTab(dist){
 	$("#about-tab").velocity({
-		bottom: dist
+		right: dist+"px"
 	}, "fast")
 }
 
