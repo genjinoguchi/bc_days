@@ -19,6 +19,8 @@ $(document).ready(function(){
 	hideProjectPage();
 	hideHomePage();
 
+	initProjects();
+
 	showProjectPage();
 
 	homePageActions();
@@ -67,7 +69,6 @@ function detectTabClicks(){
 	$("#projects-tab").click(function(){
 		hideHomePage();
 		showProjectPage();
-		initProjects();
 
 		hideTabs();
 	});

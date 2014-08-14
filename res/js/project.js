@@ -1,7 +1,7 @@
 
 var FRICTION = -0.01;
 
-function Project(name, id, year, month, path, fileType, centerx, centery, thumbnailDescription){
+function Project(name, id, year, month, path, fileType, centerx, centery, thumbnailDescription, mainDescription){
 	this.name = name;
 	this.id = id;
 	this.year = year;
@@ -12,8 +12,8 @@ function Project(name, id, year, month, path, fileType, centerx, centery, thumbn
 	this._y = centery;
 	this.stopped = false;
 	this.hover = false;
-	this.mainDescription = "hurr"+this.id+" description";
 	this.thumbnailDescription = thumbnailDescription;
+	this.mainDescription = mainDescription
 
 	this.getName = function(){ return this.name;}
 	this.getID = function(){ return this.id;}
@@ -28,6 +28,7 @@ function Project(name, id, year, month, path, fileType, centerx, centery, thumbn
 	this.setY = function(ny){ this._y = ny}
 	this.setHover = function(hover){ this.hover = hover;}
 	this.getThumbnailDescription = function(){ return this.thumbnailDescription;}
+	this.getMainDescription = function(){ return this.mainDescription;}
 
 	this.hideHoverInfo = function(){
 		$("#"+this.getID()+"-thumbnail").velocity({opacity: "0.5"}, 300);
