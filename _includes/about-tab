@@ -1,0 +1,26 @@
+<!--About Tab-->
+		
+		<div class="pane" id="about-tab">
+			<div class="info-card card-1 about-tab-card">
+				<div class="card-heading">Hello, I'm Genji.</div>
+				<div class="card-description">
+					I'm a full-stack developer who has a dream of starting a startup. I'm currently a rising senior at Stuyvesant High School, where I...
+					<hr>
+					<a><i class="fa fa-md fa-arrow-circle-right"></i></a>&nbspRead on
+				</div>
+
+				<div class="card-links"></div>
+				<img class="card-icon" src="./res/img/self2013.jpg" width="190" alt="Winter me.">
+
+			</div>
+			<div class="info-card card-2 about-tab-card">
+				hello world
+			</div>
+			<div id="Latest Project"class="info-card card-3 about-tab-card">
+				Hello world!
+			</div>
+			<div class="info-card card-4 about-tab-card">
+				Hello world!
+			</div>
+
+		</div>

@@ -1,0 +1,15 @@
+#Config settings
+author:
+   name: Genji Noguchi
+   email: genji.noguchi@gmail.com
+description: hurr
+baseurl: ""
+url: "genjinoguchi.github.io"
+
+#build settings
+markdown: redcarpet
+
+collections:
+    ventures:
+        output: true
+
