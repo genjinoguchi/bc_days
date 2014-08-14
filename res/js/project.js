@@ -35,13 +35,15 @@ function Project(name, id, year, month, path, fileType, centerx, centery, thumbn
 		this.stopped = false;
 		this.restoreInfoTags();
 	}
+	this.showProjectPage = function(){
+		$("#"+id+"-description").css("display","block")
+	}
+
 	/*
 	this.toggleProjectPage = function(){
 		$("#"+id+"-description").css("display") === "none" ? this.showProjectPage() : this.hideProjectPage();
 	}
-	this.showProjectPage = function(){
-		$("#"+id+"-description").css("display","block")
-	}
+	
 	this.hideProjectPage = function(){
 		$("#"+id+"-description").css("display","none")
 	}

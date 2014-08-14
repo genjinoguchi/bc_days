@@ -380,6 +380,8 @@ p
 .project-description
 {
 	display: none;
+	background-color: #FFFFFF;
+	position: absolute;
 }
 #projects-display
 {
