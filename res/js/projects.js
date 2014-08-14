@@ -11,35 +11,35 @@ var hackNYU, Pool3D, StuySciOlyHome, ZeroPool;
 //Functions
 
 function projectPageActions(){
-	positionProjects();
 	setTimeout(projectPageActions,1000/FPS);
 }
 function initProjects(){
 	projects = [];
+	var columns = 4;
 	//codeDayJan = new Project("CodeDay NY", 2014, 1, "./res/projects/codeDayJan/", ".png");
 	hackNYU = new Project("Hack NYU", "hackNYU",	//Name and ID
 	 	2014, 5, 	//Time
 	 	"./res/projects/hackNYU/", ".png",	//Location and file type
-		260, 260, 	//Starting position
-		0,0			//Initial velocity
+		0, 0, 	//Starting position
+		""
 		);
 	Pool3D = new Project("3D Pool", "Pool3D",
 		2014, 6,
 		"./res/projects/Pool3D/", ".png",
-		260, 460,
-		0,0
+		0, 0,
+		""
 		);
 	StuySciOlyHome = new Project("Stuyvesant Science Olympiad's New Homepage", "StuySciOlyHome",
 		2014, 7,
 		"./res/projects/StuySciOlyHome/", ".JPG",
-		340, 360,
-		0,0
+		0, 0,
+		""
 		);
 	ZeroPool = new Project("A new take on 3D Pool", "ZeroPool",
 		2014, 8,
 		"./res/projects/ZeroPool/",".JPG",
 		700,200,
-		-Math.random()*20,5
+		""
 		);
 
 	//projects.push(codeDayJan);
@@ -51,24 +51,37 @@ function initProjects(){
 	var total = "";
 
 	for(var i=0;i<projects.length;i++){
-		total += addProject(projects[i]);
+		var x = ((i % columns)*150) + 25;
+		var y = ((i / columns)*150) + 25;
+		projects[i].setX(x);
+		projects[i].setY(y);
+		$("#projects-display").append(addProject(projects[i]));
 	}
-	document.getElementById("projects-display").innerHTML = total;
 }
 function addProject(project){
 	var total = "";
 	total += "<div id=\"" + project.getID() + "\">";
 	
 		//Thumbnail
-		total += "<div id=\""+project.getID()+"-project-icon\" class=\"project-icon\">";
-			total += "<img id=\"" + project.getID()+"-thumbnail" + "\" class=\"circle\" src=\"";
+		total += "<div id=\""+project.getID()+"-project-icon\" class=\"project-icon\""
+			total += "style=\"";
+			total += "top: "+project.getY()+"px;";
+			total += "left: "+project.getX()+"px;";
+			total += ">";
+
+			total += "<img id=\"" + project.getID()+"-thumbnail" + "\" class=\"icon-lg\" src=\"";
 			total += project.getPath() + "thumbnail" + project.getFileType() + "\"";
-			total += "onmouseover=\""+project.getID()+".displayHoverInfo()\"";
-			total += "onmouseout=\""+project.getID()+".hideHoverInfo()\"";
-			total += "onclick=\""+project.getID()+".toggleProjectPage()\"";
+			//total += "onclick=\""+project.getID()+".toggleProjectPage()\"";
 			total += ">\n";
 
 			//Thumbnail Descriptions
+			//Bottom icon description
+			total += "<div ";
+				total += "id=\""+project.getID()+"-thumbnail-description \"";
+				total += "class=\"thumbnail-description\">";
+				total += project.getThumbnailDescription();
+			total += "</div>"
+			/*
 			//left
 			total += "<div ";
 				total += "id=\""+project.getID()+"-thumbnail-description-left\"";
@@ -79,6 +92,7 @@ function addProject(project){
 				total += "id=\""+project.getID()+"-thumbnail-description-right\"";
 				total += "class=\"thumbnail-description\">";
 			total += "</div>\n";
+			*/
 
 		total += "</div>\n";
 
@@ -94,10 +108,8 @@ function addProject(project){
 }
 
 function positionProjects(){
-	for(var x=0;x<projects.length;x++){
-		projects[x].update();
-	}
-	//console.log("hurrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
+	
+
 }
 
 function hideProjectPage(){

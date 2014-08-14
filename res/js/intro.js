@@ -19,7 +19,7 @@ $(document).ready(function(){
 	hideProjectPage();
 	hideHomePage();
 
-	showHomePage();
+	showProjectPage();
 
 	homePageActions();
 	projectPageActions();
@@ -31,6 +31,8 @@ $(document).ready(function(){
 //Functions
 
 function intro(){
+	slideTabPane(-600);
+	slideAboutTab(-600);
 	$("#tab-pointer").delay(1000).show("slow");
 	$("#about-pointer").delay(1000).show("slow");
 }
@@ -60,13 +62,14 @@ function detectTabClicks(){
 	$("#home-tab").click(function(){
 		showHomePage();
 		hideProjectPage();
-		shiftRight(0);
+		hideTabs();
 	});
 	$("#projects-tab").click(function(){
 		hideHomePage();
 		showProjectPage();
-		shiftRight(0);
 		initProjects();
+
+		hideTabs();
 	});
 }
 
@@ -80,11 +83,14 @@ function tabActions(){
 		$("#main-section").css("-webkit-filter", "brightness(0.4)");
 	});
 	$("#main-section").click(function(){
-		slideTabPane(-600);
-		slideAboutTab(-600);
-		$("#main-section").css("-webkit-filter", "brightness(1)");
-
+		hideTabs();
 	});
+}
+
+function hideTabs(){
+	slideTabPane(-600);
+	slideAboutTab(-600);
+	$("#main-section").css("-webkit-filter", "brightness(1)");
 }
 
 function slideTabPane(dist){

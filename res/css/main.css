@@ -7,7 +7,6 @@ body
 {
 	margin: 0px;
 	height: 100%;
-	overflow: hidden;
 }
 a
 {
@@ -65,6 +64,16 @@ p
 	-moz-border-radius: 13px;
 	-webkid-border-radius: 13px;
 	border-radius: 13px;
+}
+.icon-lg
+{
+	width: 200px;
+	height: 200px;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	opacity: 0.7;
 }
 /*option button*/
 #option-buttons
@@ -192,7 +201,7 @@ p
 	left: 0px;
 	padding: 5px;
 	width: 400px;
-	left: -600px;
+	left: -200px;
 }
 #tab-label
 {
@@ -221,13 +230,13 @@ p
 /*about tab*/
 #about-tab
 {
-	right: -500px;
-	width: 500px;
+	right: -400px;
+	width: 550px;
 	background-color: grey;
 }
 .about-tab-card
 {
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 }
 .small-label
 {
@@ -336,7 +345,7 @@ p
 }
 #projects-display
 {
-	top: 100%;
+	
 }
 .project-icon
 {
@@ -346,5 +355,10 @@ p
 .project-description
 {
 	position: absolute;
-	display: none;
+}
+#projects-background
+{
+	display: block;
+	width: 400px;
+	margin: 10% auto;
 }
