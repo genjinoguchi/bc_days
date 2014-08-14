@@ -1,6 +1,3 @@
-
-var FRICTION = -0.01;
-
 function Project(name, id, year, month, path, fileType, centerx, centery, thumbnailDescription, mainDescription){
 	this.name = name;
 	this.id = id;
