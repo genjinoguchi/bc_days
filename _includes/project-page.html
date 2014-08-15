@@ -1,0 +1,30 @@
+
+
+<!--Projects Page-->
+			<div id="projects-page">
+
+
+				<div id="projects-intro" class="full-page">
+					<h1 id="heading-projects">Projects</h1>
+				</div>
+				<div id="projects-section" class="full-page">
+					<div id="project-descriptions">
+						
+					</div>
+					<div id="projects-display">
+						{% for project in site.ventures %}
+
+							<li class="project-icon shadow-right">
+								<img class="icon-sm project-icon-thumbnail" src="{{ project.thumbnail}}" onclick="{{ project.id }}.showProjectPage()">
+								<div class="thumbnail-description">
+									<center>{{ project.title }}</center>
+								</div>
+							</li>
+
+						{% endfor%}
+
+					</div>
+				</div>
+				
+
+			</div>

@@ -359,13 +359,14 @@ p
 }
 .project
 {
-	display: inline-block;
+	
 }
 .project-icon
 {
 	padding-top: 60px;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding-left: 11px;
+	padding-right: 11px;
+	display: inline-block;
 }
 .project-icon-thumbnail
 {

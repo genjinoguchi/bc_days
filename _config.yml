@@ -4,7 +4,7 @@ author:
    email: genji.noguchi@gmail.com
 description: hurr
 baseurl: ""
-url: "genjinoguchi.github.io"
+url: "localhost:4000"
 
 #build settings
 markdown: redcarpet
@@ -17,5 +17,6 @@ defaults:
     -
         scope:
             path: ""
+            type: "pages"
         values:
             layout: "default"
