@@ -24,7 +24,6 @@ $(document).ready(function(){
 	showProjectPage();
 
 	homePageActions();
-	projectPageActions();
 
 	detectTabClicks();
 	tabActions();
@@ -128,3 +127,26 @@ function shiftRight(dist){
 	position = dist;
 
 }
+
+
+function hideProjectPage(){
+	//Subject to change
+	document.getElementById("projects-page").style.display = "none";
+	$("#heading-projects").velocity({
+		opacity: '0',
+		top: '200px'
+	}, "slow");
+	timer = null;
+}
+function showProjectPage(){
+	//Subject to change
+	document.getElementById("projects-page").style.display = "block";
+	$("#heading-projects").velocity({
+		opacity: '1',
+		top: '250px'
+	}, "slow");
+}
+
+
+
+
