@@ -147,6 +147,7 @@ function showProjectPage(){
 	}, "slow");
 }
 
-
-
+function showPage(id){
+	
+}
 
