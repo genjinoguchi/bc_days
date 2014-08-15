@@ -363,10 +363,13 @@ p
 }
 .project-icon
 {
-	padding-top: 60px;
+	top: 100px;
+	left: 10px;
+	padding-top: 50px;
 	padding-left: 11px;
 	padding-right: 11px;
 	display: inline-block;
+	position: relative;
 }
 .project-icon-thumbnail
 {
@@ -387,10 +390,10 @@ p
 #projects-display
 {
 	display: block;
-	width: 540px;
-	height: 1080px;
+	width: 575px;
+	height: 1135px;
 	margin: 10% auto;
-	background-image: url(../img/sense.jpg);
+	background-image: url(../img/pcquest-optimus-g-pro.jpg);
 }
 #projects-background
 {
