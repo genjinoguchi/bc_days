@@ -384,6 +384,7 @@ p
 .project-description
 {
 	background-color: #FFFFFF;
+	display: none;
 }
 #projects-display
 {

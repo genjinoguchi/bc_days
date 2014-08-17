@@ -1,5 +1,3 @@
-
-
 <!--Projects Page-->
 			<div id="projects-page">
 
@@ -12,7 +10,7 @@
 						{% for project in site.ventures %}
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="{{ project.thumbnail}}" onclick="{{ project.id }}.showProjectPage()">
+								<img class="icon-sm project-icon-thumbnail" src="{{ project.thumbnail }}" onclick=" showDescription('{{project.id}}-description' )">
 								<div class="thumbnail-description">
 									<center>{{ project.title }}</center>
 								</div>
@@ -24,7 +22,7 @@
 
 					<div id="project-descriptions">
 						{% for project in site.ventures %}
-							<div class="project-description">
+							<div id="{{ project.id }}-description" class="project-description">
 								{{ project.content }}
 							</div>
 						{% endfor %}

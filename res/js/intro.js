@@ -139,6 +139,7 @@ function hideProjectPage(){
 	timer = null;
 }
 function showProjectPage(){
+	console.log("js why you do this")
 	//Subject to change
 	document.getElementById("projects-page").style.display = "block";
 	$("#heading-projects").velocity({
@@ -147,7 +148,10 @@ function showProjectPage(){
 	}, "slow");
 }
 
-function showPage(id){
-	
+function showDescription(element){
+	console.log("hurr")
+	$("#"+element).slideDown();
 }
+
+
 
