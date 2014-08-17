@@ -2,7 +2,6 @@
 title: ZeroPool
 id: ZeroPool
 timeframe: May 23-May 25
-layout: project
 category: Software
 thumbnail: ../ventures/ZeroPool/thumbnail.JPG
 ---

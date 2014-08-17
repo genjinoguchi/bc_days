@@ -2,7 +2,6 @@
 title: Blackout
 id: Blackout
 timeframe: May 23-May 25
-layout: project
 category: Software
 thumbnail: ../ventures/Blackout/thumbnail.png
 ---

@@ -8,9 +8,6 @@
 					<h1 id="heading-projects">Projects</h1>
 				</div>
 				<div id="projects-section" class="full-page">
-					<div id="project-descriptions">
-						
-					</div>
 					<div id="projects-display">
 						{% for project in site.ventures %}
 
@@ -24,6 +21,15 @@
 						{% endfor%}
 
 					</div>
+
+					<div id="project-descriptions">
+						{% for project in site.ventures %}
+							<div class="project-description">
+								{{ project.content }}
+							</div>
+						{% endfor %}
+					</div>
+
 				</div>
 				
 

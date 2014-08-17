@@ -2,7 +2,6 @@
 title: Pool3D
 id: Pool3D
 timeframe: May 23-May 25
-layout: project
 category: Software
 thumbnail: ../ventures/Pool3D/thumbnail.png
 ---
