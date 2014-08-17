@@ -1,0 +1,22 @@
+#Config settings
+author:
+   name: Genji Noguchi
+   email: genji.noguchi@gmail.com
+description: hurr
+baseurl: ""
+url: "localhost:4000"
+
+#build settings
+markdown: redcarpet
+
+collections:
+    ventures:
+        output: true
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "pages"
+        values:
+            layout: "default"
