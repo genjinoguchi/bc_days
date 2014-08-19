@@ -21,7 +21,8 @@ $(document).ready(function(){
 
 	//initProjects();
 
-	showProjectPage();
+	//showProjectPage();
+	showHomePage();
 
 	homePageActions();
 
