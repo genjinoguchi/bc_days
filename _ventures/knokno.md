@@ -7,4 +7,4 @@ thumbnail: KnoKno/thumbnail.png
 ---
 
 Insert KnoKno stuff here!
-![Here's the main screenshot](http://{{site.url}}/res/img/ventures/KnoKno/main.png)
+![Here's the main screenshot]({{site.url}}/res/img/ventures/KnoKno/main.png)
