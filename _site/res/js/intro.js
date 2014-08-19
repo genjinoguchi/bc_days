@@ -17,7 +17,6 @@ $(document).ready(function(){
 
 	intro();
 	hideProjectPage();
-	hideHomePage();
 
 	//initProjects();
 
