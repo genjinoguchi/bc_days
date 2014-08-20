@@ -7,7 +7,7 @@ baseurl:
 url: "http://genjinoguchi.github.io"
 
 #build settings
-markdown: redcarpet
+markdown: kramdown
 highlighter: true
 
 collections:
