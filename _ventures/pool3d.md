@@ -4,6 +4,7 @@ id: Pool3D
 timeframe: May 23-May 25
 category: Software
 thumbnail: Pool3D/thumbnail.png
+layout: project
 ---
 
 2nd term APCS final submission! With [Julian Kalogerakis](https://github.com/juliankal)

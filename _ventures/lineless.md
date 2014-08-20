@@ -4,6 +4,7 @@ id: Lineless
 timeframe: August 9 - August 10
 category: Software
 thumbnail: Lineless/thumbnail.png
+layout: project
 ---
 
 team17's battlehack submission
