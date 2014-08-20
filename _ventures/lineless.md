@@ -7,4 +7,6 @@ thumbnail: Lineless/thumbnail.png
 ---
 
 team17's battlehack submission
+
+
 ![Here's the main screenshot]({{site.url}}/res/img/ventures/Lineless/main.png)

@@ -7,4 +7,6 @@ thumbnail: SSOHome/thumbnail.JPG
 ---
 
 SCIENCE OLYMPIAD HOME
+
+
 ![Here's the main screenshot]({{site.url}}/res/img/ventures/SSOHome/main.JPG)

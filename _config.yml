@@ -8,6 +8,7 @@ url: "http://genjinoguchi.github.io"
 
 #build settings
 markdown: redcarpet
+highlighter: true
 
 collections:
     ventures:

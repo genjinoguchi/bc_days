@@ -17,11 +17,12 @@ $(document).ready(function(){
 
 	intro();
 	hideProjectPage();
+	hideHomePage();
 
 	//initProjects();
 
-	showHomePage();
 	//showProjectPage();
+	showHomePage();
 
 	homePageActions();
 
