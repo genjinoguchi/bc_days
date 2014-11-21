@@ -4,7 +4,7 @@ author:
    email: genji.noguchi@gmail.com
 description: hurr
 baseurl: 
-url: "http://genjinoguchi.github.io"
+url: "http://genjinoguchi.com"
 
 #build settings
 markdown: kramdown
