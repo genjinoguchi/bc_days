@@ -10,4 +10,4 @@ layout: project
 I made this during HackNYU!
 
 
-![Here's the main screenshot]({{site.url}}/res/img/ventures/Blackout/main.png)
+![Here's the main screenshot](http://{{site.url}}/res/img/ventures/Blackout/main.png blackout)
