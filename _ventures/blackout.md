@@ -9,5 +9,7 @@ layout: project
 
 I made this during HackNYU!
 
-
+![Here's the main screenshot](http://upload.wikimedia.org/wikipedia/commons/f/f0/Toronto_ON_2003_Blackout.jpg)
+<!--
 ![Here's the main screenshot](http://{{site.url}}/res/img/ventures/Blackout/main.png)
+-->
