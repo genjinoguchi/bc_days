@@ -9,5 +9,4 @@ layout: project
 
 Submission for Hack the North
 
-![Here's the main screenshot]({{site.url}}/res/img/ventures/AFAR/AFARapp_main.png)
-	
+![Here's the main screenshot]({{site.url}}/res/img/ventures/AFAR/AFARapp_main.png =108x192)
