@@ -15,7 +15,6 @@ function loadAge() {
 
 	if ( (today_month*31 + today_day) >
 		 (birthday.month*31 + birthday.day) ) {
-		console.log("Today total: "+ today_month*31 + today_day)
 		years++;
 	}
 

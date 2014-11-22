@@ -68,12 +68,20 @@ function hideAboutPage(){
 	$("#about-page").velocity({
 		right: "-1000px"
 	})
+	document.getElementById("about-page").scrollTop=0;
 }
 
-function showAboutPage(){
+function showAboutPage(element){
 	$("#about-page").velocity({
 		right: "0px"
 	})
+	console.log("what the fuck I have nothign to lose")
+
+	var position = $("#"+element).position()
+	var elementHeight = position["top"]
+
+	document.getElementById("about-page").scrollTop=elementHeight;
+
 }
 
 function detectTabClicks(){
@@ -87,10 +95,6 @@ function detectTabClicks(){
 		showProjectPage();
 		hideTabs();
 	});
-	$(".read-on").click(function(){
-		console.log("here")
-		showAboutPage();
-	})
 }
 
 function tabActions(){
@@ -130,7 +134,7 @@ function shiftRight(dist){
 
 	//Move the main page.
 	$("#main-section").velocity({ left: dist+"px", right: dist+"px"}, "slow");
-	
+
 	//Move the buttons and pointers.
 	$("#about-option-button").velocity({
 		right: 30-dist+"px"
@@ -179,6 +183,3 @@ function showDescription(element){
 function hideDescription(element){
 	$("#"+element).fadeOut();
 }
-
-
-

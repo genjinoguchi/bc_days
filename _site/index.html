@@ -77,6 +77,13 @@
 				</p>
 			</div>
 
+			<div id="copyright-genji-noguchi">
+				<center>
+					Copyright 2014 Genji Noguchi
+				</center>
+			</div>
+
+			</div>
 
 		</div>
 		<!--About Tab-->
@@ -87,7 +94,9 @@
 				<div class="card-description">
 					I'm a full-stack developer who has a dream of starting a startup.
 					<hr>
-					<a class="read-on"><i class="fa fa-md fa-arrow-circle-right"></i></a>&nbspRead on
+					<a class="read-on" onclick="showAboutPage('')">
+						<i class="fa fa-md fa-arrow-circle-right"></i>
+					</a>&nbspRead on
 				</div>
 
 				<div class="card-links"></div>
@@ -101,7 +110,9 @@
 					
 					Resume, life story, and a super cool 3D pool program.
 					<hr>
-					<a class="read-on"><i class="fa fa-md fa-arrow-circle-right"></i></a>&nbspTell me more!
+					<a class="read-on" onclick="showAboutPage('what-done')">
+						<i class="fa fa-md fa-arrow-circle-right"></i>
+					</a>&nbspTell me more!
 				</div>
 				<div class="card-links"></div>
 				<img class="card-icon" src="./res/img/ventures/ZeroPool/thumbnail.JPG" width="190" alt="ZeroPool.">
@@ -112,7 +123,9 @@
 				<div class="card-description">
 					The things that I'm working on now, and what I aspire to do.
 					<hr>
-					<a class="read-on"><i class="fa fa-md fa-arrow-circle-right"></i></a>&nbspSure, let me see.
+					<a class="read-on" onclick="showAboutPage('what-doing')">
+						<i class="fa fa-md fa-arrow-circle-right"></i>
+					</a>&nbspSure, let me see.
 				</div>
 				<div class="card-links"></div>
 				<img class="card-icon" src="./res/img/ventures/AFAR/thumbnail.png" width="200" alt="AFAR System">
@@ -123,29 +136,88 @@
 				<div class="card-description">
 					Credits to my site, like FontAwesome! (shown right)
 					<hr>
-					<a class="read-on"><i class="fa fa-md fa-arrow-circle-right"></i></a>&nbspCough up!
+					<a class="read-on" onclick="showAboutPage('site-credits')">
+						<i class="fa fa-md fa-arrow-circle-right"></i>
+					</a>
+					&nbspCough up!
 				</div>
 				<div class="card-links"></div>
 				<img class="card-icon" src="./res/img/font-awesome-logo-solid.png" width="190" alt="Font Awesome is awesome.">
 			</div>
 
 		</div>
-		<!--About Page-->
+			<!--About Page-->
 
-<div id="about-page" class="pane fixed-scrollable">
-	<h1 id="about-heading">Tinkerer, maker, entrepreneur, dreamer.</h1>
-	<p class="p-about">
-		I'm Genji Noguchi. I'm <span id="age"></span> years old, and I'm currently a senior at <a href="http://stuy.enschool.org">Stuyvesant High School</a>. I love to create amazing things (check out the projects page, which is easily accessible from the left sidebar), tinker and fiddle (my Android phone is a prime example).
-		<br><br>
-		Currently, my dream is to found a tech startup compnay that can make a positive change on the world. At this point in time, startups have the greatest potential and influence on the United States (and the world). They're the ones that can pull the world into a place better than the one we have now.
-	</p>
-	<!--
-	<p id="about-heading">What have I done?
-		My dream is to found a tech startup company that can make a positive change on the world. At this point 
+	<div id="about-page" class="pane fixed-scrollable">
+	<h1 class="about-heading very-big">Tinkerer, maker, entrepreneur, dreamer.</h1>
 
-	</p>
--->
-</div>
+	<div id="who-am-i">
+		<p class="p-about">
+			1'm Genji Noguchi. I'm <span id="age"></span>* years old, and I'm currently a senior at <a href="http://stuy.enschool.org">Stuyvesant High School</a>. I love to create amazing things (check out the projects page, which is easily accessible from the left sidebar), tinker and fiddle (my Android phone is a prime example).
+			<br><br>
+			Currently, my dream is to found a tech startup compnay that can make a positive change on the world. At this point in time, startups have the greatest potential and influence on the United States (and the world). They're the ones that can pull the world into a place better than the one we have now. I would be the happiest man in the world to be able to make that kind of impact.
+		</p>
+	</div>
+
+	<div id="what-done">
+		<h1 class="about-heading just-big">
+			What I've done.
+		</h1>
+
+
+	</div>
+
+	<div id="what-doing">
+		<h1 class="about-heading just-big">
+			Where I am now.
+		</h1>
+
+	</div>
+
+	<div id="site-credits">
+		<h1 class="about-heading just-big">
+			Site Credits.
+		</h1>
+		
+			<ul class="p-about">
+				<li>
+					The icons are from the amazing <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> font and icon toolkit. All icons are vector images and look amazing. Check them out, it will be worth your time.
+				</li>
+				<li>
+					Here are the fonts that I used (all free from Google Fonts):
+					<ul>
+						<li>Open Sans</li>
+						<li>Josefin Sans</li>
+						<li>Ubuntu</li>
+						<li>Vollkorn</li>
+						<li>Roboto</li>
+						<li>Stalemate</li>
+					</ul>
+				</li>
+				<li>
+					All CSS, HTML, and JS written by Genji Noguchi.
+				<li>
+					This site is proudly hosted by <a href="https://pages.github.com">Github Pages</a>.
+				</li>
+			</ul>
+		</p>
+
+	</div>
+
+	<div id="site-specials">
+	<h1 class="about-heading less-big">
+	Extras!
+	</h1>
+	<ul>
+	<li>*Automatically updating age!</li>
+
+	</ul>
+
+	</div>
+
+
+	</div>
+
 
 		<div id = "main-section">
 			
@@ -232,7 +304,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/AFAR/thumbnail.png" onclick=" showDescription('AFAR-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/AFAR/thumbnail.png" onclick=" showDescription('AFAR-description' )">
 								<div class="thumbnail-description">
 									<center>AFAR</center>
 								</div>
@@ -241,7 +313,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/Blackout/thumbnail.png" onclick=" showDescription('Blackout-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/Blackout/thumbnail.png" onclick=" showDescription('Blackout-description' )">
 								<div class="thumbnail-description">
 									<center>Blackout</center>
 								</div>
@@ -250,7 +322,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/KnoKno/thumbnail.png" onclick=" showDescription('KnoKno-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/KnoKno/thumbnail.png" onclick=" showDescription('KnoKno-description' )">
 								<div class="thumbnail-description">
 									<center>KnoKno</center>
 								</div>
@@ -259,7 +331,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/LC/thumbnail.png" onclick=" showDescription('lc-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/LC/thumbnail.png" onclick=" showDescription('lc-description' )">
 								<div class="thumbnail-description">
 									<center>JOINLC</center>
 								</div>
@@ -268,7 +340,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/Lineless/thumbnail.png" onclick=" showDescription('Lineless-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/Lineless/thumbnail.png" onclick=" showDescription('Lineless-description' )">
 								<div class="thumbnail-description">
 									<center>Lineless</center>
 								</div>
@@ -277,7 +349,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/Pool3D/thumbnail.png" onclick=" showDescription('Pool3D-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/Pool3D/thumbnail.png" onclick=" showDescription('Pool3D-description' )">
 								<div class="thumbnail-description">
 									<center>Pool3D</center>
 								</div>
@@ -286,7 +358,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/SSOHome/thumbnail.JPG" onclick=" showDescription('SSOHome-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/SSOHome/thumbnail.JPG" onclick=" showDescription('SSOHome-description' )">
 								<div class="thumbnail-description">
 									<center>SSO Home</center>
 								</div>
@@ -295,7 +367,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/ZeroPool/thumbnail.JPG" onclick=" showDescription('ZeroPool-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.io/res/img/ventures/ZeroPool/thumbnail.JPG" onclick=" showDescription('ZeroPool-description' )">
 								<div class="thumbnail-description">
 									<center>ZeroPool</center>
 								</div>
@@ -332,20 +404,20 @@
 <p>When a medical emergency happens with no medical professional or First Aid trained people nearby, the AFAR system will be notified of the emergency and its location via text messaging or a mobile app.</p>
 
 <center>
-	<img src="http://localhost:4000/res/img/ventures/AFAR/AFARapp_main.png" height="700" alt="This is the main screenshot." />
+	<img src="http://genjinoguchi.github.io/res/img/ventures/AFAR/AFARapp_main.png" height="700" alt="This is the main screenshot." />
 </center>
 
 <p>The AFAR system will then send the emergency details to all program volunteers that have previously signed up and proved that they are qualified to perform first aid.</p>
 
 <center>
-	<img src="http://localhost:4000/res/img/ventures/AFAR/AFARapp_ios.png" alt="AFAR on iOS" />
+	<img src="http://genjinoguchi.github.io/res/img/ventures/AFAR/AFARapp_ios.png" alt="AFAR on iOS" />
 </center>
 
 <p>At the same time, AFAR will also automatically call 911 or whatever emergency number corresponds to the country of the distress call, thus sending an ambulance or whatever service you need.
 Response to medical emergencies will increase and save lives.</p>
 
 <center>
-	<img src="http://localhost:4000/res/img/ventures/AFAR/AFARapp_manual.png" height="700" alt="AFAR's built in manual." />
+	<img src="http://genjinoguchi.github.io/res/img/ventures/AFAR/AFARapp_manual.png" height="700" alt="AFAR's built in manual." />
 </center>
 
 <p>Key Features:</p>
@@ -359,7 +431,7 @@ Response to medical emergencies will increase and save lives.</p>
 </ul>
 
 <center>
-	<img src="http://localhost:4000/res/img/ventures/AFAR/AFARapp_all.png" height="700" alt="AFAR on all devices." />
+	<img src="http://genjinoguchi.github.io/res/img/ventures/AFAR/AFARapp_all.png" height="700" alt="AFAR on all devices." />
 </center>
 
 <p>Links:</p>
@@ -396,7 +468,7 @@ Response to medical emergencies will increase and save lives.</p>
 								<br>
 								<p>I made this during HackNYU!</p>
 
-<p><img src="http://localhost:4000/res/img/ventures/Blackout/main.png" alt="Here's the main screenshot" /></p>
+<p><img src="http://genjinoguchi.github.io/res/img/ventures/Blackout/main.png" alt="Here's the main screenshot" /></p>
 
 								<center>
 									<a onclick=" hideDescription('Blackout-description')"><i class="fa fa-3x fa-home"></i></a>
@@ -419,7 +491,7 @@ Response to medical emergencies will increase and save lives.</p>
 								<br>
 								<p>Insert KnoKno stuff here!</p>
 
-<p><img src="http://localhost:4000/res/img/ventures/KnoKno/main.png" alt="Here's the main screenshot" /></p>
+<p><img src="http://genjinoguchi.github.io/res/img/ventures/KnoKno/main.png" alt="Here's the main screenshot" /></p>
 
 								<center>
 									<a onclick=" hideDescription('KnoKno-description')"><i class="fa fa-3x fa-home"></i></a>
@@ -466,7 +538,7 @@ Response to medical emergencies will increase and save lives.</p>
 <h1 id="we-have-a-solution-called-lineless">We have a solution called <em>Lineless</em>.</h1>
 
 <center>
-<img src="http://localhost:4000/res/img/ventures/Lineless/thumbnail.png" />
+<img src="http://genjinoguchi.github.io/res/img/ventures/Lineless/thumbnail.png" />
 </center>
 
 <p>Here is how it works: </p>
@@ -479,7 +551,7 @@ Response to medical emergencies will increase and save lives.</p>
 </ol>
 
 <center>
-<img src="http://localhost:4000/res/img/ventures/Lineless/main.png" />
+<img src="http://genjinoguchi.github.io/res/img/ventures/Lineless/main.png" />
 </center>
 
 <p>Details</p>
@@ -522,9 +594,9 @@ Response to medical emergencies will increase and save lives.</p>
 <p>##We built a full 3D pool simulator using Java/Processing, and Processing 3D libraries.</p>
 
 <center>
-<img src="http://localhost:4000/res/img/ventures/Pool3D/Pool2D_top.png" width="800px" />
+<img src="http://genjinoguchi.github.io/res/img/ventures/Pool3D/Pool2D_top.png" width="800px" />
 <br />
-<img src="http://localhost:4000/res/img/ventures/Pool3D/Pool2D_Break.png" width="800px" />
+<img src="http://genjinoguchi.github.io/res/img/ventures/Pool3D/Pool2D_Break.png" width="800px" />
 </center>
 
 <p>Core Features:</p>
@@ -536,7 +608,7 @@ Response to medical emergencies will increase and save lives.</p>
 </ul>
 
 <center>
-<img src="http://localhost:4000/res/img/ventures/Pool3D/Pool2D_play.png" width="800px" />
+<img src="http://genjinoguchi.github.io/res/img/ventures/Pool3D/Pool2D_play.png" width="800px" />
 
 
 Details
@@ -572,7 +644,7 @@ PS We got 100 on the project.
 								<br>
 								<p>SCIENCE OLYMPIAD HOME</p>
 
-<p><img src="http://localhost:4000/res/img/ventures/SSOHome/main.JPG" alt="Here's the main screenshot" /></p>
+<p><img src="http://genjinoguchi.github.io/res/img/ventures/SSOHome/main.JPG" alt="Here's the main screenshot" /></p>
 
 								<center>
 									<a onclick=" hideDescription('SSOHome-description')"><i class="fa fa-3x fa-home"></i></a>
@@ -595,7 +667,7 @@ PS We got 100 on the project.
 								<br>
 								<p>Coming soon.</p>
 
-<p><img src="http://localhost:4000/res/img/ventures/ZeroPool/main.JPG" alt="Here's the main screenshot" /></p>
+<p><img src="http://genjinoguchi.github.io/res/img/ventures/ZeroPool/main.JPG" alt="Here's the main screenshot" /></p>
 
 								<center>
 									<a onclick=" hideDescription('ZeroPool-description')"><i class="fa fa-3x fa-home"></i></a>

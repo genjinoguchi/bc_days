@@ -35,6 +35,32 @@ p
 	padding: 0px;
 	font-size: 150%;
 }
+.most-big
+{
+	font-size: 1000%;
+}
+.extremely-big
+{
+	font-size: 800%;
+}.massive-big
+{
+	font-size: 650%;
+}.very-big
+{
+	font-size: 500%;
+}.a-bit-big
+{
+	font-size: 400%;
+}.just-big
+{
+	font-size: 300%;
+}.less-big
+{
+	font-size: 200%;
+}.not-big
+{
+	font-size: 100%;
+}
 .push-right
 {
 	float: right;
@@ -235,12 +261,17 @@ p
 	padding: 15px;
 	font-size: 125%;
 }
-
 .tab:hover
 {
 	background-color: #E6E6E6;
 }
-
+#copyright-genji-noguchi
+{
+	left: 100px;
+	bottom: 40px;
+	display: block;
+	position: absolute;
+}
 
 /*about tab*/
 #about-tab
@@ -277,14 +308,14 @@ p
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-#about-heading
+.about-heading
 {
 	font-family: 'Stalemate', 'cursive';
-	font-size: 500%;
 }
 .p-about
 {
 	font-family: 'Josefin Sans', sans-serif;
+	font-size: 150%;
 }
 
 
