@@ -24,11 +24,22 @@
 						{% for project in site.ventures %}
 							<div id="{{ project.id }}-description" class="project-description">
 								<center>
-									<h1 class="project-heading">{{ project.title }}</h1>
-									<h3>Timeframe: {{ project.timeframe}}</h3>
+									<a onclick=" hideDescription('{{project.id}}-description')"><i class="fa fa-3x fa-home"></i></a>
+									<h1 class="project-heading">
+										{{ project.title }}
+									</h1>
+									<h2>
+										{{ project.tagline }}
+									</h2>
+									<h3>
+										Timeframe: {{ project.timeframe }}
+									</h3>
 								</center>
 								<br>
 								{{ project.content }}
+								<center>
+									<a onclick=" hideDescription('{{project.id}}-description')"><i class="fa fa-3x fa-home"></i></a>
+								</center>
 							</div>
 						{% endfor %}
 					</div>

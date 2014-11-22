@@ -171,9 +171,13 @@ function showProjectPage(){
 
 function showDescription(element){
 	console.log("hurr")
-	$("#"+element).show();
+	$("#"+element).fadeIn();
 
 	//document.getElementById(element).style.display="block";
+}
+
+function hideDescription(element){
+	$("#"+element).fadeOut();
 }
 
 

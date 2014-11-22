@@ -183,31 +183,31 @@ p
 }
 .card-1
 {
-	top: 10%;
+	top: 5%;
 }
 .card-2
 {
-	top: 11%;
+	top: 6%;
 }
 .card-3
 {
-	top: 12%;
+	top: 7%;
 }
 .card-4
 {
-	top: 13%;
+	top: 8%;
 }
 .card-5
 {
-	top: 14%;
+	top: 9%;
 }
 .card-6
 {
-	top: 15%;
+	top: 10%;
 }
 .card-7
 {
-	top: 16%;
+	top: 11%;
 }
 
 /*tab panes*/
@@ -280,7 +280,7 @@ p
 #about-heading
 {
 	font-family: 'Stalemate', 'cursive';
-	font-size: 400%;
+	font-size: 500%;
 }
 .p-about
 {
@@ -423,7 +423,6 @@ p
 	left: 100px;
 	right: 100px;
 	top: 50px;
-	height: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
