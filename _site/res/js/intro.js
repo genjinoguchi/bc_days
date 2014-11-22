@@ -21,8 +21,8 @@ $(document).ready(function(){
 
 	//initProjects();
 
-	showProjectPage();
-	//showHomePage();
+	//showProjectPage();
+	showHomePage();
 
 	homePageActions();
 
@@ -152,7 +152,7 @@ function showProjectPage(){
 function showDescription(element){
 	console.log("hurr")
 	$("#"+element).show();
-	
+
 	//document.getElementById(element).style.display="block";
 }
 
