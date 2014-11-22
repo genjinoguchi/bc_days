@@ -325,6 +325,10 @@ p
 {
 	padding-bottom: 50px;
 }
+#send-message
+{
+	display: none;
+}
 
 /*projects page*/
 #projects-page

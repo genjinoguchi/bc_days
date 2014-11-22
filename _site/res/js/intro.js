@@ -40,7 +40,9 @@ function intro(){
 }
 
 function homePageActions(){
-	
+	$("#gmail-link").click(function(){
+		$("#send-message").fadeToggle();
+	})
 }
 
 function hideHomePage(){
