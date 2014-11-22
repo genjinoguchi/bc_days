@@ -87,7 +87,7 @@ function detectTabClicks(){
 		showProjectPage();
 		hideTabs();
 	});
-	$("#read-on").click(function(){
+	$(".read-on").click(function(){
 		console.log("here")
 		showAboutPage();
 	})
