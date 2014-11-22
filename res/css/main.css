@@ -33,6 +33,7 @@ p
 {
 	font-family: "Open Sans";
 	padding: 0px;
+	font-size: 150%;
 }
 .push-right
 {
@@ -355,11 +356,12 @@ p
 }
 #projects-section
 {
-	
+
 }
 .project
 {
-	
+	position: fixed;
+	margin: auto;
 }
 .project-icon
 {
@@ -383,8 +385,23 @@ p
 }
 .project-description
 {
-	background-color: #FFFFFF;
+	background-color: #E6E6E6;
 	display: none;
+	position: absolute;
+	left: 100px;
+	right: 100px;
+	top: 50px;
+	height: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	padding-top: 50px;
+	padding-left: 50px;
+	font-family: 'Open Sans';
+}
+.project-heading
+{
+	font-size: 500%;
 }
 #projects-display
 {

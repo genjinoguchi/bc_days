@@ -4,7 +4,6 @@ id: Blackout
 timeframe: May 23-May 25
 category: Software
 thumbnail: Blackout/thumbnail.png
-layout: project
 ---
 
 I made this during HackNYU!

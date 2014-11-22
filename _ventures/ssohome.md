@@ -4,7 +4,6 @@ id: SSOHome
 timeframe: May 23-May 25
 category: Software
 thumbnail: SSOHome/thumbnail.JPG
-layout: project
 ---
 
 SCIENCE OLYMPIAD HOME

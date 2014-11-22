@@ -23,12 +23,15 @@
 					<div id="project-descriptions">
 						{% for project in site.ventures %}
 							<div id="{{ project.id }}-description" class="project-description">
+								<center>
+									<h1 class="project-heading">{{ project.title }}</h1>
+									<h3>Timeframe: {{ project.timeframe}}</h3>
+								</center>
+								<br>
 								{{ project.content }}
 							</div>
 						{% endfor %}
 					</div>
 
 				</div>
-				
-
 			</div>

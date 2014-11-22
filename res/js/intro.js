@@ -151,7 +151,9 @@ function showProjectPage(){
 
 function showDescription(element){
 	console.log("hurr")
-	$("#"+element).slideDown();
+	$("#"+element).show();
+
+	//document.getElementById(element).style.display="block";
 }
 
 

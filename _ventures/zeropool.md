@@ -4,7 +4,6 @@ id: ZeroPool
 timeframe: May 23-May 25
 category: Software
 thumbnail: ZeroPool/thumbnail.JPG
-layout: project
 ---
 
 Coming soon.
