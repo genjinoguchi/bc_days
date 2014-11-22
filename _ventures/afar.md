@@ -1,5 +1,5 @@
 ---
-title: AFAR System
+title: AFAR
 id: AFAR
 timeframe: Sept 19-Sept 21
 category: Software
@@ -50,6 +50,14 @@ Key Features:
 <center>
 	<img src="{{site.url}}/res/img/ventures/AFAR/AFARapp_all.png" height="700" alt="AFAR on all devices."/>
 </center>
+
+
+Links:
+
+* You can find the code [here]("https://github.com/afarsystem")
+* Collaborators on this project:
+	* [Genji Noguchi]("http://genjinoguchi.com")
+	* [Brian Chuk]("http://devchuk.github.io")
 
 
 
