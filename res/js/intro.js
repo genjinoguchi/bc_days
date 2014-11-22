@@ -16,8 +16,10 @@ $(document).ready(function(){
 	docWidth = $(window).width();
 
 	intro();
+	loadAge();
 	hideProjectPage();
 	hideHomePage();
+	hideAboutPage();
 
 	//initProjects();
 
@@ -62,6 +64,18 @@ function showHomePage(){
 	}, "slow");
 }
 
+function hideAboutPage(){
+	$("#about-page").velocity({
+		right: "-1000px"
+	})
+}
+
+function showAboutPage(){
+	$("#about-page").velocity({
+		right: "0px"
+	})
+}
+
 function detectTabClicks(){
 	$("#home-tab").click(function(){
 		showHomePage();
@@ -71,9 +85,12 @@ function detectTabClicks(){
 	$("#projects-tab").click(function(){
 		hideHomePage();
 		showProjectPage();
-
 		hideTabs();
 	});
+	$("#read-on").click(function(){
+		console.log("here")
+		showAboutPage();
+	})
 }
 
 function tabActions(){
@@ -87,6 +104,7 @@ function tabActions(){
 	});
 	$("#main-section").click(function(){
 		hideTabs();
+		hideAboutPage();
 	});
 }
 

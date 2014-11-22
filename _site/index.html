@@ -30,6 +30,8 @@
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
 		<!---->
 
@@ -38,6 +40,7 @@
 		<script src="./res/js/jquery.min.js"></script>
 		<script src="./res/js/jquery.velocity.min.js"></script>
 		<script src="./res/js/intro.js"></script>
+		<script src="./res/js/loadAge.js"></script>
 
 		<!---->
 
@@ -82,9 +85,9 @@
 			<div class="info-card card-1 about-tab-card">
 				<div class="card-heading">Hello, I'm Genji.</div>
 				<div class="card-description">
-					I'm a full-stack developer who has a dream of starting a startup. I'm currently a rising senior at Stuyvesant High School, where I...
+					I'm a full-stack developer who has a dream of starting a startup.
 					<hr>
-					<a><i class="fa fa-md fa-arrow-circle-right"></i></a>&nbspRead on
+					<a id="read-on"><i class="fa fa-md fa-arrow-circle-right"></i></a>&nbspRead on
 				</div>
 
 				<div class="card-links"></div>
@@ -102,6 +105,15 @@
 			</div>
 
 		</div>
+		<!--About Page-->
+
+<div id="about-page" class="pane">
+	<h1 id="about-heading">Tinker, maker, entrepreneur, dreamer.</h1>
+	<p class="p-about">
+		I'm Genji Noguchi. I'm <span id="age"></span> years old, and I'm currently a senior at Stuyvesant High School.
+
+	</p>
+</div>
 
 		<div id = "main-section">
 			
@@ -188,7 +200,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/AFAR/thumbnail.png" onclick=" showDescription('AFAR-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/AFAR/thumbnail.png" onclick=" showDescription('AFAR-description' )">
 								<div class="thumbnail-description">
 									<center>AFAR System</center>
 								</div>
@@ -197,7 +209,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/Blackout/thumbnail.png" onclick=" showDescription('Blackout-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/Blackout/thumbnail.png" onclick=" showDescription('Blackout-description' )">
 								<div class="thumbnail-description">
 									<center>Blackout</center>
 								</div>
@@ -206,7 +218,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/KnoKno/thumbnail.png" onclick=" showDescription('KnoKno-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/KnoKno/thumbnail.png" onclick=" showDescription('KnoKno-description' )">
 								<div class="thumbnail-description">
 									<center>KnoKno</center>
 								</div>
@@ -215,7 +227,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/LC/thumbnail.png" onclick=" showDescription('lc-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/LC/thumbnail.png" onclick=" showDescription('lc-description' )">
 								<div class="thumbnail-description">
 									<center>JOINLC</center>
 								</div>
@@ -224,7 +236,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/Lineless/thumbnail.png" onclick=" showDescription('Lineless-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/Lineless/thumbnail.png" onclick=" showDescription('Lineless-description' )">
 								<div class="thumbnail-description">
 									<center>Lineless</center>
 								</div>
@@ -233,7 +245,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/Pool3D/thumbnail.png" onclick=" showDescription('Pool3D-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/Pool3D/thumbnail.png" onclick=" showDescription('Pool3D-description' )">
 								<div class="thumbnail-description">
 									<center>Pool3D</center>
 								</div>
@@ -242,7 +254,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/SSOHome/thumbnail.JPG" onclick=" showDescription('SSOHome-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/SSOHome/thumbnail.JPG" onclick=" showDescription('SSOHome-description' )">
 								<div class="thumbnail-description">
 									<center>SSO Home</center>
 								</div>
@@ -251,7 +263,7 @@
 						
 
 							<li class="project-icon shadow-right">
-								<img class="icon-sm project-icon-thumbnail" src="http://genjinoguchi.github.com/res/img/ventures/ZeroPool/thumbnail.JPG" onclick=" showDescription('ZeroPool-description' )">
+								<img class="icon-sm project-icon-thumbnail" src="http://localhost:4000/res/img/ventures/ZeroPool/thumbnail.JPG" onclick=" showDescription('ZeroPool-description' )">
 								<div class="thumbnail-description">
 									<center>ZeroPool</center>
 								</div>
@@ -271,7 +283,7 @@
 								<br>
 								<p>Submission for Hack the North</p>
 
-<p><img src="http://genjinoguchi.github.com/res/img/ventures/AFAR/AFARapp_main.png" height="700" alt="This is the main screenshot." /></p>
+<p><img src="http://localhost:4000/res/img/ventures/AFAR/AFARapp_main.png" height="700" alt="This is the main screenshot." /></p>
 
 							</div>
 						
@@ -283,7 +295,7 @@
 								<br>
 								<p>I made this during HackNYU!</p>
 
-<p><img src="http://genjinoguchi.github.com/res/img/ventures/Blackout/main.png" alt="Here's the main screenshot" /></p>
+<p><img src="http://localhost:4000/res/img/ventures/Blackout/main.png" alt="Here's the main screenshot" /></p>
 
 							</div>
 						
@@ -295,7 +307,7 @@
 								<br>
 								<p>Insert KnoKno stuff here!</p>
 
-<p><img src="http://genjinoguchi.github.com/res/img/ventures/KnoKno/main.png" alt="Here's the main screenshot" /></p>
+<p><img src="http://localhost:4000/res/img/ventures/KnoKno/main.png" alt="Here's the main screenshot" /></p>
 
 							</div>
 						
@@ -317,7 +329,7 @@
 								<br>
 								<p>team17’s battlehack submission</p>
 
-<p><img src="http://genjinoguchi.github.com/res/img/ventures/Lineless/main.png" alt="Here's the main screenshot" /></p>
+<p><img src="http://localhost:4000/res/img/ventures/Lineless/main.png" alt="Here's the main screenshot" /></p>
 
 							</div>
 						
@@ -329,7 +341,7 @@
 								<br>
 								<p>2nd term APCS final submission! With <a href="https://github.com/juliankal">Julian Kalogerakis</a></p>
 
-<p><img src="http://genjinoguchi.github.com/res/img/ventures/Pool3D/main.png" alt="Here's the main screenshot" /></p>
+<p><img src="http://localhost:4000/res/img/ventures/Pool3D/main.png" alt="Here's the main screenshot" /></p>
 
 							</div>
 						
@@ -341,7 +353,7 @@
 								<br>
 								<p>SCIENCE OLYMPIAD HOME</p>
 
-<p><img src="http://genjinoguchi.github.com/res/img/ventures/SSOHome/main.JPG" alt="Here's the main screenshot" /></p>
+<p><img src="http://localhost:4000/res/img/ventures/SSOHome/main.JPG" alt="Here's the main screenshot" /></p>
 
 							</div>
 						
@@ -353,7 +365,7 @@
 								<br>
 								<p>Coming soon.</p>
 
-<p><img src="http://genjinoguchi.github.com/res/img/ventures/ZeroPool/main.JPG" alt="Here's the main screenshot" /></p>
+<p><img src="http://localhost:4000/res/img/ventures/ZeroPool/main.JPG" alt="Here's the main screenshot" /></p>
 
 							</div>
 						

@@ -209,7 +209,6 @@ p
 #tab-pane
 {
 	background-color: #FFFFFF;
-	left: 0px;
 	padding: 5px;
 	width: 400px;
 	left: -200px;
@@ -258,6 +257,23 @@ p
 #about-label
 {
 	background-color: #3059D6;
+}
+
+#about-page
+{
+	right: -850px;
+	width: 950px;
+	background-color: white;
+	padding-left: 50px;
+}
+#about-heading
+{
+	font-family: 'Stalemate', 'cursive';
+	font-size: 400%;
+}
+.p-about
+{
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 
