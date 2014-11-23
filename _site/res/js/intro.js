@@ -25,6 +25,7 @@ $(document).ready(function(){
 
 	//showProjectPage();
 	showHomePage();
+	showAboutPage();
 
 	homePageActions();
 
