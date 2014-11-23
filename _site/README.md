@@ -7,9 +7,20 @@ It's going to have a couple of features:
 *  Personal about page, and contact page.
 *  Resume/CVS.
 *  The current software (and a couple of hardware, but only a couple) that I'm working on, and those that I've finished.
-*  A randomly-generated animation done through js-- check!
-  
-Swag to include
+
+
+
+
+
+
+
+
+
+
+
+
+Personal Notes  
+Possible things to include
 * Home page with a photo gallery maybe?
 * Some js animations
 * Parallax scrolling
