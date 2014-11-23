@@ -90,11 +90,13 @@ function detectTabClicks(){
 		showHomePage();
 		hideProjectPage();
 		hideTabs();
+		hideAboutPage();
 	});
 	$("#projects-tab").click(function(){
 		hideHomePage();
 		showProjectPage();
 		hideTabs();
+		hideAboutPage();
 	});
 }
 
