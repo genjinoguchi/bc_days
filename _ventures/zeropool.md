@@ -8,9 +8,7 @@ thumbnail: ZeroPool/thumbnail.JPG
 
 Coming soon.
 
-<center>
 ![Here is the main screenshot]({{site.url}}/res/img/ventures/ZeroPool/main.JPG)
-</center>
 
 
 
