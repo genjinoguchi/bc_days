@@ -6,9 +6,11 @@ category: Software
 thumbnail: ZeroPool/thumbnail.JPG
 ---
 
+<center>
+
 Coming soon.
 
 ![Here is the main screenshot]({{site.url}}/res/img/ventures/ZeroPool/main.JPG)
 
 
-
+</center>
