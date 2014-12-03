@@ -6,7 +6,14 @@ category: Software
 thumbnail: SSOHome/thumbnail.JPG
 ---
 
-SCIENCE OLYMPIAD HOME
+The awesome new home for all your science olympiad needs and announcements.
 
 
+<center>
+	<img src="{{site.url}}/res/img/ventures/SSOHome/main.JPG" alt="Home page for StuySciolyHome" width="70%">
+</center>
+
+<!--
 ![Here's the main screenshot]({{site.url}}/res/img/ventures/SSOHome/main.JPG)
+-->
+
