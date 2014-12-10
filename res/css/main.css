@@ -430,6 +430,15 @@ hr
 	opacity: 0;
 	color: #FFFFFF;
 }
+#pointer-down
+{
+	position: absolute;
+	display: inline-block;
+	bottom: 100px;
+	margin: auto;
+	width: 100px;
+	color: white;
+}
 #projects-section
 {
 
