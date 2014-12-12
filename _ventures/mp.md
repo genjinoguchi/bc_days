@@ -9,6 +9,6 @@ tagline:
 
 hurr
 <center>
-	<img src="{{sire.url}}/res/img/ventures/MP/statesbox2.jpg"/>
+	<img src="{{sire.url}}/res/img/ventures/MP/statesbox2.jpg" width="700" alt="Box view 2."/>
 </center>
 
