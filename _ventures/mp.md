@@ -7,8 +7,8 @@ thumbnail: MP/thumbnail.png
 tagline: 
 ---
 
-hurr
+Mission Possible, an event under Science Olympiad
 <center>
-	<img src="{{sire.url}}/res/img/ventures/MP/statesbox2.jpg" width="700" alt="Box view 2."/>
+	<img src="{{site.url}}/res/img/ventures/MP/statesbox2.jpg" width="700" alt="Box view 2."/>
 </center>
 
