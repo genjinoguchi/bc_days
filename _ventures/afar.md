@@ -1,13 +1,13 @@
 ---
 title: AFAR
 id: AFAR
-timeframe: Sept 19-Sept 21
+timeframe: Sept 19 2014 -Sept 21 2014
 category: Software
 thumbnail: AFAR/thumbnail.png
 tagline: AFAR is a crowdsourced, geolocation-based, flexible software solution designed to save lives in medical emergencies.
 ---
 
-I remember on a warm June afternoon on the streets in New York City my friends and I were heading to a park. As I was about to cross the street, I heard my friends yell for my name. When I turned, I saw a man who stopped breathing with some food lodged down the wrong pipe in his throat. The people there who were currently trying to help him clearly did not know first aid and were about to stick their fingers down his mouth. Thankfully, a man and I ran up to him and were able to save him with proper first aid training.
+On a warm June day, as I was about to cross the street, I heard my friends yell for my name. When I turned, I saw a man who stopped breathing with some food lodged down the wrong pipe in his throat. The people there who were currently trying to help him clearly did not know first aid and were about to stick their fingers down his mouth. Thankfully, a man and I ran up to him and were able to save him with proper first aid training.
 
 The thing is, what happens when those who know first aid are missing in an emergencies like this?
 
