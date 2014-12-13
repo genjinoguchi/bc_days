@@ -23,8 +23,8 @@ $(document).ready(function(){
 
 	//initProjects();
 
-	showProjectPage();
-	//showHomePage();
+	//showProjectPage();
+	showHomePage();
 	//showAboutPage();
 
 	homePageActions();
