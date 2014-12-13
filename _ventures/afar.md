@@ -1,5 +1,6 @@
 ---
-title: AFAR
+sub: AFAR
+title: The Advanced First Aid Response System
 id: AFAR
 timeframe: Sept 19 2014 -Sept 21 2014
 category: Software

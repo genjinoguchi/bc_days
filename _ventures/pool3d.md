@@ -1,5 +1,6 @@
 ---
-title: Pool3D
+sub: 3D Pool
+title: 3D Pool Simulation
 id: Pool3D
 timeframe: May 23-May 25
 category: Software

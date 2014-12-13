@@ -1,5 +1,6 @@
 ---
-title: SSO Home
+sub: SSO Home
+title: The New Stuyvesant Science Olympiad Home Page
 id: SSOHome
 timeframe: May 23-May 25
 category: Software
