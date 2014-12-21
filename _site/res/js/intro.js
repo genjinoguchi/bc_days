@@ -73,6 +73,7 @@ function hideAboutPage(){
 }
 
 function showAboutPage(element){
+    /*
     var card = $("#about-preview-general");
 
     card.velocity({
@@ -81,8 +82,8 @@ function showAboutPage(element){
     .velocity({
 	width: "1000px"
     });
-
-    /*
+*/	
+    
     $("#about-page").velocity({
 	right: "0px"
     })
@@ -91,7 +92,7 @@ function showAboutPage(element){
     var elementHeight = position["top"];
 
     document.getElementById("about-page").scrollTop=elementHeight;
-    */
+    
 }
 
 function detectTabClicks(){
