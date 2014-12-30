@@ -11,7 +11,7 @@ tagline: A full 3D pool simulation that was built from scratch.
 
 My friend [Julian Kalogerakis]("https://github.com/juliankal") and I really love to play pool. Whenever I go over to his Upper West Side apartment to hang out and work, we always take some time off to go down to his basement and shoot some pool. The set is pretty battered -- two of the sticks are broken in half, and the rest have missing tips. More often than not, the chalk is missing. Yet, it does not detriment it much; it still remains the same game that we both know and love.
 
-So, for our APCS final projects, we were introduced to 3D graphics using Processing. It was a no-brainer as to what we were going to build.
+During our APCS class, we were introduced to 3D graphics using Processing. So, we put two and two together.
 
 
 #Pool3D
