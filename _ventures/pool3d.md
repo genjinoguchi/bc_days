@@ -34,6 +34,7 @@ Core Features:
 <center>
 <img src="{{ site.url }}/res/img/ventures/Pool3D/Pool2D_play.png" width="800px">
 
+<br><br>
 
 Details
 
