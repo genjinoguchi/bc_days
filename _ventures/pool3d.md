@@ -37,11 +37,9 @@ Core Features:
 
 Details
 
+
 * Collaborators
 	* [Genji Noguchi]("genjinoguchi.com")
 	* [Julian Kalogetakis]("https://github.com/juliankal")
 * Source code can be found [here.]("https://github.com/JulianKal/Per6-Noguchi-Kalogerakis-XPool")
 
-
-PS We got 100 on the project.
-~Genji
