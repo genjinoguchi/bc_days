@@ -55,7 +55,7 @@ Key Features:
 
 Links:
 
-* You can find the code [here]("https://github.com/afarsystem")
+* You can find the code [here](https://github.com/afarsystem)
 * Collaborators on this project:
 	* [Genji Noguchi]("http://genjinoguchi.com")
 	* [Brian Chuk]("http://devchuk.github.io")
