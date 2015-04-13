@@ -39,16 +39,22 @@
 		
 		<script src="./res/js/jquery.min.js"></script>
 		<script src="./res/js/jquery.velocity.min.js"></script>
-		<script src="./res/js/intro.js"></script>
 		<script src="./res/js/loadAge.js"></script>
+		<script src="./res/js/lodash.js"></script>
+		<script src="./res/js/backbone.js"></script>
+		<script src="./res/js/backbone.marionette.min.js"></script>
+		<script src="./res/js/page_actions.js"></script>
 
 		<!---->
 
 	</head>
 
+
 	<body>
-		
-		<!--Option button-->
+	
+		<!-- Navigation Panes -->
+		<script type="text/template" id="navbar-template">
+			<!--Option button-->
 		
 		<div id="option-buttons">
 			<div id="tab-option-button" class="small-circle"></div>
@@ -56,7 +62,7 @@
 			<div id="about-option-button" class="small-circle"></div>
 			<p id="about-pointer"> About Me.</p>
 		</div>
-		<!--Tab Pane-->
+			<!--Tab Pane-->
 		
 		<div class="pane" id="tab-pane">
 
@@ -87,7 +93,7 @@
 
 		</div>
 
-		<!--About Tab-->
+			<!--About Tab-->
 		
 		<div class="pane fixed-scrollable" id="about-tab">
 			<div id="about-preview-general"  class="info-card card-1 about-tab-card">
@@ -155,7 +161,11 @@
 
 		</div>
 
-			<!--About Page-->
+		</script>
+
+		<!-- About Page -->
+		<script type="text/template" id="about-template">
+				<!--About Page-->
 
 	<div id="about-page" class="pane fixed-scrollable">
 		<a onclick="hideAboutPage()" style="position: fixed">
@@ -246,6 +256,8 @@
 					<li>
 						All CSS, HTML, and JS written by Genji Noguchi (save for certain indicated CSS sections, and JQuery and Velocity libraries.) No CSS framework of any kind here, I like to write things from scratch.
 					<li>
+						The site is powered by Jekyll, a static site-generator that is very blog-friendly. The blog is coming soon, I promise.
+					<li>
 						This site is proudly hosted by <i class="fa fa-github-alt"></i> <a href="https://pages.github.com">Github Pages</a>.
 					</li>
 				</ul>
@@ -267,9 +279,10 @@
 
 	</div>
 
+		</script>
 
-		<div id = "main-section">
-			
+		<!-- Landing Page -->
+		<script type="text/template" id="landing-template">
 			<!--Intro page-->
 			
 			<div id="intro-page" class="full-page">
@@ -323,7 +336,7 @@
 						</a>
 						
 						<div id="send-message">
-							<form method="POST" action="http://forms.brace.io/genji.noguchi@gmail.com">
+							<form method="POST" action="http://formspree.io/genji.noguchi@gmail.com">
 								Contact me anytime, anywhere.<br>
 							    Name:<input type="text" name="name" placeholder="Genji Noguchi"><br>
 							    Email:<input type="email" name="_replyto" placeholder="genji.noguchi@gmail.com"><br>
@@ -341,6 +354,11 @@
 				</div>
 
 			</div>
+
+		</script>
+
+		<!-- Portfolio Page -->
+		<script type="text/template" id="portfolio-template">
 			<!--Projects Page-->
 			<div id="projects-page">
 
@@ -498,7 +516,7 @@ Response to medical emergencies will increase and save lives.</p>
 <p>Links:</p>
 
 <ul>
-  <li>You can find the code <a href="&quot;https://github.com/afarsystem&quot;">here</a></li>
+  <li>You can find the code <a href="https://github.com/afarsystem">here</a></li>
   <li>Collaborators on this project:
     <ul>
       <li><a href="&quot;http://genjinoguchi.com&quot;">Genji Noguchi</a></li>
@@ -716,7 +734,7 @@ Response to medical emergencies will increase and save lives.</p>
 								<br>
 								<p>My friend <a href="&quot;https://github.com/juliankal&quot;">Julian Kalogerakis</a> and I really love to play pool. Whenever I go over to his Upper West Side apartment to hang out and work, we always take some time off to go down to his basement and shoot some pool. The set is pretty battered – two of the sticks are broken in half, and the rest have missing tips. More often than not, the chalk is missing. Yet, it does not detriment it much; it still remains the same game that we both know and love.</p>
 
-<p>So, for our APCS final projects, we were introduced to 3D graphics using Processing. It was a no-brainer as to what we were going to build.</p>
+<p>During our APCS class, we were introduced to 3D graphics using Processing. So, we put two and two together.</p>
 
 <h1 id="pool3d">Pool3D</h1>
 <p>##We built a full 3D pool simulator using Java/Processing, and Processing 3D libraries.</p>
@@ -738,17 +756,16 @@ Response to medical emergencies will increase and save lives.</p>
 <center>
 <img src="http://genjinoguchi.github.io/res/img/ventures/Pool3D/Pool2D_play.png" width="800px" />
 
+<br /><br />
 
 Details
+
 
 * Collaborators
 	* [Genji Noguchi]("genjinoguchi.com")
 	* [Julian Kalogetakis]("https://github.com/juliankal")
 * Source code can be found [here.]("https://github.com/JulianKal/Per6-Noguchi-Kalogerakis-XPool")
 
-
-PS We got 100 on the project.
-~Genji
 </center>
 
 								<center>
@@ -815,8 +832,16 @@ PS We got 100 on the project.
 				</div>
 			</div>
 
+		</script>
+
+		
+		<div id="main-section">
+			
 
 		</div>
+		
+
+		<script src="./res/js/main.js"></script>
 
 	</body>
 

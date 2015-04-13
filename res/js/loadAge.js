@@ -18,5 +18,5 @@ function loadAge() {
 		years++;
 	}
 
-	document.getElementById('age').innerHTML= years.toString();
+	//document.getElementById('age').innerHTML= years.toString();
 }

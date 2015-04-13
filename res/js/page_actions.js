@@ -1,39 +1,4 @@
-//main js script
-
-//Constants
-var FPS = 60;
-
-//Variables
-var position = 0;
-var docHeight;
-var docWidth;
-var mouseX, mouseY;
-
-//jQuery Actions
-
-$(document).ready(function(){
-    docHeight = $(window).height();
-    docWidth = $(window).width();
-
-    intro();
-    loadAge();
-    hideProjectPage();
-    hideHomePage();
-    hideAboutPage();
-
-    //initProjects();
-
-    //showProjectPage();
-    showHomePage();
-    //showAboutPage();
-
-    homePageActions();
-
-    detectTabClicks();
-    tabActions();
-})
-
-//Functions
+// Page actions using JQuery
 
 function intro(){
     slideTabPane(-600);

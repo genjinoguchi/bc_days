@@ -19,18 +19,37 @@
 	{% include head.html %}
 
 	<body>
-		
-		{% include option-buttons.html %}
-		{% include tab-pane.html %}
-		{% include about-tab.html %}
-		{% include about.html %}
+	
+		<!-- Navigation Panes -->
+		<script type="text/template" id="navbar-template">
+			{% include option-buttons.html %}
+			{% include tab-pane.html %}
+			{% include about-tab.html %}
+		</script>
 
-		<div id = "main-section">
-			
+		<!-- About Page -->
+		<script type="text/template" id="about-template">
+			{% include about.html %}
+		</script>
+
+		<!-- Landing Page -->
+		<script type="text/template" id="landing-template">
 			{% include intro-page.html %}
+		</script>
+
+		<!-- Portfolio Page -->
+		<script type="text/template" id="portfolio-template">
 			{% include project-page.html %}
+		</script>
+
+		
+		<div id="main-section">
+			
 
 		</div>
+		
+
+		<script src="./res/js/main.js"></script>
 
 	</body>
 
