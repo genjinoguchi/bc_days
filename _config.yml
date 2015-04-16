@@ -16,7 +16,11 @@ paginate_path	: /blog/page:num
 permalink		: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--end_excerpt-->
 
-
+# Collections
+collections:
+    portfolio:
+        output : true
+        permalink : /portfolio/:path
 
 # Bio
 #author:
