@@ -1,23 +1,24 @@
-#Config settings
-author:
-   name: Genji Noguchi
-   email: genji.noguchi@gmail.com
-description: hurr
-baseurl: 
-url: "http://genjinoguchi.github.io"
+# Site Variables
+title           : "Genji Home"
+name			: "Genji"
+description     : "Genji Noguchi's Home Page!"
+url             : "localhost:4000"
+baseurl         : /
+version			: 0.0.1
 
-#build settings
-markdown: kramdown
-highlighter: true
+#Dependencies
+markdown        : redcarpet
+highlighter     : true
 
-collections:
-    ventures:
-        output: true
+# Blog Settings
+paginate		: 5
+paginate_path	: /blog/page:num
+permalink		: /blog/:year/:month/:day/:title/
+excerpt_separator: <!--end_excerpt-->
 
-defaults:
-    -
-        scope:
-            path: ""
-            type: "pages"
-        values:
-            layout: "default"
+
+
+# Bio
+#author:
+#	name		: "Genji Noguchi"
+#s	url			: "https://linkedin.com/in/genjinoguchi"
