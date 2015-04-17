@@ -1,6 +1,8 @@
 ---
 
-layout : post
+layout : project
+name : Test Project
+anchor : test-project
 
 ---
 

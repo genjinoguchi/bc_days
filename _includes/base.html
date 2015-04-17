@@ -4,7 +4,7 @@
 		
 		{% include meta.html %}
 
-		<title>{{ site.name }} | {{ include.location }}</title>
+		<title>{{ site.name }} | {{ include.title }}</title>
 
 		{% include css.html %}
 		{% include styles.html %}
@@ -13,11 +13,13 @@
 	</head>
 
 	<body>
-		<h1> Unstyled Home Page</h1>
+		<h1> {{ include.heading }} </h1>
 	
 		<br><br>
 		<a href="/blog">Blog</a>
 		<a href="/portfolio">Portfolio</a>
+
+		{{ content }}
 
 	</body>
 

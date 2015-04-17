@@ -20,7 +20,7 @@ excerpt_separator: <!--end_excerpt-->
 collections:
     portfolio:
         output : true
-        permalink : /portfolio/:path
+        permalink : /portfolio/:path/index.html
 
 # Bio
 #author:

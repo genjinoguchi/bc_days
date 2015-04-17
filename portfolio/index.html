@@ -4,4 +4,6 @@ layout : portfolio
 
 ---
 
-Portfolio
+{% for project in site.portfolio %}
+	{% include project_excerpt.html %}
+{% endfor %}
