@@ -7,7 +7,7 @@
 		<title>{{ site.name }} | {{ include.title }}</title>
 
 		{% include css.html %}
-		{% include styles.html %}
+		{% include scripts.html %}
 
 
 	</head>
@@ -19,7 +19,9 @@
 		<a href="/blog">Blog</a>
 		<a href="/portfolio">Portfolio</a>
 
-		{{ content }}
+		<div id="main">
+			{{ content }}
+		</div>
 
 	</body>
 

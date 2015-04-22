@@ -1,0 +1,35 @@
+<div id="paginator">
+	<!-- Next Page -->
+	{% if paginator.next_page %}
+	<a href="{{ site.baseurl }}blog/page{{ paginator.next_page }}">
+		Next
+	</a>
+	{% else %}
+
+	{% endif %}
+
+	<a href=".">
+		{{ paginator.page }}
+	</a>
+
+
+
+	<!-- Previous Page -->
+	{% if paginator.previous_page %}
+
+		<!-- For some reason, /blog/page1 does not exist. Quick fix: -->
+		{% if paginator.page == 2 %}
+		<a href="{{ site.baseurl }}blog">
+			Previous
+		</a>
+
+		{% else %}
+		<a href="{{ site.baseurl}}blog/page{{ paginator.previous_page }}">
+			Previous
+		</a>
+		{% endif %}
+
+	{% else %}
+	
+	{% endif %}
+</div>
