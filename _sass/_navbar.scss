@@ -1,0 +1,55 @@
+nav {
+	/* Desktop Values */
+	$anchor-width : 15em;
+	$anchor-height: 1.5em;
+
+
+	h1 {
+	
+	}	
+
+	a {
+		width : 100%;
+		padding : 25px 25px;
+		text-decoration: none;
+		font-family: $font-sans;
+		display : block;
+		color : black;
+	}
+
+	@mixin blur-fade-background-image($imgpath, $width, $height) {
+		background-image : url($imgpath);
+		background-size : $width, $height;
+		background-repeat : no-repeat;
+	}
+	#home-anchor {
+		background-color : $sky-blue;
+		/*
+		@include blur-fade-background-image(
+			"/res/img/family-cropped.jpg",
+			$anchor-width,
+			$anchor-height
+			);
+			*/
+	}
+	#portfolio-anchor {
+		background-color : $gray;
+		/*
+		@include blur-fade-background-image(
+			"/res/img/desk.jpg",
+			$anchor-width,
+			$anchor-height
+			);
+			*/
+	}
+	#blog-anchor {
+		background-color : $red;
+		/*
+		@include blur-fade-background-image(
+			"/res/img/bacon-cropped.jpg",
+			$anchor-width,
+			$anchor-height
+			);
+			*/
+	}
+}

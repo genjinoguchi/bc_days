@@ -1,0 +1,33 @@
+$font-sans		: Arial, sans-serif;
+$font-serif		: Arial, serif;
+
+/* Nice Colors. */
+$sky-blue		: #ADEBFF;
+$blue 			: #3366CC;
+$red			: #FF4D4D;
+$light-gray 	: #E6E6E6;
+$gray 			: #999999;
+
+
+a {
+	color : $blue;
+	text-decoration: none;
+	font-family: $font-sans;
+}
+h1 {
+	text-decoration : none;
+}
+body {
+	background-color : $light-gray;
+}
+
+/* Classes for Positioning */
+.push-right {
+	float : right;
+}
+.push-left {
+	float: left;
+}
+
+/* Font Size */
+

@@ -22,7 +22,11 @@ collections:
         output : true
         permalink : /portfolio/:path/index.html
 
+# Sass
+sass:
+    sass_dir : _sass
+
 # Bio
 #author:
 #	name		: "Genji Noguchi"
-#s	url			: "https://linkedin.com/in/genjinoguchi"
+#	url			: "https://linkedin.com/in/genjinoguchi"

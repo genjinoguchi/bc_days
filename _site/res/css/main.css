@@ -1,11 +1,67 @@
-html
-{
-	height: 100%;
-}
+/* Nice Colors. */
+a {
+  color: #3366CC;
+  text-decoration: none;
+  font-family: Arial, sans-serif; }
 
-body
-{
-	margin: 0px;
-	height: 100%;
-	overflow-x: hidden;
-}
+h1 {
+  text-decoration: none; }
+
+body {
+  background-color: #E6E6E6; }
+
+/* Classes for Positioning */
+.push-right {
+  float: right; }
+
+.push-left {
+  float: left; }
+
+/* Font Size */
+.box-rounded {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000; }
+
+.box-shadow {
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78);
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78); }
+
+nav {
+  /* Desktop Values */ }
+  nav a {
+    width: 100%;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    display: block;
+    color: black; }
+  nav #home-anchor {
+    background-color: #ADEBFF;
+    /*
+    @include blur-fade-background-image(
+    	"/res/img/family-cropped.jpg",
+    	$anchor-width,
+    	$anchor-height
+    	);
+    	*/ }
+  nav #portfolio-anchor {
+    background-color: #999999;
+    /*
+    @include blur-fade-background-image(
+    	"/res/img/desk.jpg",
+    	$anchor-width,
+    	$anchor-height
+    	);
+    	*/ }
+  nav #blog-anchor {
+    background-color: #FF4D4D;
+    /*
+    @include blur-fade-background-image(
+    	"/res/img/bacon-cropped.jpg",
+    	$anchor-width,
+    	$anchor-height
+    	);
+    	*/ }
