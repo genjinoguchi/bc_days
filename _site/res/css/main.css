@@ -22,17 +22,33 @@ body {
 .push-left {
   float: left; }
 
+/* Classes for Sizing */
+.full-page {
+  position: relative;
+  height: 100%; }
+
+.container {
+  position: relative; }
+
 /* Font Size */
-.box-rounded {
+.box-rounded, .card {
   border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
   border: 0px solid #000000; }
 
-.box-shadow {
+.box-shadow, .card {
   -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78);
   -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78);
   box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78); }
+
+.card {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  margin: 20px;
+  background-color: white;
+  position: relative; }
 
 nav {
   z-index: 15;
@@ -43,7 +59,7 @@ nav {
     padding: 25px 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-top: 10px;
     text-decoration: none;
     font-family: Arial, sans-serif;
     display: block;
@@ -76,11 +92,9 @@ nav {
     	);
     	*/ }
 
-#home {
+#home-front-page {
   z-index: 10;
-  height: 100%;
+  height: calc(100%-100px);
+  top: -57px;
   position: relative;
-  top: -56px; }
-  #home #home-full-page {
-    height: 100%;
-    background-color: green; }
+  background-color: #B8FF94; }

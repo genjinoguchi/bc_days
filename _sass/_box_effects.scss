@@ -10,3 +10,14 @@
 	-moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.78);
 	box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.78);
 }
+
+.card {
+	@extend .box-shadow;
+	@extend .box-rounded;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-top : 30px;
+	margin : 20px;
+	background-color : white;
+	position : relative;	
+}
