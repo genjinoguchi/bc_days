@@ -1,27 +1,22 @@
 nav {
-	/* Desktop Values */
-	$anchor-width : 15em;
-	$anchor-height: 1.5em;
-
+	z-index : 15;
 
 	h1 {
 	
 	}	
 
 	a {
-		width : 100%;
+		width : 80%;
 		padding : 25px 25px;
+		margin-left : auto;
+		margin-right : auto;
+		margin-bottom : 10px;
 		text-decoration: none;
 		font-family: $font-sans;
 		display : block;
 		color : black;
 	}
 
-	@mixin blur-fade-background-image($imgpath, $width, $height) {
-		background-image : url($imgpath);
-		background-size : $width, $height;
-		background-repeat : no-repeat;
-	}
 	#home-anchor {
 		background-color : $sky-blue;
 		/*
@@ -52,4 +47,15 @@ nav {
 			);
 			*/
 	}
+
+
+
+
+	@mixin blur-fade-background-image($imgpath, $width, $height) {
+		background-image : url($imgpath);
+		background-size : $width, $height;
+		background-repeat : no-repeat;
+	}
+
+
 }

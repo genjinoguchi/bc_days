@@ -1,6 +1,6 @@
 ---
 
-layout : project
+layout : project_layout
 name : Test Software Project
 anchor: software/test-software
 
