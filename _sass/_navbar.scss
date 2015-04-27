@@ -19,6 +19,7 @@ nav {
 		color : black;
 	}
 
+	#home-anchor-mobile,
 	#home-anchor {
 		background-color : $sky-blue;
 		/*
@@ -29,6 +30,8 @@ nav {
 			);
 			*/
 	}
+
+	#portfolio-anchor-mobile,
 	#portfolio-anchor {
 		background-color : $gray;
 		/*
@@ -39,6 +42,8 @@ nav {
 			);
 			*/
 	}
+
+	#blog-anchor-mobile,
 	#blog-anchor {
 		background-color : $red;
 		/*

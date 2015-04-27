@@ -4,14 +4,14 @@ name			: "Genji"
 description     : "Genji Noguchi's Home Page!"
 url             : "localhost:4000"
 baseurl         : /
-version			: 0.0.1
+version			: 2.0.1
 
 #Dependencies
 markdown        : redcarpet
 highlighter     : true
 
 # Blog Settings
-paginate		: 1
+paginate		: 5
 paginate_path	: /blog/page:num
 permalink		: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--end_excerpt-->

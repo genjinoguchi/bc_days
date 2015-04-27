@@ -65,6 +65,7 @@ nav {
     font-family: Arial, sans-serif;
     display: block;
     color: black; }
+  nav #home-anchor-mobile,
   nav #home-anchor {
     background-color: #ADEBFF;
     /*
@@ -74,6 +75,7 @@ nav {
     	$anchor-height
     	);
     	*/ }
+  nav #portfolio-anchor-mobile,
   nav #portfolio-anchor {
     background-color: #999999;
     /*
@@ -83,6 +85,7 @@ nav {
     	$anchor-height
     	);
     	*/ }
+  nav #blog-anchor-mobile,
   nav #blog-anchor {
     background-color: #FF4D4D;
     /*
