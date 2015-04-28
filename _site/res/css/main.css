@@ -32,24 +32,22 @@ body {
 
 /* Font Size */
 .box-rounded, .card {
-  border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
   border: 0px solid #000000; }
 
 .box-shadow, .card {
-  -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78);
-  -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78);
-  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.78); }
+  -webkit-box-shadow: 0px 0px 4px 0px black;
+  -moz-box-shadow: 0px 0px 4px 0px black;
+  box-shadow: 0px 0px 4px 0px black; }
 
 .card {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 20px;
   background-color: white;
-  position: relative; }
+  position: relative;
+  margin-top: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px; }
 
 nav {
   z-index: 15;
@@ -67,7 +65,7 @@ nav {
     color: black; }
   nav #home-anchor-mobile,
   nav #home-anchor {
-    background-color: #ADEBFF;
+    background-color: white;
     /*
     @include blur-fade-background-image(
     	"/res/img/family-cropped.jpg",
@@ -77,7 +75,7 @@ nav {
     	*/ }
   nav #portfolio-anchor-mobile,
   nav #portfolio-anchor {
-    background-color: #999999;
+    background-color: white;
     /*
     @include blur-fade-background-image(
     	"/res/img/desk.jpg",
@@ -87,7 +85,7 @@ nav {
     	*/ }
   nav #blog-anchor-mobile,
   nav #blog-anchor {
-    background-color: #FF4D4D;
+    background-color: white;
     /*
     @include blur-fade-background-image(
     	"/res/img/bacon-cropped.jpg",
@@ -98,7 +96,6 @@ nav {
 
 #home-front-page {
   z-index: 10;
-  height: calc(100%-100px);
-  top: -57px;
+  top: -52px;
   position: relative;
   background-color: #B8FF94; }
