@@ -38,5 +38,12 @@ body {
 	position : relative;
 }
 
+/* Mixins */
+@mixin blur-fade-background-image($imgpath, $width, $height) {
+	background-image : url($imgpath);
+	background-size : $width, $height;
+	background-repeat : no-repeat;
+}
+
 /* Font Size */
 

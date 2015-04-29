@@ -30,6 +30,7 @@ body {
 .container {
   position: relative; }
 
+/* Mixins */
 /* Font Size */
 .box-rounded, .card {
   border-radius: 3px 3px 3px 3px;
@@ -96,6 +97,9 @@ nav {
 
 #home-front-page {
   z-index: 10;
-  top: -52px;
+  top: -36px;
   position: relative;
-  background-color: #B8FF94; }
+  background-color: #B8FF94;
+  background-image: url("/res/img/cars-and-sunsets.jpg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat; }

@@ -1,6 +1,10 @@
 #home-front-page {
 	z-index : 10;
-	top : -52px;
+	top : -36px;
 	position : relative;
 	background-color : #B8FF94;
+	@include blur-fade-background-image(
+		"/res/img/cars-and-sunsets.jpg",
+		100%, 100%
+	);
 }
