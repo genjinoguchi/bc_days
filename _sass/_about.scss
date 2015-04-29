@@ -1,0 +1,15 @@
+#about-front-page {
+	z-index : 10;
+	top : -36px;
+	position : relative;
+	background-color : $sky-blue;
+	@include blur-fade-background-image (
+		"/res/img/cars-and-sunsets.jpg",
+		100%, 100%
+	);
+
+	h1 {
+		color : $light-gray;
+
+	}
+}
