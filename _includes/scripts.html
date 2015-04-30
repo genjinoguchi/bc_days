@@ -1,2 +1,4 @@
-		<script src="/res/js/d3.min.js"></script>
-		<script src="/res/js/main.js"></script>
+{% for depen in site.js %}
+<script src="/res/js/{{depen.name}}"></script>
+{% endfor %}
+

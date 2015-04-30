@@ -4,6 +4,10 @@ layout		: blog_layout
 
 ---
 
+<div id="blog-front-page" class="front-page full-page">
+	<br><br><br><br><br>
+	<h1>Welcome to my little space on the internet.</h1>
+</div>
 
 <div id="blog">
 	<div id="blog-list">

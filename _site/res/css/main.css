@@ -121,3 +121,21 @@ footer {
   background-repeat: no-repeat; }
   #about-front-page h1 {
     color: #E6E6E6; }
+
+#blog-front-page {
+  z-index: 10;
+  top: -36px;
+  position: relative;
+  background-color: #ADEBFF;
+  background-image: url("/res/img/sunset-beach.jpg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat; }
+
+#portfolio-front-page {
+  z-index: 10;
+  top: -36px;
+  position: relative;
+  background-color: #ADEBFF;
+  background-image: url("/res/img/beach.jpg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat; }
