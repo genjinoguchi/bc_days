@@ -54,6 +54,10 @@ nav {
   z-index: 15;
   position: absolute;
   width: 100%; }
+  nav #mobile-navbar {
+    display: none; }
+  nav #mobile-navbar-anchor {
+    display: none; }
   nav a {
     width: 80%;
     padding: 25px 25px;

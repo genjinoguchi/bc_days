@@ -21,8 +21,8 @@
 
 <link rel="stylesheet" href="/res/css/main.css" />
 
-		
-
+		<script src="/res/js/d3.min.js"></script>
+<script src="/res/js/main.js"></script>
 
 
 
@@ -66,33 +66,40 @@
 		</div>
 	</div>
 
-	<div class="pure-g">
-		<!-- Mobile View -->
-		<div class="pure-u-xs-1 pure-u-sm-0">
-			<a href="/" id="home-anchor-mobile"
-						class="card">
-				HOME
-			</a>
-		</div>
-		<div class="pure-u-xs-1 pure-u-sm-0">
-			<a href="/blog" id="blog-anchor-mobile"
-							class="card">
-				BLOG
-			</a>
-		</div>
-		<div class="pure-u-xs-1 pure-u-sm-0">
-			<a href="/portfolio" id="portfolio-anchor-mobile"
-								 class="card">
-				PORTFOLIO
-			</a>
-		</div>
-		<div class="pure-u-xs-1 pure-u-sm-0">
-			<a href="/about" id="about-anchor-mobile"
-								 class="card">
-				PORTFOLIO
-			</a>
-		</div>
+	<div id="mobile-navbar-hidden" class="pure-u-xs-1 pure-u-sm-0">
+		|||
 	</div>
+	<span id="mobile-navbar">
+		<div class="pure-g">
+			<!-- Mobile View -->
+			<div class="pure-u-xs-1 pure-u-sm-0">
+				<a href="/" id="home-anchor-mobile"
+				class="card mobile-navbar-anchor">
+					HOME
+				</a>
+			</div>
+			<div class="pure-u-xs-1 pure-u-sm-0">
+				<a href="/blog" id="blog-anchor-mobile"
+					class="card mobile-navbar-anchor">
+					BLOG
+				</a>
+			</div>
+			<div class="pure-u-xs-1 pure-u-sm-0">
+				<a href="/portfolio" id="portfolio-anchor-mobile"
+						 class="card mobile-navbar-anchor">
+					PORTFOLIO
+				</a>
+			</div>
+			<div class="pure-u-xs-1 pure-u-sm-0">
+				<a href="/about" id="about-anchor-mobile"
+					 class="card mobile-navbar-anchor">
+					ABOUT
+				</a>
+			</div>
+		</div>	
+	</span>
+
+
 </nav>
 
 		
