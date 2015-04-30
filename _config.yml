@@ -21,6 +21,9 @@ collections:
     portfolio:
         output : true
         permalink : /portfolio/:path/index.html
+    css:
+        output : true
+        permalink : /res/css/:path.css
 
 # Sass
 sass:

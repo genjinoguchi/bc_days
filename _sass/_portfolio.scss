@@ -1,0 +1,10 @@
+#portfolio-front-page {
+	z-index : 10;
+	top : -36px;
+	position: relative;
+	background-color : $sky-blue;
+	@include blur-fade-background-image (
+		"/res/img/beach.jpg",
+		100%, 100%
+	)
+}
