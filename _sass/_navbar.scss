@@ -8,13 +8,14 @@ nav {
 	}	
 
 	#mobile-navbar {
-		display : none;
+	
 	}
 
-	#mobile-navbar-anchor {
-		display : none;
+	.mobile-navbar-anchor {
+		position : absolute;
+		/*margin-left : 5%;*/
+		/*top : -7em;	*/
 	}
-
 
 	a {
 		width : 80%;

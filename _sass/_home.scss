@@ -4,7 +4,8 @@
 	position : relative;
 	background-color : #B8FF94;
 	@include blur-fade-background-image(
-		"/res/img/beach-greenery.jpg",
-		100%, 100%
+		"/res/img/airplane-window-horizon.jpg"
 	);
+	
+	@extend .full-page-background-image;
 }

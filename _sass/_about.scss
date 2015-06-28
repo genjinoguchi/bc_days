@@ -4,9 +4,9 @@
 	position : relative;
 	background-color : $sky-blue;
 	@include blur-fade-background-image (
-		"/res/img/cars-and-sunsets.jpg",
-		100%, 100%
+		"/res/img/cars-and-sunsets.jpg"
 	);
+	@extend .full-page-background-image;
 
 	h1 {
 		color : $light-gray;

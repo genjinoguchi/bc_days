@@ -30,6 +30,12 @@ body {
 .container {
   position: relative; }
 
+.full-page-background-image, #home-front-page, #about-front-page {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 /* Mixins */
 /* Font Size */
 .box-rounded, .card {
@@ -47,6 +53,8 @@ body {
   background-color: white;
   position: relative;
   margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding-top: 25px;
   padding-bottom: 25px; }
 
@@ -54,10 +62,10 @@ nav {
   z-index: 15;
   position: absolute;
   width: 100%; }
-  nav #mobile-navbar {
-    display: none; }
-  nav #mobile-navbar-anchor {
-    display: none; }
+  nav .mobile-navbar-anchor {
+    position: absolute;
+    /*margin-left : 5%;*/
+    /*top : -7em;	*/ }
   nav a {
     width: 80%;
     padding: 25px 25px;
@@ -111,8 +119,7 @@ footer {
   top: -36px;
   position: relative;
   background-color: #B8FF94;
-  background-image: url("/res/img/beach-greenery.jpg");
-  background-size: 100%, 100%;
+  background-image: url("/res/img/airplane-window-horizon.jpg");
   background-repeat: no-repeat; }
 
 #about-front-page {
@@ -121,7 +128,6 @@ footer {
   position: relative;
   background-color: #ADEBFF;
   background-image: url("/res/img/cars-and-sunsets.jpg");
-  background-size: 100%, 100%;
   background-repeat: no-repeat; }
   #about-front-page h1 {
     color: #E6E6E6; }
@@ -132,7 +138,6 @@ footer {
   position: relative;
   background-color: #ADEBFF;
   background-image: url("/res/img/sunset-beach.jpg");
-  background-size: 100%, 100%;
   background-repeat: no-repeat; }
 
 #portfolio-front-page {
@@ -141,5 +146,4 @@ footer {
   position: relative;
   background-color: #ADEBFF;
   background-image: url("/res/img/beach.jpg");
-  background-size: 100%, 100%;
   background-repeat: no-repeat; }

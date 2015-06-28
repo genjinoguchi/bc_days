@@ -37,11 +37,16 @@ body {
 .container {
 	position : relative;
 }
+.full-page-background-image {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 /* Mixins */
-@mixin blur-fade-background-image($imgpath, $width, $height) {
+@mixin blur-fade-background-image($imgpath) {
 	background-image : url($imgpath);
-	background-size : $width, $height;
 	background-repeat : no-repeat;
 }
 

@@ -4,7 +4,6 @@
 	position: relative;
 	background-color : $sky-blue;
 	@include blur-fade-background-image (
-		"/res/img/sunset-beach.jpg",
-		100%, 100%
+		"/res/img/sunset-beach.jpg"
 	)
 }
