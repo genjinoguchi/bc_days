@@ -73,7 +73,7 @@ body {
 
 
 /* Mixins */
-@mixin blur-fade-background-image($imgpath) {
+@mixin centered-background-image($imgpath) {
 	background-image : url($imgpath);
 	background-repeat : no-repeat;
 	background-position: center;

@@ -1,7 +1,9 @@
 html,
 body,
 #main {
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
 /* Nice Colors. */
 a {
@@ -30,7 +32,7 @@ body {
 .container {
   position: relative; }
 
-.full-page-background-image, #home-front-page, #about-front-page {
+.full-page-background-image, #home-front-page, #home-info-cards, #about-front-page, #blog-front-page {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -61,7 +63,7 @@ body {
 
 /* Mixins */
 /* Font Size */
-.box-rounded {
+.box-rounded, .card {
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -131,10 +133,9 @@ nav {
     	*/ }
 
 footer {
-  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-top: 50px;
+  top: -5em;
   background-color: #3366CC; }
 
 #home-front-page {
@@ -159,6 +160,16 @@ footer {
       #home-front-page #logo-block #logo-desktop li {
         display: inline-block; }
 
+#home-info-cards {
+  background-image: url("/res/img/beach-blur.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-offset: -100px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -4em; }
+
 #about-front-page {
   z-index: 10;
   top: -36px;
@@ -176,7 +187,7 @@ footer {
   top: -36px;
   position: relative;
   background-color: #ADEBFF;
-  background-image: url("/res/img/sunset-beach.jpg");
+  background-image: url("/res/img/sony-bokeh.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-offset: -100px; }

@@ -3,7 +3,8 @@
 	top : -36px;
 	position: relative;
 	background-color : $sky-blue;
-	@include blur-fade-background-image (
-		"/res/img/sunset-beach.jpg"
-	)
+	@include centered-background-image (
+		"/res/img/sony-bokeh.jpg"
+	);
+	@extend .full-page-background-image;
 }

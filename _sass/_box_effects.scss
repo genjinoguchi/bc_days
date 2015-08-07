@@ -13,6 +13,7 @@
 
 .card {
 	@extend .box-shadow;
+	@extend .box-rounded;
 	background-color : white;
 	position : relative;
 	margin-top : 15px;

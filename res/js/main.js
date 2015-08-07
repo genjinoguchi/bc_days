@@ -12,10 +12,10 @@ function hideMenuBar() {
 
 
 
-document.ready(function() {
+window.onload = function() {
 	// Load button callbacks with jQuery
 	
 	$("#mobile-navbar-menu-button").click(function() {
 
 	})
-})
+}

@@ -3,10 +3,9 @@
 	top : -36px;
 	position : relative;
 	background-color : #B2B2B2;
-	@include blur-fade-background-image(
+	@include centered-background-image(
 		"/res/img/airplane-window-horizon.jpg"
 	);
-
 	@extend .full-page-background-image;
 
 
@@ -34,4 +33,18 @@
 		}
 
 	}
+}
+
+
+#home-info-cards {
+	@include centered-background-image(
+		"/res/img/beach-blur.jpg"
+	);
+	@extend .full-page-background-image;
+
+	margin: 0;
+	padding: 0;
+
+	position: relative;
+	top: -4em;
 }

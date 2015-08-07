@@ -3,7 +3,7 @@
 	top : -36px;
 	position: relative;
 	background-color : $sky-blue;
-	@include blur-fade-background-image (
+	@include centered-background-image (
 		"/res/img/beach.jpg"
 	)
 }
