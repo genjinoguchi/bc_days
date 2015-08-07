@@ -1,0 +1,5 @@
+Possible libraries to use:
+* Sketch.js (https://github.com/soulwire/sketch.js): An easy way to make flowery, flashy animations based on mouse movements.
+* Lettering.js (): A small jQuery plugin that makes it easy to style lettering, letter by letter.
+				   It will be good to pair it with CSS nth-child selectors (http://www.w3schools.com/cssref/sel_nth-child.asp)
+

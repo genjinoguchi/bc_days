@@ -2,10 +2,36 @@
 	z-index : 10;
 	top : -36px;
 	position : relative;
-	background-color : #B8FF94;
+	background-color : #B2B2B2;
 	@include blur-fade-background-image(
 		"/res/img/airplane-window-horizon.jpg"
 	);
-	
+
 	@extend .full-page-background-image;
+
+
+
+	#logo-block{
+
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		#logo-desktop {
+			display: block;
+			position: relative;
+			width: 500px;
+			padding-top: 46vh;
+			padding-right: 60vh;
+
+			li {
+				display: inline-block;
+			}
+		}
+
+		#logo-mobile {
+
+		}
+
+	}
 }
