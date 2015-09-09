@@ -5,7 +5,7 @@ XH<!--About Page-->
 
 <div id="who-am-i">
 <p class="p-about">
-I'm Genji Noguchi. I'm <span id="age"></span>* years old, and I'm currently a senior at <a href="http://stuy.enschool.org">Stuyvesant High School</a>. I love to create amazing things (check out the projects page, which is easily accessible from the left sidebar), tinker and fiddle (my Android phone is a prime example).
+I'm Genji Noguchi. I'm <span id="age"></span>* years old, and I'm currently a freshman at the University of California, Berkeley, studying computer science under the EECS major. I love to create amazing things (check out the projects page, accessible from the left sidebar), tinker (my Android phone is a prime example), and make memories.
 <br><br>
 Currently, my dream is to found a tech startup compnay that can make a positive change on the world. At this point in time, startups have the greatest potential and influence on the United States (and the world). They're the ones that can pull the world into a place better than the one we have now. I would be the happiest man in the world to be able to make that kind of impact.
 </p>
@@ -55,6 +55,7 @@ Here are the fonts that I used (all free from Google Fonts):
 	 </h1>
 	 <ul>
 	 <li>*Automatically updating age!</li>
+	 <li>This site is a bit out of date. V2.0 is rolling out soon!</li>
 
 	 </ul>
 
