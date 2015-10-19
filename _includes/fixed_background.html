@@ -1,0 +1,31 @@
+<div id="fixed-background" class="full-page background-image"></div>
+
+<style>
+	
+	#fixed-background {
+		z-index: 10;
+		position: relative;
+
+		background: url("{{include.blurSrc}}") top right no-repeat;
+		background: url("{{include.imgSrc}}") top right no-repeat;
+		
+	}
+
+	#fixed-background-blur {
+		position: fixed;
+
+	}
+	.background-image {
+		background-attachment:fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto 100%;
+		background-offset: -100px;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+</style>
