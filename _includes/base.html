@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		
+
 		{% include meta.html %}
 
 		<title>{{ site.name }} | {{ include.title }}</title>
@@ -13,14 +13,15 @@
 	<body>
 		<!-- {{ include.heading }} -->
 
-	
+
 		{% include navbar.html%}
-		
+
 		<br><br>
 
 		<div id="main">
+			<!-- for future things, add fixed_background. -->
 			{{ content }}
-			
+
 		</div>
 
 

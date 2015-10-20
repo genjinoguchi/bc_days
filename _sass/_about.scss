@@ -3,13 +3,10 @@
 	top : -36px;
 	position : relative;
 	background-color : $sky-blue;
-	@include centered-background-image (
-		"/res/img/cars-and-sunsets.jpg"
+	height: 60%;
+
+	@include leftjust-background-image (
+		"/res/img/berkeley-skyline.jpg"
 	);
 	@extend .full-page-background-image;
-
-	h1 {
-		color : $light-gray;
-
-	}
 }

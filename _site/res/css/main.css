@@ -32,7 +32,7 @@ body {
 .container {
   position: relative; }
 
-.full-page-background-image, #home-front-page, #home-info-cards, #about-front-page, #blog-front-page {
+.full-page-background-image, #home-front-page, #home-info-cards, #about-front-page, #blog-front-page, #portfolio-front-page {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,6 +63,33 @@ body {
 
 /* Mixins */
 /* Font Size */
+/* Test  */
+.fancy {
+  line-height: 0.5;
+  text-align: center; }
+
+.fancy span {
+  display: inline-block;
+  position: relative; }
+
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px; }
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px; }
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px; }
+
 .box-rounded, .card {
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
@@ -140,25 +167,19 @@ footer {
 
 #home-front-page {
   z-index: 10;
-  top: -36px;
+  top: -60px;
   position: relative;
   background-color: #B2B2B2;
-  background-image: url("/res/img/airplane-window-horizon.jpg");
+  background-image: url("/res/img/airplane-window-horizon-bw.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-offset: -100px; }
   #home-front-page #logo-block {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d; }
+    position: absolute; }
     #home-front-page #logo-block #logo-desktop {
-      display: block;
-      position: relative;
-      width: 500px;
-      padding-top: 46vh;
-      padding-right: 60vh; }
-      #home-front-page #logo-block #logo-desktop li {
-        display: inline-block; }
+      max-width: 300px;
+      left: 30%;
+      position: relative; }
 
 #home-info-cards {
   background-image: url("/res/img/beach-blur.jpg");
@@ -175,12 +196,11 @@ footer {
   top: -36px;
   position: relative;
   background-color: #ADEBFF;
-  background-image: url("/res/img/cars-and-sunsets.jpg");
+  height: 60%;
+  background-image: url("/res/img/berkeley-skyline.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
   background-offset: -100px; }
-  #about-front-page h1 {
-    color: #E6E6E6; }
 
 #blog-front-page {
   z-index: 10;
@@ -194,10 +214,54 @@ footer {
 
 #portfolio-front-page {
   z-index: 10;
-  top: -36px;
+  top: -60px;
   position: relative;
   background-color: #ADEBFF;
-  background-image: url("/res/img/beach.jpg");
+  height: 70%;
+  background-image: url("/res/img/mac-blur.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-offset: -100px; }
+  #portfolio-front-page #portfolio-header-block {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    #portfolio-front-page #portfolio-header-block #portfolio-header {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      top: 45%;
+      position: relative; }
+      #portfolio-front-page #portfolio-header-block #portfolio-header .line {
+        display: inline-block;
+        line-height: 0.5px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        width: 300px; }
+      #portfolio-front-page #portfolio-header-block #portfolio-header .subheader {
+        line-height: 0.5px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 15px;
+        display: inline-block;
+        position: relative; }
+      #portfolio-front-page #portfolio-header-block #portfolio-header .subheader:before,
+      #portfolio-front-page #portfolio-header-block #portfolio-header .subheader:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        width: 70px; }
+      #portfolio-front-page #portfolio-header-block #portfolio-header .subheader:before {
+        right: 100%;
+        margin-right: 15px; }
+      #portfolio-front-page #portfolio-header-block #portfolio-header .subheader:after {
+        left: 100%;
+        margin-left: 15px; }
+      #portfolio-front-page #portfolio-header-block #portfolio-header .header {
+        color: white;
+        font-family: serif;
+        font-size: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px; }
