@@ -15,7 +15,8 @@ h1 {
   text-decoration: none; }
 
 body {
-  background-color: #E6E6E6; }
+  background-color: #E6E6E6;
+  overflow-x: hidden; }
 
 /* Classes for Positioning */
 .push-right {
@@ -267,4 +268,21 @@ footer {
         margin-bottom: 0px; }
 
 #projects-block #projects {
-  max-width: 80vw; }
+  text-align: center; }
+  #projects-block #projects .desktop {
+    height: 300px;
+    width: 400px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; }
+  #projects-block #projects .mobile {
+    height: 300px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+    vertical-align: top; }

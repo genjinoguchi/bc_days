@@ -68,10 +68,28 @@
 
 #projects-block {
 	#projects {
-		max-width: 80vw;
+		text-align: center;
 
-		.project-excerpt {
-
+		.desktop {
+			height: 300px;
+			width: 400px;
+			border-width: 1px;
+			border-color: black;
+			border-style: solid;
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
 		}
+		.mobile {
+			height: 300px;
+			border-width: 1px;
+			border-color: black;
+			border-style: solid;
+			position: relative;
+			vertical-align: top;
+		}
+
+
 	}
 }
