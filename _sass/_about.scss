@@ -1,12 +1,59 @@
 #about-front-page {
 	z-index : 10;
 	top : -36px;
-	position : relative;
+	position: relative;
 	background-color : $sky-blue;
-	height: 60%;
+	height: 70%;
+
 
 	@include leftjust-background-image (
-		"/res/img/berkeley-skyline.jpg"
+		"/res/img/klesis.jpg"
 	);
 	@extend .full-page-background-image;
+
+
+
+	#about-header-block {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		#about-header {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			top: 65%;
+			position: relative;
+
+			.line {
+				display: inline-block;
+				line-height: 0.5px;
+				border-top: 1px solid white;
+				border-bottom: 1px solid white;
+				width: 330px;
+			}
+			.header {
+				color: white;
+				font-family: serif;
+				font-size: 50px;
+				margin-top: 0px;
+				margin-bottom: 0px
+			}
+
+		}
+	}
+}
+
+#about-info-cards {
+
+	.about-card {
+		width: 400px;
+		vertical-align: top;
+		position: relative;
+	}
+
+	.about-card-mobile {
+		width: 100%;
+		position: relative;
+	}
 }

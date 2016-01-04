@@ -16,6 +16,9 @@ paginate_path	: /blog/page:num
 permalink		: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--end_excerpt-->
 
+# Gems
+gems : [jekyll-paginate, redcarpet]
+
 # Collections
 collections:
     portfolio:

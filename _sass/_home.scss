@@ -4,7 +4,7 @@
 	position : relative;
 	background-color : #B2B2B2;
 	@include centered-background-image(
-		"/res/img/airplane-window-horizon-bw.jpg"
+		"/res/img/airplane-window-horizon-color.jpg"
 	);
 	@extend .full-page-background-image;
 
@@ -28,14 +28,32 @@
 
 
 #home-info-cards {
+	/*
 	@include centered-background-image(
 		"/res/img/beach-blur.jpg"
 	);
+	*/
+	/*
 	@extend .full-page-background-image;
+	*/
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#31597c+0,28bcd6+100 */
+	background: #31597c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #31597c 0%, #28bcd6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #31597c 0%,#28bcd6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #31597c 0%,#28bcd6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31597c', endColorstr='#28bcd6',GradientType=0 ); /* IE6-9 */
+
 
 	margin: 0;
 	padding: 0;
 
 	position: relative;
 	top: -4em;
+
+	p {
+		margin-left: 2em;
+		margin-right: 2em;
+		font-size: 100%;
+	}
 }
