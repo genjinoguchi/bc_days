@@ -2,19 +2,20 @@
 <!--
 <div class="desktop pure-u-xs-0 pure-u-sm-1-12">
 -->
-<div class="desktop">
-    <img src="/res/img/{{project.thumbnail}}" width="100%"/>
-    <h1> {{ project.name }} </h1>
+<a href="/portfolio/{{ project.category }}{{ project.anchor }}">
+    <div class="desktop">
+        <img src="/res/img/{{project.thumbnail}}" width="100%"/>
+        <h1> {{ project.name }} </h1>
 
-    {{ project.content }}
+        {{ project.sub }}
 
-    <a href="/portfolio/{{ project.category }}{{ project.anchor }}">Read More</a>
-</div>
-<!-- Mobile View -->
-<div class="mobile pure-u-xs-1 pure-u-sm-0">
-    <h1> {{ project.name }} </h1>
+        Read More</a>
+    </div>
+    <!-- Mobile View -->
+    <div class="mobile pure-u-xs-1 pure-u-sm-0">
+        <h1> {{ project.name }} </h1>
 
-    {{ project.content }}
-    <a href="/portfolio/{{ project.category }}{{ project.anchor }}">Read More</a>
+        {{ project.sub }}
 
-</div>
+    </div>
+</a>

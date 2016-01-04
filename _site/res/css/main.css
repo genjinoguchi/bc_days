@@ -91,7 +91,7 @@ body {
   left: 100%;
   margin-left: 15px; }
 
-.box-rounded, .card {
+.box-rounded {
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -103,6 +103,7 @@ body {
   box-shadow: 0px 0px 4px 0px black; }
 
 .card {
+  /*@extend .box-rounded;*/
   background-color: white;
   position: relative;
   margin-top: 15px;
@@ -248,10 +249,12 @@ footer {
   padding-bottom: 100px;
   width: 100%; }
   #about-info-cards .about-card {
-    max-width: 400px;
-    position: relative; }
+    max-width: 300px;
+    position: relative;
+    padding: 20px; }
   #about-info-cards .about-card-mobile {
     width: 90%;
+    padding: 20px;
     position: relative; }
 
 #blog-front-page {

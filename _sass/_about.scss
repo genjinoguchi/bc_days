@@ -49,12 +49,14 @@
 	width: 100%;
 
 	.about-card {
-		max-width: 400px;
+		max-width: 300px;
 		position: relative;
+		padding: 20px;
 	}
 
 	.about-card-mobile {
 		width: 90%;
+		padding: 20px;
 		position: relative;
 	}
 }

@@ -2,6 +2,7 @@
 
 layout : project_layout
 name : Test Project
+sub : A TEST PROJECT
 category: misc
 anchor : test-project
 thumbnail: beach-blur.jpg
