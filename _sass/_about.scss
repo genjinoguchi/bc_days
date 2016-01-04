@@ -45,15 +45,16 @@
 }
 
 #about-info-cards {
+	padding-bottom: 100px;
+	width: 100%;
 
 	.about-card {
-		width: 400px;
-		vertical-align: top;
+		max-width: 400px;
 		position: relative;
 	}
 
 	.about-card-mobile {
-		width: 100%;
+		width: 90%;
 		position: relative;
 	}
 }
