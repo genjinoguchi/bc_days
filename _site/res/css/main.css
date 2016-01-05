@@ -116,8 +116,13 @@ nav {
   position: absolute;
   width: 100%; }
   nav .mobile-navbar-anchor {
+    /* uncomment this
+    position: absolute
+    */
+    /* comment this out for doing android-style navbar */
     position: relative;
     padding: 10px 25px !important;
+    /* endcomment */
     /*margin-left : 5%;*/
     /*top : -7em;	*/ }
   nav a {
