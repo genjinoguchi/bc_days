@@ -6,6 +6,9 @@ url             : "localhost:4000"
 baseurl         : /
 version			: 2.0.1
 
+#Exclude
+exclude         : ['test-project.md', 'test-software.md', 'test-hardware.md']
+
 #Dependencies
 markdown        : redcarpet
 highlighter     : true

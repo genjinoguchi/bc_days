@@ -1,26 +1,27 @@
 ---
-layout          : project_layout
+layout          : content_layout
 name            : AFAR
 sub             : AN APP TO HELP SAVE LIVES
 category        : software
-anchor          : software/afar
-thumbnail       : AFAR/thumbnail.png
-timeframe       : Sept 19 2014-Sept 21 2014
+anchor          : afar
+thumbnail       : AFAR/thumbnail.jpg
+landing			: AFAR/AFARapp_all.png
+timeframe       : Sept 19 2014 - Sept 21 2014
 ---
 
 On a warm June day, as I was about to cross the street, I heard my friends yell for my name. When I turned, I saw a man who stopped breathing with some food lodged down the wrong pipe in his throat. The people there who were currently trying to help him clearly did not know first aid and were about to stick their fingers down his mouth. Thankfully, a man and I ran up to him and were able to save him with proper first aid training.
 
-The thing is, what happens when those who know first aid are missing in an emergencies like this?
+##The thing is, what happens when those who know first aid are missing in an emergencies like this?
 
 In New York City and other densely populated places, it can take over 15 minutes for an ambulance to arrive in time to help one in need. In cases such as when people have cardiac arrest, it's common logic that every minute a victim's heart's not beating, the greater the chance of death. We need a way for people in medical emergencies to get help earlier. That's where AFAR comes in.
 
-How does it work?
+##How does it work?
 
 When a medical emergency happens with no medical professional or First Aid trained people nearby, the AFAR system will be notified of the emergency and its location via text messaging or a mobile app.
 
 
 <center>
-	<img src="{{site.url}}/res/src/AFAR/AFARapp_main.png" height="700" alt="This is the main screenshot."/>
+	<img src="/res/img/src/AFAR/AFARapp_main.png" height="700" alt="This is the main screenshot."/>
 </center>
 
 
@@ -28,7 +29,7 @@ The AFAR system will then send the emergency details to all program volunteers t
 
 
 <center>
-	<img src="{{site.url}}/res/img/ventures/AFAR/AFARapp_ios.png" alt="AFAR on iOS">
+	<img src="/res/img/src/AFAR/AFARapp_ios.png" alt="AFAR on iOS">
 </center>
 
 
@@ -36,10 +37,10 @@ At the same time, AFAR will also automatically call 911 or whatever emergency nu
 Response to medical emergencies will increase and save lives.
 
 <center>
-	<img src="{{site.url}}/res/img/ventures/AFAR/AFARapp_manual.png" height="700" alt="AFAR's built in manual."/>
+	<img src="/res/img/src/AFAR/AFARapp_manual.png" height="700" alt="AFAR's built in manual."/>
 </center>
 
-Key Features:
+##Key Features:
 
 * The service fully works. Anyone can sign up as a volunteer on our website right now and will receive any notifications of emergencies near them.
 * You do not need to install the app in order to use the emergency service. Simply text it and follow its instructions.
@@ -49,11 +50,10 @@ Key Features:
 
 
 <center>
-	<img src="{{site.url}}/res/img/ventures/AFAR/AFARapp_all.png" height="700" alt="AFAR on all devices."/>
+	<img src="/res/img/src/AFAR/AFARapp_all.png" height="700" alt="AFAR on all devices."/>
 </center>
 
-
-Links:
+##Links:
 
 * You can find the code [here](https://github.com/afarsystem)
 * Collaborators on this project:

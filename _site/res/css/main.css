@@ -91,7 +91,7 @@ body {
   left: 100%;
   margin-left: 15px; }
 
-.box-rounded {
+.box-rounded, .card {
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -103,7 +103,6 @@ body {
   box-shadow: 0px 0px 4px 0px black; }
 
 .card {
-  /*@extend .box-rounded;*/
   background-color: white;
   position: relative;
   margin-top: 15px;
@@ -322,21 +321,88 @@ footer {
         margin-bottom: 0px; }
 
 #projects-block #projects {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /*
+  		.proj-img {
+  			height: 400px;
+  			width: 100%;
+  			overflow: hidden;
+  			text-align: center;
+  
+  			img {
+  				display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  			}
+  		}
+  		*/ }
+  #projects-block #projects .proj-block {
+    text-align: left;
+    position: relative; }
   #projects-block #projects .desktop {
-    height: 300px;
-    width: 400px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    position: relative;
-    display: inline-block;
+    width: 480px;
     vertical-align: top;
-    text-align: center; }
+    margin-bottom: 60px;
+    margin-right: 20px; }
   #projects-block #projects .mobile {
-    height: 300px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    position: relative;
-    vertical-align: top; }
+    vertical-align: top;
+    margin-bottom: 40px; }
+  #projects-block #projects img {
+    float: left; }
+
+#proj-front-page {
+  z-index: 10;
+  position: relative;
+  background-color: white;
+  top: -36px;
+  height: 50%; }
+  #proj-front-page #proj-header-block {
+    z-index: 11;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-offset: -100px;
+    -webkit-filter: url("#blur");
+    filter: url("#blur");
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  #proj-front-page #proj-header {
+    font-family: serif;
+    z-index: 12;
+    width: 100%;
+    top: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    background-color: white;
+    opacity: 0.5; }
+    #proj-front-page #proj-header #header {
+      font-size: 500%;
+      margin-bottom: 0px; }
+    #proj-front-page #proj-header #subheader {
+      font-size: 120%;
+      margin: 0; }
+    #proj-front-page #proj-header #timeframe {
+      font-size: 100%;
+      margin-top: 0;
+      margin-bottom: 10px; }
+
+#content-container {
+  position: relative;
+  background-color: #E6E6E6; }
+  #content-container #content {
+    max-width: 100%;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    line-height: 170%; }
+    #content-container #content p {
+      padding: 15px; }

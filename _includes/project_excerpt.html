@@ -1,21 +1,17 @@
-<!-- Desktop View -->
+
 <!--
 <div class="desktop pure-u-xs-0 pure-u-sm-1-12">
 -->
-<a href="/portfolio/{{ project.category }}{{ project.anchor }}">
-    <div class="desktop">
-        <img src="/res/img/{{project.thumbnail}}" width="100%"/>
-        <h1> {{ project.name }} </h1>
-
-        {{ project.sub }}
-
-        Read More</a>
+<a href="/portfolio/{{ project.category }}/{{ project.anchor }}">
+    <div class="desktop proj-block pure-u-xs-0 pure-u-sm-1">
+        <img src="/res/img/src/{{project.thumbnail}}" width="480" height="300"/>
+        <p> <b> {{ project.name }} </b> </p>
+        <p> {{ project.sub }} </p>
     </div>
     <!-- Mobile View -->
-    <div class="mobile pure-u-xs-1 pure-u-sm-0">
-        <h1> {{ project.name }} </h1>
-
-        {{ project.sub }}
-
+    <div class="mobile proj-block pure-u-xs-1 pure-u-sm-0">
+        <img src="/res/img/src/{{project.thumbnail}}" width="100%"/>
+        <p> <b> {{ project.name }} </b> </p>
+        <p> {{ project.sub }} </p>
     </div>
 </a>
