@@ -116,7 +116,8 @@ nav {
   position: absolute;
   width: 100%; }
   nav .mobile-navbar-anchor {
-    position: absolute;
+    position: relative;
+    padding: 10px 25px !important;
     /*margin-left : 5%;*/
     /*top : -7em;	*/ }
   nav a {
