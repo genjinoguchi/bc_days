@@ -1,7 +1,7 @@
 ---
 layout          : content_layout
 name            : AFAR
-sub             : AN APP TO HELP SAVE LIVES
+sub             : An app designed to help save lives.
 category        : software
 anchor          : afar
 thumbnail       : AFAR/thumbnail.jpg

@@ -209,7 +209,7 @@ footer {
   #home-info-cards p {
     margin-left: 2em;
     margin-right: 2em;
-    font-size: 100%; }
+    font-size: 110%; }
 
 #about-front-page {
   z-index: 10;
@@ -246,15 +246,34 @@ footer {
 
 #about-info-cards {
   padding-bottom: 100px;
-  width: 100%; }
+  top: -36px;
+  position: relative;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08121d+0,485466+100 */
+  background: #08121d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #08121d 0%, #485466 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #08121d 0%, #485466 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #08121d 0%, #485466 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08121d', endColorstr='#485466',GradientType=0 );
+  /* IE6-9 */ }
   #about-info-cards .about-card {
     max-width: 300px;
     position: relative;
     padding: 20px; }
+    #about-info-cards .about-card p {
+      text-align: left; }
   #about-info-cards .about-card-mobile {
     width: 90%;
     padding: 20px;
     position: relative; }
+
+p, li {
+  text-align: left;
+  font-size: 120%; }
 
 #blog-front-page {
   z-index: 10;
@@ -406,3 +425,5 @@ footer {
     line-height: 170%; }
     #content-container #content p {
       padding: 15px; }
+    #content-container #content img {
+      max-width: 100%; }
