@@ -372,7 +372,8 @@ p, li {
     width: 480px;
     vertical-align: top;
     margin-bottom: 60px;
-    margin-right: 20px; }
+    margin-right: 50px;
+    margin-left: 50px; }
   #projects-block #projects .mobile {
     vertical-align: top;
     margin-bottom: 40px; }
