@@ -44,4 +44,4 @@ Details
 * Collaborators
 	* [Genji Noguchi]("genjinoguchi.com")
 	* [Julian Kalogetakis]("https://github.com/juliankal")
-* Source code can be found [here.]("https://github.com/JulianKal/Per6-Noguchi-Kalogerakis-XPool")
+* Source code can be found <a href="https://github.com/JulianKal/Per6-Noguchi-Kalogerakis-XPool">here</a>.
