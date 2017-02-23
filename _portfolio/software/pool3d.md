@@ -21,9 +21,9 @@ During our APCS class, we were introduced to 3D graphics using Processing. So, w
 
 
 <center>
-<img src="{{ site.url }}/res/img/ventures/Pool3D/Pool2D_top.png" width="800px">
+<img src="/res/img/src/Pool3D/Pool2D_top.png" width="800px">
 <br>
-<img src="{{ site.url }}/res/img/ventures/Pool3D/Pool2D_Break.png" width="800px">
+<img src="/res/img/srcs/Pool3D/Pool2D_Break.png" width="800px">
 </center>
 
 
@@ -34,7 +34,7 @@ Core Features:
 * We are looking to port it to the Android and iPhone, and put it on the Google Play Store as well as the App Store.
 
 <center>
-<img src="{{ site.url }}/res/img/ventures/Pool3D/Pool2D_play.png" width="800px">
+<img src="/res/img/src/Pool3D/Pool2D_play.png" width="800px">
 
 <br><br>
 
@@ -44,4 +44,4 @@ Details
 * Collaborators
 	* [Genji Noguchi]("genjinoguchi.com")
 	* [Julian Kalogetakis]("https://github.com/juliankal")
-* Source code can be found [here.]("https://github.com/JulianKal/Per6-Noguchi-Kalogerakis-XPool")
+* Source code can be found <a href="https://github.com/JulianKal/Per6-Noguchi-Kalogerakis-XPool">here</a>.
